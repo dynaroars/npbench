@@ -1,0 +1,20 @@
+         Degree Constrained Minimum Spanning Tree Test Data
+The CRD and SYM data sets have been obtained from A Volgenant, the remainder
+have been created by A Ernst and M Krishnamoorthy.
+
+Format:
+The CRD files contain simply co-ordinates in a 2-dimensional
+euclidean space (truncate to integer). All others contain 1/2 of the symmetric
+cost matrix between all pairs of points. ie these should be read with a loop
+of the form:
+  FOR i=1..n:
+    FOR j=1..i-1:
+      distance(i,j)=distance(j,i) = read_next_number;
+
+Other files:
+Data generators: the .c files contain data generators for different types of
+                 data sets. Use at your own risk.
+bestSolutions.txt: list of best known solutions to go with the paper on
+                   DCMST written by Ernst, Krishnamoorthy, Sharaiha:
+                   "Comparisons of algorithms for the degree constrained
+		   minimum spanning tree"

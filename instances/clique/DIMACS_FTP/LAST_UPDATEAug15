@@ -1,0 +1,68 @@
+Last Update: August 15
+  -rw-------  1 trick       63522 Aug 15 10:04 p_hat1000-1.clq.b
+  -rw-------  1 trick       63531 Aug 15 10:04 p_hat1000-2.clq.b
+  -rw-------  1 trick       63533 Aug 15 10:04 p_hat1000-3.clq.b
+  -rw-------  1 trick      141858 Aug 15 10:04 p_hat1500-1.clq.b
+  -rw-------  1 trick      141893 Aug 15 10:04 p_hat1500-2.clq.b
+  -rw-------  1 trick      141909 Aug 15 10:04 p_hat1500-3.clq.b
+  -rw-------  1 trick        6306 Aug 15 10:04 p_hat300-1.clq.b
+  -rw-------  1 trick        6307 Aug 15 10:04 p_hat300-2.clq.b
+  -rw-------  1 trick        6308 Aug 15 10:04 p_hat300-3.clq.b
+  -rw-------  1 trick       16405 Aug 15 10:04 p_hat500-1.clq.b
+  -rw-------  1 trick       16408 Aug 15 10:04 p_hat500-2.clq.b
+  -rw-------  1 trick       16408 Aug 15 10:04 p_hat500-3.clq.b
+  -rw-------  1 trick       31517 Aug 15 10:04 p_hat700-1.clq.b
+  -rw-------  1 trick       31523 Aug 15 10:04 p_hat700-2.clq.b
+  -rw-------  1 trick       31524 Aug 15 10:04 p_hat700-3.clq.b
+
+Last Update: July 29
+  -rw-------  1 trick        2995 Jul 29 14:00 brock200_1.clq.b
+  -rw-------  1 trick        2964 Jul 29 14:00 brock200_2.clq.b
+  -rw-------  1 trick        2973 Jul 29 14:00 brock200_3.clq.b
+  -rw-------  1 trick        2979 Jul 29 14:00 brock200_4.clq.b
+  -rw-------  1 trick       10623 Jul 29 14:00 brock400_1.clq.b
+  -rw-------  1 trick       10630 Jul 29 14:00 brock400_2.clq.b
+  -rw-------  1 trick       10641 Jul 29 14:00 brock400_3.clq.b
+  -rw-------  1 trick       10652 Jul 29 14:01 brock400_4.clq.b
+  -rw-------  1 trick       40811 Jul 29 14:01 brock800_1.clq.b
+  -rw-------  1 trick       40817 Jul 29 14:02 brock800_2.clq.b
+  -rw-------  1 trick       40820 Jul 29 14:03 brock800_3.clq.b
+  -rw-------  1 trick       40825 Jul 29 14:03 brock800_4.clq.b
+
+
+Initial files:
+  -rw-r--r--  1 trick        2941 Jul 11 15:21 c-fat200-1.clq.b
+  -rw-r--r--  1 trick        2941 Jul 11 15:21 c-fat200-2.clq.b
+  -rw-r--r--  1 trick        2941 Jul 11 15:21 c-fat200-5.clq.b
+  -rw-r--r--  1 trick       16217 Jul 11 15:22 c-fat500-1.clq.b
+  -rw-r--r--  1 trick       16219 Jul 11 15:22 c-fat500-10.clq.b
+  -rw-r--r--  1 trick       16217 Jul 11 15:22 c-fat500-2.clq.b
+  -rw-r--r--  1 trick       16218 Jul 11 15:22 c-fat500-5.clq.b
+  -rw-r--r--  1 trick       66313 Jul 11 15:22 hamming10-2.clq.b
+  -rw-r--r--  1 trick       66313 Jul 11 15:22 hamming10-4.clq.b
+  -rw-r--r--  1 trick         548 Jul 11 15:22 hamming6-2.clq.b
+  -rw-r--r--  1 trick         547 Jul 11 15:22 hamming6-4.clq.b
+  -rw-r--r--  1 trick        4486 Jul 11 15:22 hamming8-2.clq.b
+  -rw-r--r--  1 trick        4486 Jul 11 15:22 hamming8-4.clq.b
+  -rw-r--r--  1 trick        1276 Jul 11 15:22 johnson16-2-4.clq.b
+  -rw-r--r--  1 trick       15942 Jul 11 15:22 johnson32-2-4.clq.b
+  -rw-r--r--  1 trick         377 Jul 11 15:22 johnson8-2-4.clq.b
+  -rw-r--r--  1 trick         656 Jul 11 15:22 johnson8-4-4.clq.b
+  -rw-r--r--  1 trick        2344 Jul 11 15:22 keller4.clq.b
+  -rw-r--r--  1 trick       38456 Jul 11 15:22 keller5.clq.b
+  -rw-r--r--  1 trick      708204 Jul 11 15:22 keller6.clq.b
+  -rw-r--r--  1 trick       63523 Jul 11 15:22 san1000.clq.b
+  -rw-r--r--  1 trick        2989 Jul 11 15:22 san200_0.7_1.clq.b
+  -rw-r--r--  1 trick        2989 Jul 11 15:22 san200_0.7_2.clq.b
+  -rw-r--r--  1 trick        2989 Jul 11 15:22 san200_0.9_1.clq.b
+  -rw-r--r--  1 trick        2986 Jul 11 15:22 san200_0.9_2.clq.b
+  -rw-r--r--  1 trick        2988 Jul 11 15:22 san200_0.9_3.clq.b
+  -rw-r--r--  1 trick       10589 Jul 11 15:22 san400_0.5_1.clq.b
+  -rw-r--r--  1 trick       10590 Jul 11 15:22 san400_0.7_1.clq.b
+  -rw-r--r--  1 trick       10588 Jul 11 15:22 san400_0.7_2.clq.b
+  -rw-r--r--  1 trick       10589 Jul 11 15:22 san400_0.7_3.clq.b
+  -rw-r--r--  1 trick       10590 Jul 11 15:22 san400_0.9_1.clq.b
+  -rw-r--r--  1 trick        3112 Jul 11 15:22 sanr200_0.7.clq.b
+  -rw-r--r--  1 trick        3112 Jul 11 15:22 sanr200_0.9.clq.b
+  -rw-r--r--  1 trick       10712 Jul 11 15:22 sanr400_0.5.clq.b
+  -rw-r--r--  1 trick       10711 Jul 11 15:22 sanr400_0.7.clq.b

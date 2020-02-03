@@ -1,0 +1,68 @@
+DIMACS Challenge II 
+  
+  DIMACS Format for Storing Undirected Graphs in Binary Files
+  -----------------------------------------------------------
+
+The binary format for storing a graph is an alternative to the ascii
+(human readable) format described in the File Formats section of the
+document /pub/challenge/graph/doc/ccformat.tex at dimacs.rutgers.edu
+(anonymous ftp). 
+
+If the edge density of the graph is bigger than ~1.2%, the binary
+storage is more space efficient. It uses roughly (N^2)/16 bytes 
+for a graph of N vertices and M edges, while the ascii format needs
+about M*9 bytes for the same graph.
+
+
+The file "binformat.shar" contains three codes:
+-----------------------------------------------
+
+	asc2bin infile [outfile]
+
+		Converts an ascii format file (infile) to binary format. 
+		If "outfile" is omitted, it creates a file "infile.b".
+
+	bin2asc infile [outfile]
+
+		Converts a binary format file (infile) to ascii format.
+		"infile" must have suffix ".b". 
+		If "outfile" is omitted, it creates a file with the same name
+		as "infile", eexcept the ".b" suffix is removed.
+	
+	showpreamble binary_infile [outfile]
+
+		Extracts the preamble information of the "binary_infile"
+		to stdout or to a "outfile".
+
+
+BINARY FORMAT for storing a graph of N vertices
+-----------------------------------------------
+
+The file consists of 3 blocks: 
+
+	First Line
+	Preamble
+	Binary Block (The rest of the file)
+
+	The First Line contains an integer (%d, say #) describing the
+	length of the proceeding preamble.
+
+	The a Preamble consists of # characters, and contains possibly
+some comments following the ascii format plus a line
+describing the number of vertices and edges in the graph. 
+(In "p type Num_vertices Num_edges" format).
+
+	The Binary Block contains the lower triangular part of the
+vertex-vertex adjacency matrix of the graph. Each row of the matrix is
+stored as sequence of bits, where the j'th bit is 1 if the edge (i,j) 
+is in the graph otherwise the bit is 0. (Note that i >= j)
+
+For more information, see the routine "read_graph_DIMACS_bin()"
+in the file "bin2asc.c". 
+
+IMPLEMENTATION details
+----------------------
+
+You may read the files "asc2bin.c" and "bin2asc.c" and extract any
+part of the code to implement the binary storage internally. 
+

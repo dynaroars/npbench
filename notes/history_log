@@ -1,0 +1,19 @@
+
+
+
+
+2006 
+07/20: some small modifications to the contents (make it easier to read)
+
+02/18: added Other Instances to clique page
+- by request, added item BHOSLIB: Benchmarks with Hidden Optimum Solutions for Graph Problems (Maximum Clique, Maximum Independent Set, Minimum Vertex Cover and Vertex Coloring): http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm 
+- modify some text to bold
+
+
+2005
+
+12/17: upload init clique pages to server ,  DIMACS file dir are obtained from ftp://dimacs.rutgers.edu/pub/challenge/graph/benchmarks/clique/ and ADDITINAL file dir are obtained from http://mat.gsia.cmu.edu/COLOR02/clq.html.
+
+12/16 : fix link to Vasek Chvatal's website  http://www.cs.concordia.ca/~chvatal/queengraphs.html
+
+12/15 : upload init coloring pages to server

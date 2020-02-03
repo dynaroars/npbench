@@ -1,0 +1,145 @@
+\documentstyle[12pt,supertab]{article}
+\begin{document}
+\tablefirsthead{\hline\multicolumn{5}{|c|}{DIMACS CLIQUE
+BENCHMARKS}\\\hline File&Code&Nodes&Edges&Clique Size\\\hline}
+\tablehead{\hline\multicolumn{5}{|c|}{DIMACS CLIQUE
+BENCHMARKS (cont.)}\\\hline File&Code&Nodes&Edges&Clique Size\\\hline}
+\tabletail{\hline\multicolumn{5}{|r|}{\it Continued on next
+page}\\\hline}
+\tablelasttail{\hline}
+\begin{supertabular}{|lc|rr|c|}
+c-fat200-1.clq&(CFat)&200&1534&\\
+c-fat200-2.clq&(CFat)&200&3235&\\
+c-fat200-5.clq&(CFat)&200&8473&\\
+c-fat500-1.clq&(CFat)&500&4459&\\
+c-fat500-10.clq&(CFat)&500&46627&\\
+c-fat500-2.clq&(CFat)&500&9139&\\
+c-fat500-5.clq&(CFat)&500&23191&\\
+johnson16-2-4.clq&(Joh)&120&5460&8\\
+johnson32-2-4.clq&(Joh)&496&107880&\\
+johnson8-2-4.clq&(Joh)&28&210&\\
+johnson8-4-4.clq&(Joh)&70&1855&14\\
+keller4.clq&(Kel)&171&9435&11\\
+keller5.clq&(Kel)&776&225990&27\\
+keller6.clq&(Kel)&3361&4619898&$\ge$ 59\\
+hamming10-2.clq&(Ham)&1024&518656&\\
+hamming10-4.clq&(Ham)&1024&434176&\\
+hamming6-2.clq&(Ham)&64&1824&32\\
+hamming6-4.clq&(Ham)&64&704&4\\
+hamming8-2.clq&(Ham)&256&31616&$\ge$ 79\\
+hamming8-4.clq&(Ham)&256&20864&16\\
+san1000.clq&(San)&1000&250500&15\\
+san200\_0.7\_1.clq&(San)&200&13930&30\\
+san200\_0.7\_2.clq&(San)&200&13930&18\\
+san200\_0.9\_1.clq&(San)&200&17910&70\\
+san200\_0.9\_2.clq&(San)&200&17910&60\\
+san200\_0.9\_3.clq&(San)&200&17910&44\\
+san400\_0.5\_1.clq&(San)&400&39900&13\\
+san400\_0.7\_1.clq&(San)&400&55860&40\\
+san400\_0.7\_2.clq&(San)&400&55860&30\\
+san400\_0.7\_3.clq&(San)&400&55860&22\\
+san400\_0.9\_1.clq&(San)&400&71820&100\\
+sanr200\_0.7.clq&(San)&200&13868&\\
+sanr200\_0.9.clq&(San)&200&17863&\\
+sanr400\_0.5.clq&(San)&400&39984&\\
+sanr400\_0.7.clq&(San)&400&55869&\\
+brock200\_1.clq.b&(Bro)&200 &14834 &21 \\
+brock200\_2.clq.b&(Bro)&200 &9876 &12 \\
+brock200\_3.clq.b&(Bro)&200 &12048 &15 \\
+brock200\_4.clq.b&(Bro)&200 &13089 &17 \\
+brock400\_1.clq.b&(Bro)&400 &59723 &27 \\
+brock400\_2.clq.b&(Bro)&400 &59786 &29 \\
+brock400\_3.clq.b&(Bro)&400 &59681 &31 \\
+brock400\_4.clq.b&(Bro)&400 &59765 &33 \\
+brock800\_1.clq.b&(Bro)&800 &207505 &23 \\
+brock800\_2.clq.b&(Bro)&800 &208166 &24 \\
+brock800\_3.clq.b&(Bro)&800 &207333 &25 \\
+brock800\_4.clq.b&(Bro)&800 &207643 &26 \\
+p\_hat300-1.clq&(PHat)&300 &10933 & \\
+p\_hat300-2.clq&(PHat)&300 &21928 & \\
+p\_hat300-3.clq&(PHat)&300 &33390 & \\
+p\_hat500-1.clq&(PHat)&500 &31569 & \\
+p\_hat500-2.clq&(PHat)&500 &62946 & \\
+p\_hat500-3.clq&(PHat)&500 &93800 & \\
+p\_hat700-1.clq&(PHat)&700&60999& \\
+p\_hat700-2.clq&(PHat)&700&121728& \\
+p\_hat700-3.clq&(PHat)&700&183010& \\
+p\_hat1000-1.clq&(PHat)&1000 &122253 & \\
+p\_hat1000-2.clq&(PHat)&1000 &244799 & \\
+p\_hat1000-3.clq&(PHat)&1000 &371746 & \\
+p\_hat1500-1.clq&(PHat)&1500 &284923 & \\
+p\_hat1500-2.clq&(PHat)&1500 &568960 & \\
+p\_hat1500-3.clq&(PHat)&1500 &847244 & \\
+MANN\_a27.clq&(Stein)&378&70551&126\\
+MANN\_a45.clq&(Stein)&1035&533115&345\\
+MANN\_a81.clq&(Stein)&3321&5506380&$\ge$1100\\
+MANN\_a9.clq&(Stein)&45&918&16\\
+\end{supertabular}
+
+\bigskip
+\noindent {\bf Notes:}
+
+\begin{description}
+\item[CFat] (From Panos Pardalos {\tt pardalos@math.uflorida.edu})
+Problems based on fault diagnosis problems.  Original reference is
+Berman and Pelc, ``Distributed Fault Diagnosis for Multiprocessor
+Systems,'' {\it Proceedings of the 20th Annual Symposium on
+Fault--Tolerant Computing}, 340--346 (1990).  For more instances, see
+the generator in graph/contributed/pardalos.
+
+\item[Joh] (From Panos Pardalos {\tt pardalos@math.uflorida.edu})
+Problems based on problem in coding theory.  A Johnson graph with
+parameters $n, w, d$ has a node for every binary vector of length $n$
+with exactly $w$ 1s.  Two vertices are adjacent if and only if their
+hamming distance is at least $d$.  A clique then represents a feasible
+set of vectors for a code.  For more instances, see
+the generator in graph/contributed/pardalos.
+
+\item[Kel] (From Peter Shor {\tt shor@research.att.com}) Problems
+based on Keller's conjecture on tilings using hypercubes.  One
+reference is J.C. Lagarias and P.W. Shor, ``Keller's Cube--Tiling
+Conjecture is False in High Dimensions,'' {\it Bulletin of the AMS},
+{\bf 27:} 279--283 (1992). For more instances (though they get very
+large very fast) see either the generator in graph/contributed/shor or
+the generator in graph/contributed/pardalos.
+
+\item[Ham] (From Panos Pardalos {\tt pardalos@math.uflorida.edu})
+Another coding theory problem.  A Hamming graph with parameters $n$
+and $d$ has a node for each binary vector of length $n$.  Two nodes
+are adjacent if and only if the corresponding bit vectors are hamming
+distance at least $d$ apart.  For more instances, see
+the generator in graph/contributed/pardalos.
+
+\item[San] (From Laura Sanchis {\tt laura@cs.colgate.edu}) Instances
+based on her ``Test Case Construction for Vertex Cover Problem,''
+DIMACS Workshop on Computational Support for Discrete Mathematics,
+March 1992 along with more recent work that will be part of a
+technical report to be published.  The generator generates instances
+with known clique size.
+
+\item[SanR] (From Laura Sanchis {\tt laura@cs.colgate.edu}) These
+are random instances with sizes similar to those in {\bf San}.
+
+\item[Bro] (From Mark Brockington {\tt brock@cs.ualberta.ca})
+Instances from Mark Brockington and Joe Culberson's generator that
+attempts to ``hide'' cliques in a graph where the expected clique size
+is much smaller.  For more instances, see their generator in
+graph/contributed/brockington.  
+
+\item [PHat] (From Patrick Soriano and Michel Gendreau 
+               {\tt  patrick@crt.umontreal.ca})
+     Random problems generated with the p\_hat generator which is a 
+     generalization of the classical uniform random graph generator. Uses
+     3 parameters: $n$, the number of nodes, and $a$ and $b$, two density 
+     parameters verifying $0 \le a \le b \le 1$. Generates problem instances 
+     having wider node degree spread and larger clique sizes. Reference: 
+     "Solving the Maximum Clique Problem Using a Tabu Search Approach", 
+     {\em Annals of Operations Research} {\bf 41}, 385--403 (1993).
+
+\item[Stein] (From Carlo Mannino {\tt mannino@iasi.rm.cnr.it}) Clique
+formulation of the set covering formulation of the Steiner Triple
+Problem.  Created using Mannino's code to convert set covering
+problems to clique problems.
+
+\end{description}
+\end{document}

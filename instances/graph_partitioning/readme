@@ -1,0 +1,43 @@
+http://wwwcs.uni-paderborn.de/cs/ag-monien/RESEARCH/PART/graphs.html
+
+
+
+Graph Partitioning - Graph Collection
+Under construction, more graphs and descriptions will be added soon!
+
+This page contains our collection of test-graphs obtained from various sources. The graphs are stored in ASCII-format used by various graph-partitioning codes like CHACO, METIS or PARTY. Check for example the PARTY Users Guide for a description of the file format. The files are gnu-zipped and tar-ed into large archieves. Feel free to download the files and use them for own tests. All files come without any warrenty about originality or correctness. Please note that some of the files are very large!
+
+Some of the graphs can be obtained online from the liks below, some not. Please contact us if you would like to obtain graphs from the list which are not given here.
+
+We would be happy to obtain reports about any results found with and on these graphs. Please send an email to Ralf Diekmann or Robert Preis.
+Unstructured Graphs:
+
+    * RANDOM.tar: Small Random Graphs
+
+    * FEM2.tar: Some 2-dimensional FE-meshes, many with dual graphs (3elt, airfoil1, big, crack, grid1, grid2, netz4504, ukerbe1, whitaker3)
+
+    * FEM3.tar: Some 3-dimensional FE-meshes (brack2, wave)
+
+    * Q_GRID.tar: Square Grids
+
+    * HB.tar: Some graphs from the Harwell-Boeing collection
+
+    * NASA.tar: The "nasa"-graphs (nasa1824, nasa2146, nasa4704)
+
+Structured Graphs:
+
+    * SE.tar: Shuffle-Exchange Graphs (dim 3-15)
+
+    * DEBR.tar: De Brujin Graphs (dim 3-20)
+
+    * CCC.tar: Cube-Connected-Cycle Graphs (dim 3-12)
+
+    * CCA.tar: Cube-Connected-Cycle Graphs without Wrap-around Edges (dim 3-12)
+
+    * BFLY.tar: Butterfly Graphs (dim 3-12)
+
+    * FFT.tar: Butterfly Graphs without Wrap-around Edges (dim 3-12)
+
+    * GRID.tar: Square Grids
+
+    * CAGE.tar: Cages 

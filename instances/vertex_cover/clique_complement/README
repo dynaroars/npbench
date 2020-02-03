@@ -1,0 +1,1 @@
+070426:   Muthu:  Developed a file converter, which converts the test graph instances for the max clique problem into the complement graph. These complement graphs can then be used for the MVC problem. The size of the minimum vertex cover is the difference between the total number of vertices and the size of the max clique. 

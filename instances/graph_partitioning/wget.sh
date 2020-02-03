@@ -1,0 +1,13 @@
+wget http://wwwcs.uni-paderborn.de/cs/ag-monien/RESEARCH/PART/GRAPHS/FEM2.tar
+wget http://wwwcs.uni-paderborn.de/cs/ag-monien/RESEARCH/PART/GRAPHS/FEM3.tar
+wget http://wwwcs.uni-paderborn.de/cs/ag-monien/RESEARCH/PART/GRAPHS/Q_GRID.tar
+wget http://wwwcs.uni-paderborn.de/cs/ag-monien/RESEARCH/PART/GRAPHS/HB.tar
+wget http://wwwcs.uni-paderborn.de/cs/ag-monien/RESEARCH/PART/GRAPHS/NASA.tar
+wget http://wwwcs.uni-paderborn.de/cs/ag-monien/RESEARCH/PART/GRAPHS/SE.tar
+wget http://wwwcs.uni-paderborn.de/cs/ag-monien/RESEARCH/PART/GRAPHS/DEBR.tar
+wget http://wwwcs.uni-paderborn.de/cs/ag-monien/RESEARCH/PART/GRAPHS/CCC.tar
+wget http://wwwcs.uni-paderborn.de/cs/ag-monien/RESEARCH/PART/GRAPHS/CCA.tar
+wget http://wwwcs.uni-paderborn.de/cs/ag-monien/RESEARCH/PART/GRAPHS/BFLY.tar
+wget http://wwwcs.uni-paderborn.de/cs/ag-monien/RESEARCH/PART/GRAPHS/FFT.tar
+wget http://wwwcs.uni-paderborn.de/cs/ag-monien/RESEARCH/PART/GRAPHS/GRID.tar
+wget http://wwwcs.uni-paderborn.de/cs/ag-monien/RESEARCH/PART/GRAPHS/CAGE.tar

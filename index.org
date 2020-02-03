@@ -1,0 +1,14 @@
+#+TITLE:    NP-Complete Benchmark Instances
+#+OPTIONS: html-postamble:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../Pub/solarized-light.css" />
+
+
+1. [[./graphcoloring.html][Graph Coloring and its Generalizations]]
+- [[./clique.html][Clique]]
+- [[./vertexcovering.html][Vertex Cover]]
+- [[./spanningtree.html][Degree Constrainned Spanning Tree]]
+
+-----
+This website is maintained by 
+[[https://www.cse.unl.edu/~tnguyen/][ThanhVu (Vu) Nguyen]] ([[tnguyen@cse.unl.edu][tnguyen@cse.unl.edu]]) 
+and [[http://cs.hbg.psu.edu/~bui][Thang Bui]] ([[tbui@psu.edu][tbui@psu.edu]])

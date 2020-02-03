@@ -1,0 +1,71 @@
+Last Update: June 9, 2002 for Computational Workshop
+Initial Creation: December 12, 1993
+Creator: Michael Trick
+
+This directory contains codes and instances to help
+benchmark machines for the DIMACS Challenge.  By having
+everyone solve some instances using a standard code, it
+will be possible to compare codes from different machines.
+
+Note: The .b files MUST be transferred in binary mode.
+
+FILES:
+
+This collection consists of a number of files:
+
+Makefile:  the makefile that will compile and run the tests
+
+dfmax.c: A code that solves clique problems.  This will act as
+   a surrogate for general combinatorial optimization codes, so
+   even people working in graph coloring or satisfiability will
+   use this code.
+
+r100.5.b: 100 node graph to solve (binary format)
+r200.5.b: 200 node graph to solve (binary format)
+r300.5.b: 300 node graph to solve (binary format)
+r400.5.b: 400 node graph to solve (binary format)
+r500.5.b: 500 node graph to solve (binary format)
+
+results.sparc10.41: The results on my machine (Sun Sparc 10/ Model 41)
+   using gcc and the "-O" optimization option.
+
+INSTRUCTIONS:
+
+1) Edit the Makefile so that CC is the compiler you use, and 
+   CFLAGS are the compiler flags needed.  Some flags you might
+   need include:
+      1) Optimization flags
+      2) Path flags:  used in libraries or include files are in
+         nonstandard places
+
+2) Type
+
+     make 
+
+   and the following steps should take place:
+      1) dfmax will be created using your compiler
+      2) dfmax will be run on the five instances.  The result
+         will be placed in the files "results.out".  This run
+         may take a while (about half an hour on my machine).
+
+3) Get the results from results.out.  In general, we will use the
+   time from r500.5.b to get the machine multiplier.  The other
+   information is needed in case those with slow machines are 
+   unable to get the larger problems solved.
+
+RATIONALE:
+
+Since we are trying to compare algorithms, it seems that an algorithm
+is the best benchmarking tool.  Satisfiability and coloring algorithms
+probably have roughly the same instruction mix as finding clique does (or
+at least the mix within each class is at least as varied as between
+the classes).  Therefore, we are going with just the clique solving
+code.
+
+The r500.5.b will take a significant amount of time on any computer
+(though less significant than back in 1993!), so the result should be
+relatively accurate.  There is no difference between solving one
+problem over a long period of time versus solving many small ones.  In
+each case there is an assumption about the appropriate mix of
+instructions which does not seem possible to resolve.  So, in the
+interests of simplicity, this one instance will suffice.

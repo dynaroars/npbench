@@ -1,0 +1,215 @@
+#+TITLE:    CLIQUE Benchmark Instances
+#+OPTIONS: ^:nil html-postamble:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../Pub/solarized-light.css" />
+
+-----
+* Utils
+- [[./instances/converter.tar.gz][Converter]]: convert from benchmarks from ~ascii~ to ~binary~ format and vice versa.
+
+* DIMACS Instances
+  [[./instances/clique/DIMACS_cliques/][Directory]], 
+  [[./instances/clique/DIMACS_cliques.tar.gz][tar.gz format]]
+
+Files from Dimacs [[ftp://dimacs.rutgers.edu/pub/challenge/graph/benchmarks/clique/][ftp://dimacs.rutgers.edu/pub/challenge/graph/benchmarks/clique/]] in binary format (~*.clq.b~).
+
+#+NAME: tab:dimacs
+|    | File                                                                         | Max Clique[fn:1] |
+|----+------------------------------------------------------------------------------+------------------|
+|  1 | [[./instances/clique/DIMACS_cliques/brock200_1.clq.b     ][brock200_1     ]] |               21 |
+|  2 | [[./instances/clique/DIMACS_cliques/brock200_2.clq.b     ][brock200_2     ]] |               12 |
+|  3 | [[./instances/clique/DIMACS_cliques/brock200_3.clq.b     ][brock200_3     ]] |               15 |
+|  4 | [[./instances/clique/DIMACS_cliques/brock200_4.clq.b     ][brock200_4     ]] |               17 |
+|  5 | [[./instances/clique/DIMACS_cliques/brock400_1.clq.b     ][brock400_1     ]] |               27 |
+|  6 | [[./instances/clique/DIMACS_cliques/brock400_2.clq.b     ][brock400_2     ]] |               29 |
+|  7 | [[./instances/clique/DIMACS_cliques/brock400_3.clq.b     ][brock400_3     ]] |               31 |
+|  8 | [[./instances/clique/DIMACS_cliques/brock400_4.clq.b     ][brock400_4     ]] |               33 |
+|  9 | [[./instances/clique/DIMACS_cliques/brock800_1.clq.b     ][brock800_1     ]] |               23 |
+| 10 | [[./instances/clique/DIMACS_cliques/brock800_2.clq.b     ][brock800_2     ]] |               24 |
+| 11 | [[./instances/clique/DIMACS_cliques/brock800_3.clq.b     ][brock800_3     ]] |               25 |
+| 12 | [[./instances/clique/DIMACS_cliques/brock800_4.clq.b     ][brock800_4     ]] |               26 |
+| 13 | [[./instances/clique/DIMACS_cliques/c-fat200-1.clq.b     ][c-fat200-1     ]] |               12 |
+| 14 | [[./instances/clique/DIMACS_cliques/c-fat200-2.clq.b     ][c-fat200-2     ]] |               24 |
+| 15 | [[./instances/clique/DIMACS_cliques/c-fat200-5.clq.b     ][c-fat200-5     ]] |               58 |
+| 16 | [[./instances/clique/DIMACS_cliques/c-fat500-1.clq.b     ][c-fat500-1     ]] |               14 |
+| 17 | [[./instances/clique/DIMACS_cliques/c-fat500-2.clq.b     ][c-fat500-2     ]] |               26 |
+| 18 | [[./instances/clique/DIMACS_cliques/c-fat500-5.clq.b     ][c-fat500-5     ]] |               64 |
+| 19 | [[./instances/clique/DIMACS_cliques/c-fat500-10.clq.b    ][c-fat500-10    ]] |              126 |
+| 20 | [[./instances/clique/DIMACS_cliques/hamming6-2.clq.b     ][hamming6-2     ]] |               32 |
+| 21 | [[./instances/clique/DIMACS_cliques/hamming6-4.clq.b     ][hamming6-4     ]] |                4 |
+| 22 | [[./instances/clique/DIMACS_cliques/hamming8-2.clq.b     ][hamming8-2     ]] |              128 |
+| 23 | [[./instances/clique/DIMACS_cliques/hamming8-4.clq.b     ][hamming8-4     ]] |               16 |
+| 24 | [[./instances/clique/DIMACS_cliques/hamming10-2.clq.b    ][hamming10-2    ]] |              512 |
+| 25 | [[./instances/clique/DIMACS_cliques/hamming10-4.clq.b    ][hamming10-4    ]] |               40 |
+| 26 | [[./instances/clique/DIMACS_cliques/johnson8-2-4.clq.b   ][johnson8-2-4   ]] |                4 |
+| 27 | [[./instances/clique/DIMACS_cliques/johnson8-4-4.clq.b   ][johnson8-4-4   ]] |               14 |
+| 28 | [[./instances/clique/DIMACS_cliques/johnson16-2-4.clq.b  ][johnson16-2-4  ]] |                8 |
+| 29 | [[./instances/clique/DIMACS_cliques/johnson32-2-4.clq.b  ][johnson32-2-4  ]] |               16 |
+| 30 | [[./instances/clique/DIMACS_cliques/keller4.clq.b        ][keller4        ]] |               11 |
+| 31 | [[./instances/clique/DIMACS_cliques/keller5.clq.b        ][keller5        ]] |               27 |
+| 32 | [[./instances/clique/DIMACS_cliques/keller6.clq.b        ][keller6        ]] |         $\ge$ 59 |
+| 33 | [[./instances/clique/DIMACS_cliques/MANN_a9.clq.b        ][MANN_a9        ]] |               16 |
+| 34 | [[./instances/clique/DIMACS_cliques/MANN_a27.clq.b       ][MANN_a27       ]] |              126 |
+| 35 | [[./instances/clique/DIMACS_cliques/MANN_a44.clq.b       ][MANN_a45       ]] |              345 |
+| 36 | [[./instances/clique/DIMACS_cliques/MANN_a81.clq.b       ][MANN_a81       ]] |       $\ge$ 1100 |
+| 37 | [[./instances/clique/DIMACS_cliques/p_hat300-1.clq.b     ][p_hat300-1     ]] |                8 |
+| 38 | [[./instances/clique/DIMACS_cliques/p_hat300-2.clq.b     ][p_hat300-2     ]] |               25 |
+| 39 | [[./instances/clique/DIMACS_cliques/p_hat300-3.clq.b     ][p_hat300-3     ]] |               36 |
+| 40 | [[./instances/clique/DIMACS_cliques/p_hat500-1.clq.b     ][p_hat500-1     ]] |                9 |
+| 41 | [[./instances/clique/DIMACS_cliques/p_hat500-2.clq.b     ][p_hat500-2     ]] |               36 |
+| 42 | [[./instances/clique/DIMACS_cliques/p_hat500-3.clq.b     ][p_hat500-3     ]] |         $\ge$ 50 |
+| 43 | [[./instances/clique/DIMACS_cliques/p_hat700-1.clq.b     ][p_hat700-1     ]] |               11 |
+| 44 | [[./instances/clique/DIMACS_cliques/p_hat700-2.clq.b     ][p_hat700-2     ]] |         $\ge$ 44 |
+| 45 | [[./instances/clique/DIMACS_cliques/p_hat700-3.clq.b     ][p_hat700-3     ]] |         $\ge$ 62 |
+| 46 | [[./instances/clique/DIMACS_cliques/p_hat1000-1.clq.b    ][p_hat1000-1    ]] |         $\ge$ 10 |
+| 47 | [[./instances/clique/DIMACS_cliques/p_hat1000-2.clq.b    ][p_hat1000-2    ]] |         $\ge$ 46 |
+| 48 | [[./instances/clique/DIMACS_cliques/p_hat1000-3.clq.b    ][p_hat1000-3    ]] |         $\ge$ 68 |
+| 49 | [[./instances/clique/DIMACS_cliques/p_hat1500-1.clq.b    ][p_hat1500-1    ]] |         $\ge$ 12 |
+| 50 | [[./instances/clique/DIMACS_cliques/p_hat1500-2.clq.b    ][p_hat1500-2    ]] |         $\ge$ 65 |
+| 51 | [[./instances/clique/DIMACS_cliques/p_hat1500-3.clq.b    ][p_hat1500-3    ]] |         $\ge$ 94 |
+| 52 | [[./instances/clique/DIMACS_cliques/san200_0.7_1.clq.b   ][san200_0.7_1   ]] |               30 |
+| 53 | [[./instances/clique/DIMACS_cliques/san200_0.7_2.clq.b   ][san200_0.7_2   ]] |               18 |
+| 54 | [[./instances/clique/DIMACS_cliques/san200_0.9_1.clq.b   ][san200_0.9_1   ]] |               70 |
+| 55 | [[./instances/clique/DIMACS_cliques/san200_0.9_2.clq.b   ][san200_0.9_2   ]] |               60 |
+| 56 | [[./instances/clique/DIMACS_cliques/san200_0.9_3.clq.b   ][san200_0.9_3   ]] |               44 |
+| 57 | [[./instances/clique/DIMACS_cliques/san400_0.5_1.clq.b   ][san400_0.5_1   ]] |               13 |
+| 58 | [[./instances/clique/DIMACS_cliques/san400_0.7_1.clq.b   ][san400_0.7_1   ]] |               40 |
+| 59 | [[./instances/clique/DIMACS_cliques/san400_0.7_2.clq.b   ][san400_0.7_2   ]] |               30 |
+| 60 | [[./instances/clique/DIMACS_cliques/san400_0.7_3.clq.b   ][san400_0.7_3   ]] |               22 |
+| 61 | [[./instances/clique/DIMACS_cliques/san400_0.9_1.clq.b   ][san400_0.9_1   ]] |              100 |
+| 62 | [[./instances/clique/DIMACS_cliques/san1000.clq.b        ][san1000        ]] |               15 |
+| 63 | [[./instances/clique/DIMACS_cliques/sanr200_0.7.clq.b    ][sanr200_0.7    ]] |               18 |
+| 64 | [[./instances/clique/DIMACS_cliques/sanr200_0.9.clq.b    ][sanr200_0.9    ]] |               42 |
+| 65 | [[./instances/clique/DIMACS_cliques/sanr400_0.5.clq.b    ][sanr400_0.5    ]] |               13 |
+| 66 | [[./instances/clique/DIMACS_cliques/sanr400_0.7.clq.b    ][sanr400_0.7    ]] |               21 |
+|----+------------------------------------------------------------------------------+------------------|
+#+tblfm: $1=@#-1   
+
+* Additional Instances
+  [[./instances/clique/Additional_cliques/][Directory]], 
+  [[./instances/clique/Additional_cliques.tar.gz][tar.gz format]] 
+
+Files from Mike Trick [[http://mat.gsia.cmu.edu/COLOR02/clq.html][http://mat.gsia.cmu.edu/COLOR02/clq.html]]. For the ~brock~ graphs below, there is an "off-by-one" error in the comments: if it claims node 26, for example, is in the clique, it is really node 27.
+
+
+|    | File                                                                         | Max Clique[fn:1] |
+|----+------------------------------------------------------------------------------+------------------|
+|  1 | [[./instances/clique/Additional_cliques/brock200_2.clq    ][brock200_2     ]] |               12 |
+|  2 | [[./instances/clique/Additional_cliques/brock200_4.clq    ][brock200_4     ]] |               17 |
+|  3 | [[./instances/clique/Additional_cliques/brock400_2.clq    ][brock400_2     ]] |               29 |
+|  4 | [[./instances/clique/Additional_cliques/brock400_4.clq    ][brock400_4     ]] |               33 |
+|  5 | [[./instances/clique/Additional_cliques/brock800_2.clq    ][brock800_2     ]] |               24 |
+|  6 | [[./instances/clique/Additional_cliques/brock800_4.clq    ][brock800_4     ]] |               26 |
+|  7 | [[./instances/clique/Additional_cliques/C125.9.clq        ][C125.9         ]] |         $\ge$ 34 |
+|  8 | [[./instances/clique/Additional_cliques/C250.9.clq        ][C250.9         ]] |         $\ge$ 44 |
+|  9 | [[./instances/clique/Additional_cliques/C500.9.clq        ][C500.9         ]] |         $\ge$ 57 |
+| 10 | [[./instances/clique/Additional_cliques/C1000.9.clq       ][C1000.9        ]] |         $\ge$ 68 |
+| 11 | [[./instances/clique/Additional_cliques/C2000.5.clq       ][C2000.5        ]] |         $\ge$ 16 |
+| 12 | [[./instances/clique/Additional_cliques/C2000.9.clq       ][C2000.9        ]] |         $\ge$ 77 |
+| 13 | [[./instances/clique/Additional_cliques/C4000.5.clq       ][C4000.5        ]] |         $\ge$ 18 |
+| 14 | [[./instances/clique/Additional_cliques/DSJC500.5.clq     ][DSJC500.5      ]] |         $\ge$ 13 |
+| 15 | [[./instances/clique/Additional_cliques/DSJC1000.5.clq    ][DSJC1000.5     ]] |         $\ge$ 15 |
+| 16 | [[./instances/clique/Additional_cliques/gen200_p0.9_44.clq][gen200_p0.9_44 ]] |               44 |
+| 17 | [[./instances/clique/Additional_cliques/gen200_p0.9_55.clq][gen200_p0.9_55 ]] |               55 |
+| 18 | [[./instances/clique/Additional_cliques/gen400_p0.9_55.clq][gen400_p0.9_55 ]] |               55 |
+| 19 | [[./instances/clique/Additional_cliques/gen400_p0.9_65.clq][gen400_p0.9_65 ]] |               65 |
+| 20 | [[./instances/clique/Additional_cliques/gen400_p0.9_75.clq][gen400_p0.9_75 ]] |               75 |
+| 21 | [[./instances/clique/Additional_cliques/hamming8-4.clq    ][hamming8-4     ]] |               16 |
+| 22 | [[./instances/clique/Additional_cliques/hamming10-4.clq   ][hamming10-4    ]] |               40 |
+| 23 | [[./instances/clique/Additional_cliques/keller4.clq       ][keller4        ]] |               11 |
+| 24 | [[./instances/clique/Additional_cliques/keller5.clq       ][keller5        ]] |               27 |
+| 25 | [[./instances/clique/Additional_cliques/keller6.clq       ][keller6        ]] |         $\ge$ 59 |
+| 26 | [[./instances/clique/Additional_cliques/MANN_a27.clq      ][MANN_a27       ]] |              126 |
+| 27 | [[./instances/clique/Additional_cliques/MANN_a44.clq      ][MANN_a45       ]] |              345 |
+| 28 | [[./instances/clique/Additional_cliques/MANN_a81.clq      ][MANN_a81       ]] |       $\ge$ 1100 |
+| 29 | [[./instances/clique/Additional_cliques/p_hat300-1.clq    ][p_hat300-1     ]] |                8 |
+| 30 | [[./instances/clique/Additional_cliques/p_hat300-2.clq    ][p_hat300-2     ]] |               25 |
+| 31 | [[./instances/clique/Additional_cliques/p_hat300-3.clq    ][p_hat300-3     ]] |               36 |
+| 32 | [[./instances/clique/Additional_cliques/p_hat700-1.clq    ][p_hat700-1     ]] |               11 |
+| 33 | [[./instances/clique/Additional_cliques/p_hat700-2.clq    ][p_hat700-2     ]] |         $\ge$ 44 |
+| 34 | [[./instances/clique/Additional_cliques/p_hat700-3.clq    ][p_hat700-3     ]] |         $\ge$ 62 |
+| 35 | [[./instances/clique/Additional_cliques/p_hat1500-1.clq   ][p_hat1500-1    ]] |         $\ge$ 12 |
+| 36 | [[./instances/clique/Additional_cliques/p_hat1500-2.clq   ][p_hat1500-2    ]] |         $\ge$ 65 |
+| 37 | [[./instances/clique/Additional_cliques/p_hat1500-3.clq   ][p_hat1500-3    ]] |         $\ge$ 94 |
+|----+------------------------------------------------------------------------------+------------------|
+#+tblfm: $1=@#-1   
+
+* Categories
+Reference: [[http://mat.gsia.cmu.edu/contents.clique.ps][http://mat.gsia.cmu.edu/contents.clique.ps]], 
+[[./instances/others/cached/contents.clique.ps][(cached)]]
+
+- CFat :: (From Panos Pardalos pardalos@math.uflorida.edu) 
+  Problems based on fault diagnosis problems. Original reference is 
+  Berman and Pelc, "Distributed Fault Diagnosis for Multiprocessor Systems," 
+  Proceedings of the 20th Annual Symposium on Fault-Tolerant Computing, 
+  340-346 (1990). 
+  For more instances, see the generator in graph/contributed/pardalos. 
+
+- Joh :: (From Panos Pardalos pardalos@math.uflorida.edu) 
+  Problems based  on problem in coding theory. 
+  A Johnson graph with parameters n; w; d has a node for every binary vector 
+  of length n with exactly w 1s. Two vertices are adjacent if and only if 
+  their hamming distance is at least d. A clique then represents a feasible 
+  set of vectors for a code. 
+  For more instances, see the generator in graph/contributed/pardalos.
+
+- Kel :: (From Peter Shor shor@research.att.com) 
+  Problems based on Keller's conjecture on tilings using hypercubes. 
+  One reference is J.C. Lagarias and P.W. Shor, 
+  "Keller's Cube-Tiling Conjecture is False in High Dimensions," 
+  Bulletin of the AMS, 27: 279-283 (1992). 
+  For more instances (though they get very large very fast) see either 
+  the generator in graph/contributed/shor or the generator 
+  in graph/contributed/pardalos.
+
+- Ham :: (From Panos Pardalos pardalos@math.uflorida.edu) 
+  Another coding theory problem. A Hamming graph with parameters n and d 
+  has a node for each binary vector of length n. Two nodes are adjacent 
+  if and only if the corresponding bit vectors are hamming distance at 
+  least d apart. 
+  For more instances, see the generator in graph/contributed/pardalos. 
+  It has been noted by participants that n- -2 graphs have a maximum 
+  clique of size $2^{n-1}$. 
+  For a proof of this, see the note in graph/contributed/bourjolly/hamming.tex.
+
+- San :: (From Laura Sanchis laura@cs.colgate.edu) 
+  Instances based on her "Test Case Construction for Vertex Cover Problem," 
+  DIMACS Workshop on Computational Support for Discrete Mathematics, 
+  March 1992 along with more recent work that will be part of a technical 
+  report to be published. The generator generates instances with known clique size.
+
+- SanR :: (From Laura Sanchis laura@cs.colgate.edu) 
+  These are random instances with sizes similar to those in San.
+
+- Bro :: (From Mark Brockington brock@cs.ualberta.ca) 
+  Instances from Mark Brockington and Joe Culberson's generator that 
+  attempts to "hide" cliques in a graph where the expected clique size 
+  is much smaller. 
+  For more instances, see their generator in graph/contributed/brockington.
+
+- PHat :: (From Patrick Soriano and Michel Gendreau patrick@crt.umontreal.ca) 
+  Random problems generated with the p hat generator which is a 
+  generalization of the classical uniform random graph generator. 
+  Uses 3 parameters: n, the number of nodes, and a and b, two density 
+  parameters verifying $0 \le a \le b \le 1$. Generates problem instances 
+  having wider node degree spread and larger clique sizes. 
+  Reference: "Solving the Maximum Clique Problem Using a Tabu Search Approach", 
+  Annals of Operations Research 41, 385-403 (1993).
+
+- Stein :: (From Carlo Mannino mannino@iasi.rm.cnr.it) 
+  Clique formulation of the set covering formulation of the Steiner 
+  Triple Problem. Created using Mannino's code to convert set covering 
+  problems to clique problems.
+  Notes: ~MANN~ graphs belongs to this class.
+
+* Other Instances
+
+- BHOSLIB :: Benchmarks with Hidden Optimum Solutions for Graph Problems (Maximum Clique, Maximum Independent Set, Minimum Vertex Cover and Vertex Coloring): [[http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm][http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm]]
+
+
+-----
+
+[[./index.html][Back to benchmark instances page]]
+
+
+[fn:1] Optimal clique size obtained from various resources including  [[http://www.busygin.dp.ua/dimacs_clique.html][http://www.busygin.dp.ua/dimacs_clique.html]] and [[http://mat.gsia.cmu.edu/contents.clique.ps][http://mat.gsia.cmu.edu/contents.clique.ps]]
+
