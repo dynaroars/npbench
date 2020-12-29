@@ -1,0 +1,32 @@
+site_name: NP-Complete Benchmark Instances
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Benchmark:
+    - "Graph Coloring": graphcoloring.md
+    - Clique: clique.md
+    - "Vertex Cover": vertexcovering.md
+    - "Degree Constrainned Spanning Tree": spanningtree.md
+  - Miscs:
+    - Converter: convert.md
+    
+theme:
+  name: material
+  features:
+    # - navigation.tabs
+    # - navigation.sections
+    # - navigation.expand
+    # - toc.integrate
+  palette:
+    scheme: preference #slate
+    # primary: green 
+    # accent: light blue 
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+
