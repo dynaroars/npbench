@@ -3,138 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<!-- 2021-08-20 Fri 08:45 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <title>Graph Coloring Benchmark Instances</title>
-<!-- 2017-01-01 Sun 22:55 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="tnguyen@GiaoChi" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { color: green; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  /*]]>*/-->
-</style>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="ThanhVu (Vu) Nguyen" />
 <link rel="stylesheet" type="text/css" href="../Pub/solarized-light.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
+<link rel="stylesheet" href="https://nguyenthanhvuh.github.io/files/org.css">
+<link rel="alternative stylesheet" href="https://nguyenthanhvuh.github.io/files/org-orig.css">
 </head>
 <body>
 <div id="content">
@@ -143,1265 +19,1263 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. Utils</a></li>
-<li><a href="#sec-2">2. Graph Coloring instances</a></li>
-<li><a href="#sec-3">3. Coloring with Fixed Set instances</a></li>
-<li><a href="#sec-4">4. Bandwidth and Multicoloring instances</a></li>
-<li><a href="#sec-5">5. Categories</a></li>
+<li><a href="#org5b665b6">1. Utils</a></li>
+<li><a href="#orge7020b5">2. Graph Coloring instances</a></li>
+<li><a href="#org231c34d">3. Coloring with Fixed Set instances</a></li>
+<li><a href="#orgc5e6bce">4. Bandwidth and Multicoloring instances</a></li>
+<li><a href="#orgc4981b3">5. Categories</a></li>
 </ul>
 </div>
 </div>
 
 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Utils</h2>
+<div id="outline-container-org5b665b6" class="outline-2">
+<h2 id="org5b665b6"><span class="section-number-2">1</span> Utils</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li><a href="./instances/converter.tar.gz">Converter</a>: convert from benchmarks from <code>ascii</code> to <code>binary</code> format and vice versa.
-</li>
+<li><a href="./instances/converter.tar.gz">Converter</a>: convert from benchmarks from <code>ascii</code> to <code>binary</code> format and vice versa.</li>
 <li><a href="./instances/benchmark.tar.gz">Benchmark</a>: 
 Since the experiments are performed on different machines,
 download this file, untar, compile the program <code>dfmax</code>, 
-run the program on <code>r500.b</code>, and report the resulting computation time.
-</li>
+run the program on <code>r500.b</code>, and report the resulting computation time.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> Graph Coloring instances</h2>
+<div id="outline-container-orge7020b5" class="outline-2">
+<h2 id="orge7020b5"><span class="section-number-2">2</span> Graph Coloring instances</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 <a href="./instances/coloring/graph_color/">Directory</a>, 
 <a href="./instances/coloring/graph_color.tar.gz">tar.gz format</a>
 </p>
 
-<table id="tab:gc" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table id="orge3ef3c2" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="right" />
+<col  class="org-right" />
 
-<col  class="left" />
+<col  class="org-left" />
 
-<col  class="right" />
+<col  class="org-right" />
 
-<col  class="right" />
+<col  class="org-right" />
 
-<col  class="right" />
+<col  class="org-right" />
 
-<col  class="left" />
+<col  class="org-left" />
 
-<col  class="left" />
+<col  class="org-left" />
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="right">&#xa0;</th>
-<th scope="col" class="left">File</th>
-<th scope="col" class="right">Vertices</th>
-<th scope="col" class="right">Edges</th>
-<th scope="col" class="right">Sol</th>
-<th scope="col" class="left">Category</th>
-<th scope="col" class="left">Note</th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">File</th>
+<th scope="col" class="org-right">Vertices</th>
+<th scope="col" class="org-right">Edges</th>
+<th scope="col" class="org-right">Sol</th>
+<th scope="col" class="org-left">Category</th>
+<th scope="col" class="org-left">Note</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="right">1</td>
-<td class="left"><a href="./instances/coloring/graph_color/DSJC125.1.col">(*)DSJC125.1.col</a></td>
-<td class="right">125</td>
-<td class="right">736</td>
-<td class="right">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">1</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/DSJC125.1.col">(*)DSJC125.1.col</a></td>
+<td class="org-right">125</td>
+<td class="org-right">736</td>
+<td class="org-right">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">2</td>
-<td class="left"><a href="./instances/coloring/graph_color/DSJC125.5.col">(*)DSJC125.5.col</a></td>
-<td class="right">125</td>
-<td class="right">3891</td>
-<td class="right">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">2</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/DSJC125.5.col">(*)DSJC125.5.col</a></td>
+<td class="org-right">125</td>
+<td class="org-right">3891</td>
+<td class="org-right">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">3</td>
-<td class="left"><a href="./instances/coloring/graph_color/DSJC125.9.col">(*)DSJC125.9.col</a></td>
-<td class="right">125</td>
-<td class="right">6961</td>
-<td class="right">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">3</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/DSJC125.9.col">(*)DSJC125.9.col</a></td>
+<td class="org-right">125</td>
+<td class="org-right">6961</td>
+<td class="org-right">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">4</td>
-<td class="left"><a href="./instances/coloring/graph_color/DSJC250.1.col">(*)DSJC250.1.col</a></td>
-<td class="right">250</td>
-<td class="right">3218</td>
-<td class="right">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">4</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/DSJC250.1.col">(*)DSJC250.1.col</a></td>
+<td class="org-right">250</td>
+<td class="org-right">3218</td>
+<td class="org-right">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">5</td>
-<td class="left"><a href="./instances/coloring/graph_color/DSJC250.5.col">(*)DSJC250.5.col</a></td>
-<td class="right">250</td>
-<td class="right">15668</td>
-<td class="right">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">5</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/DSJC250.5.col">(*)DSJC250.5.col</a></td>
+<td class="org-right">250</td>
+<td class="org-right">15668</td>
+<td class="org-right">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">6</td>
-<td class="left"><a href="./instances/coloring/graph_color/DSJC250.9.col">(*)DSJC250.9.col</a></td>
-<td class="right">250</td>
-<td class="right">27897</td>
-<td class="right">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">6</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/DSJC250.9.col">(*)DSJC250.9.col</a></td>
+<td class="org-right">250</td>
+<td class="org-right">27897</td>
+<td class="org-right">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">7</td>
-<td class="left"><a href="./instances/coloring/graph_color/DSJC500.1.col">(*)DSJC500.1.col</a></td>
-<td class="right">500</td>
-<td class="right">12458</td>
-<td class="right">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">7</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/DSJC500.1.col">(*)DSJC500.1.col</a></td>
+<td class="org-right">500</td>
+<td class="org-right">12458</td>
+<td class="org-right">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">8</td>
-<td class="left"><a href="./instances/coloring/graph_color/DSJC500.5.col">(*)DSJC500.5.col</a></td>
-<td class="right">500</td>
-<td class="right">62624</td>
-<td class="right">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">8</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/DSJC500.5.col">(*)DSJC500.5.col</a></td>
+<td class="org-right">500</td>
+<td class="org-right">62624</td>
+<td class="org-right">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">9</td>
-<td class="left"><a href="./instances/coloring/graph_color/DSJC500.9.col">(*)DSJC500.9.col</a></td>
-<td class="right">500</td>
-<td class="right">224874</td>
-<td class="right">?</td>
-<td class="left">DSJ</td>
-<td class="left"># edges should be<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup> 112437</td>
+<td class="org-right">9</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/DSJC500.9.col">(*)DSJC500.9.col</a></td>
+<td class="org-right">500</td>
+<td class="org-right">224874</td>
+<td class="org-right">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left"># edges should be<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup> 112437</td>
 </tr>
 
 <tr>
-<td class="right">10</td>
-<td class="left"><a href="./instances/coloring/graph_color/DSJR500.1.col">(*)DSJR500.1.col</a></td>
-<td class="right">500</td>
-<td class="right">3555</td>
-<td class="right">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">10</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/DSJR500.1.col">(*)DSJR500.1.col</a></td>
+<td class="org-right">500</td>
+<td class="org-right">3555</td>
+<td class="org-right">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">11</td>
-<td class="left"><a href="./instances/coloring/graph_color/DSJR500.1c.col">(*)DSJR500.1c.col</a></td>
-<td class="right">500</td>
-<td class="right">121275</td>
-<td class="right">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">11</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/DSJR500.1c.col">(*)DSJR500.1c.col</a></td>
+<td class="org-right">500</td>
+<td class="org-right">121275</td>
+<td class="org-right">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">12</td>
-<td class="left"><a href="./instances/coloring/graph_color/DSJR500.5.col">(*)DSJR500.5.col</a></td>
-<td class="right">500</td>
-<td class="right">58862</td>
-<td class="right">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">12</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/DSJR500.5.col">(*)DSJR500.5.col</a></td>
+<td class="org-right">500</td>
+<td class="org-right">58862</td>
+<td class="org-right">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">13</td>
-<td class="left"><a href="./instances/coloring/graph_color/DSJC1000.1.col">(*)DSJC1000.1.col</a></td>
-<td class="right">1000</td>
-<td class="right">49629</td>
-<td class="right">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">13</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/DSJC1000.1.col">(*)DSJC1000.1.col</a></td>
+<td class="org-right">1000</td>
+<td class="org-right">49629</td>
+<td class="org-right">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">14</td>
-<td class="left"><a href="./instances/coloring/graph_color/DSJC1000.5.col">(*)DSJC1000.5.col</a></td>
-<td class="right">1000</td>
-<td class="right">249826</td>
-<td class="right">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">14</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/DSJC1000.5.col">(*)DSJC1000.5.col</a></td>
+<td class="org-right">1000</td>
+<td class="org-right">249826</td>
+<td class="org-right">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">15</td>
-<td class="left"><a href="./instances/coloring/graph_color/DSJC1000.9.col">(*)DSJC1000.9.col</a></td>
-<td class="right">1000</td>
-<td class="right">449449</td>
-<td class="right">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">15</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/DSJC1000.9.col">(*)DSJC1000.9.col</a></td>
+<td class="org-right">1000</td>
+<td class="org-right">449449</td>
+<td class="org-right">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">16</td>
-<td class="left"><a href="./instances/coloring/graph_color/fpsol2.i.1.col">fpsol2.i.1.col</a></td>
-<td class="right">496</td>
-<td class="right">11654</td>
-<td class="right">65</td>
-<td class="left">REG</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">16</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/fpsol2.i.1.col">fpsol2.i.1.col</a></td>
+<td class="org-right">496</td>
+<td class="org-right">11654</td>
+<td class="org-right">65</td>
+<td class="org-left">REG</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">17</td>
-<td class="left"><a href="./instances/coloring/graph_color/fpsol2.i.2.col">fpsol2.i.2.col</a></td>
-<td class="right">451</td>
-<td class="right">8691</td>
-<td class="right">30</td>
-<td class="left">REG</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">17</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/fpsol2.i.2.col">fpsol2.i.2.col</a></td>
+<td class="org-right">451</td>
+<td class="org-right">8691</td>
+<td class="org-right">30</td>
+<td class="org-left">REG</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">18</td>
-<td class="left"><a href="./instances/coloring/graph_color/fpsol2.i.3.col">fpsol2.i.3.col</a></td>
-<td class="right">425</td>
-<td class="right">8688</td>
-<td class="right">30</td>
-<td class="left">REG</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">18</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/fpsol2.i.3.col">fpsol2.i.3.col</a></td>
+<td class="org-right">425</td>
+<td class="org-right">8688</td>
+<td class="org-right">30</td>
+<td class="org-left">REG</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">19</td>
-<td class="left"><a href="./instances/coloring/graph_color/inithx.i.1.col">inithx.i.1.col</a></td>
-<td class="right">864</td>
-<td class="right">18707</td>
-<td class="right">54</td>
-<td class="left">REG</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">19</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/inithx.i.1.col">inithx.i.1.col</a></td>
+<td class="org-right">864</td>
+<td class="org-right">18707</td>
+<td class="org-right">54</td>
+<td class="org-left">REG</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">20</td>
-<td class="left"><a href="./instances/coloring/graph_color/inithx.i.2.col">inithx.i.2.col</a></td>
-<td class="right">645</td>
-<td class="right">13979</td>
-<td class="right">31</td>
-<td class="left">REG</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">20</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/inithx.i.2.col">inithx.i.2.col</a></td>
+<td class="org-right">645</td>
+<td class="org-right">13979</td>
+<td class="org-right">31</td>
+<td class="org-left">REG</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">21</td>
-<td class="left"><a href="./instances/coloring/graph_color/inithx.i.3.col">inithx.i.3.col</a></td>
-<td class="right">621</td>
-<td class="right">13969</td>
-<td class="right">31</td>
-<td class="left">REG</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">21</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/inithx.i.3.col">inithx.i.3.col</a></td>
+<td class="org-right">621</td>
+<td class="org-right">13969</td>
+<td class="org-right">31</td>
+<td class="org-left">REG</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">22</td>
-<td class="left"><a href="./instances/coloring/graph_color/latin_square_10.col">(*)latin_square_10.col</a></td>
-<td class="right">900</td>
-<td class="right">307350</td>
-<td class="right">?</td>
-<td class="left">LAT</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">22</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/latin_square_10.col">(*)latin_square_10.col</a></td>
+<td class="org-right">900</td>
+<td class="org-right">307350</td>
+<td class="org-right">?</td>
+<td class="org-left">LAT</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">23</td>
-<td class="left"><a href="./instances/coloring/graph_color/le450_15a.col">(*)le450_15a.col</a></td>
-<td class="right">450</td>
-<td class="right">8168</td>
-<td class="right">15</td>
-<td class="left">LEI</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">23</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/le450_15a.col">(*)le450_15a.col</a></td>
+<td class="org-right">450</td>
+<td class="org-right">8168</td>
+<td class="org-right">15</td>
+<td class="org-left">LEI</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">24</td>
-<td class="left"><a href="./instances/coloring/graph_color/le450_15b.col">(*)le450_15b.col</a></td>
-<td class="right">450</td>
-<td class="right">8169</td>
-<td class="right">15</td>
-<td class="left">LEI</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">24</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/le450_15b.col">(*)le450_15b.col</a></td>
+<td class="org-right">450</td>
+<td class="org-right">8169</td>
+<td class="org-right">15</td>
+<td class="org-left">LEI</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">25</td>
-<td class="left"><a href="./instances/coloring/graph_color/le450_15c.col">(*)le450_15c.col</a></td>
-<td class="right">450</td>
-<td class="right">16680</td>
-<td class="right">15</td>
-<td class="left">LEI</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">25</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/le450_15c.col">(*)le450_15c.col</a></td>
+<td class="org-right">450</td>
+<td class="org-right">16680</td>
+<td class="org-right">15</td>
+<td class="org-left">LEI</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">26</td>
-<td class="left"><a href="./instances/coloring/graph_color/le450_15d.col">(*)le450_15d.col</a></td>
-<td class="right">450</td>
-<td class="right">16750</td>
-<td class="right">15</td>
-<td class="left">LEI</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">26</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/le450_15d.col">(*)le450_15d.col</a></td>
+<td class="org-right">450</td>
+<td class="org-right">16750</td>
+<td class="org-right">15</td>
+<td class="org-left">LEI</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">27</td>
-<td class="left"><a href="./instances/coloring/graph_color/le450_25a.col">(*)le450_25a.col</a></td>
-<td class="right">450</td>
-<td class="right">8260</td>
-<td class="right">25</td>
-<td class="left">LEI</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">27</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/le450_25a.col">(*)le450_25a.col</a></td>
+<td class="org-right">450</td>
+<td class="org-right">8260</td>
+<td class="org-right">25</td>
+<td class="org-left">LEI</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">28</td>
-<td class="left"><a href="./instances/coloring/graph_color/le450_25b.col">(*)le450_25b.col</a></td>
-<td class="right">450</td>
-<td class="right">8263</td>
-<td class="right">25</td>
-<td class="left">LEI</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">28</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/le450_25b.col">(*)le450_25b.col</a></td>
+<td class="org-right">450</td>
+<td class="org-right">8263</td>
+<td class="org-right">25</td>
+<td class="org-left">LEI</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">29</td>
-<td class="left"><a href="./instances/coloring/graph_color/le450_25c.col">(*)le450_25c.col</a></td>
-<td class="right">450</td>
-<td class="right">17343</td>
-<td class="right">25</td>
-<td class="left">LEI</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">29</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/le450_25c.col">(*)le450_25c.col</a></td>
+<td class="org-right">450</td>
+<td class="org-right">17343</td>
+<td class="org-right">25</td>
+<td class="org-left">LEI</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">30</td>
-<td class="left"><a href="./instances/coloring/graph_color/le450_25d.col">(*)le450_25d.col</a></td>
-<td class="right">450</td>
-<td class="right">17425</td>
-<td class="right">25</td>
-<td class="left">LEI</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">30</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/le450_25d.col">(*)le450_25d.col</a></td>
+<td class="org-right">450</td>
+<td class="org-right">17425</td>
+<td class="org-right">25</td>
+<td class="org-left">LEI</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">31</td>
-<td class="left"><a href="./instances/coloring/graph_color/le450_5a.col">(*)le450_5a.col</a></td>
-<td class="right">450</td>
-<td class="right">5714</td>
-<td class="right">5</td>
-<td class="left">LEI</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">31</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/le450_5a.col">(*)le450_5a.col</a></td>
+<td class="org-right">450</td>
+<td class="org-right">5714</td>
+<td class="org-right">5</td>
+<td class="org-left">LEI</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">32</td>
-<td class="left"><a href="./instances/coloring/graph_color/le450_5b.col">(*)le450_5b.col</a></td>
-<td class="right">450</td>
-<td class="right">5734</td>
-<td class="right">5</td>
-<td class="left">LEI</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">32</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/le450_5b.col">(*)le450_5b.col</a></td>
+<td class="org-right">450</td>
+<td class="org-right">5734</td>
+<td class="org-right">5</td>
+<td class="org-left">LEI</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">33</td>
-<td class="left"><a href="./instances/coloring/graph_color/le450_5c.col">(*)le450_5c.col</a></td>
-<td class="right">450</td>
-<td class="right">9803</td>
-<td class="right">5</td>
-<td class="left">LEI</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">33</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/le450_5c.col">(*)le450_5c.col</a></td>
+<td class="org-right">450</td>
+<td class="org-right">9803</td>
+<td class="org-right">5</td>
+<td class="org-left">LEI</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">34</td>
-<td class="left"><a href="./instances/coloring/graph_color/le450_5d.col">(*)le450_5d.col</a></td>
-<td class="right">450</td>
-<td class="right">9757</td>
-<td class="right">5</td>
-<td class="left">LEI</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">34</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/le450_5d.col">(*)le450_5d.col</a></td>
+<td class="org-right">450</td>
+<td class="org-right">9757</td>
+<td class="org-right">5</td>
+<td class="org-left">LEI</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">35</td>
-<td class="left"><a href="./instances/coloring/graph_color/mulsol.i.1.col">mulsol.i.1.col</a></td>
-<td class="right">197</td>
-<td class="right">3925</td>
-<td class="right">49</td>
-<td class="left">REG</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">35</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/mulsol.i.1.col">mulsol.i.1.col</a></td>
+<td class="org-right">197</td>
+<td class="org-right">3925</td>
+<td class="org-right">49</td>
+<td class="org-left">REG</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">36</td>
-<td class="left"><a href="./instances/coloring/graph_color/mulsol.i.2.col">mulsol.i.2.col</a></td>
-<td class="right">188</td>
-<td class="right">3885</td>
-<td class="right">31</td>
-<td class="left">REG</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">36</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/mulsol.i.2.col">mulsol.i.2.col</a></td>
+<td class="org-right">188</td>
+<td class="org-right">3885</td>
+<td class="org-right">31</td>
+<td class="org-left">REG</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">37</td>
-<td class="left"><a href="./instances/coloring/graph_color/mulsol.i.3.col">mulsol.i.3.col</a></td>
-<td class="right">184</td>
-<td class="right">3916</td>
-<td class="right">31</td>
-<td class="left">REG</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">37</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/mulsol.i.3.col">mulsol.i.3.col</a></td>
+<td class="org-right">184</td>
+<td class="org-right">3916</td>
+<td class="org-right">31</td>
+<td class="org-left">REG</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">38</td>
-<td class="left"><a href="./instances/coloring/graph_color/mulsol.i.4.col">mulsol.i.4.col</a></td>
-<td class="right">185</td>
-<td class="right">3946</td>
-<td class="right">31</td>
-<td class="left">REG</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">38</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/mulsol.i.4.col">mulsol.i.4.col</a></td>
+<td class="org-right">185</td>
+<td class="org-right">3946</td>
+<td class="org-right">31</td>
+<td class="org-left">REG</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">39</td>
-<td class="left"><a href="./instances/coloring/graph_color/mulsol.i.5.col">mulsol.i.5.col</a></td>
-<td class="right">186</td>
-<td class="right">3973</td>
-<td class="right">31</td>
-<td class="left">REG</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">39</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/mulsol.i.5.col">mulsol.i.5.col</a></td>
+<td class="org-right">186</td>
+<td class="org-right">3973</td>
+<td class="org-right">31</td>
+<td class="org-left">REG</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">40</td>
-<td class="left"><a href="./instances/coloring/graph_color/school1.col">school1.col</a></td>
-<td class="right">385</td>
-<td class="right">19095</td>
-<td class="right">?</td>
-<td class="left">SCH</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">40</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/school1.col">school1.col</a></td>
+<td class="org-right">385</td>
+<td class="org-right">19095</td>
+<td class="org-right">?</td>
+<td class="org-left">SCH</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">41</td>
-<td class="left"><a href="./instances/coloring/graph_color/school1_nsh.col">(*)school1_nsh.col</a></td>
-<td class="right">352</td>
-<td class="right">14612</td>
-<td class="right">?</td>
-<td class="left">SCH</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">41</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/school1_nsh.col">(*)school1_nsh.col</a></td>
+<td class="org-right">352</td>
+<td class="org-right">14612</td>
+<td class="org-right">?</td>
+<td class="org-left">SCH</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">42</td>
-<td class="left"><a href="./instances/coloring/graph_color/zeroin.i.1.col">zeroin.i.1.col</a></td>
-<td class="right">211</td>
-<td class="right">4100</td>
-<td class="right">49</td>
-<td class="left">REG</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">42</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/zeroin.i.1.col">zeroin.i.1.col</a></td>
+<td class="org-right">211</td>
+<td class="org-right">4100</td>
+<td class="org-right">49</td>
+<td class="org-left">REG</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">43</td>
-<td class="left"><a href="./instances/coloring/graph_color/zeroin.i.2.col">zeroin.i.2.col</a></td>
-<td class="right">211</td>
-<td class="right">3541</td>
-<td class="right">30</td>
-<td class="left">REG</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">43</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/zeroin.i.2.col">zeroin.i.2.col</a></td>
+<td class="org-right">211</td>
+<td class="org-right">3541</td>
+<td class="org-right">30</td>
+<td class="org-left">REG</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">44</td>
-<td class="left"><a href="./instances/coloring/graph_color/zeroin.i.3.col">zeroin.i.3.col</a></td>
-<td class="right">206</td>
-<td class="right">3540</td>
-<td class="right">30</td>
-<td class="left">REG</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">44</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/zeroin.i.3.col">zeroin.i.3.col</a></td>
+<td class="org-right">206</td>
+<td class="org-right">3540</td>
+<td class="org-right">30</td>
+<td class="org-left">REG</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">45</td>
-<td class="left"><a href="./instances/coloring/graph_color/anna.col">anna.col</a></td>
-<td class="right">138</td>
-<td class="right">493</td>
-<td class="right">11</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">45</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/anna.col">anna.col</a></td>
+<td class="org-right">138</td>
+<td class="org-right">493</td>
+<td class="org-right">11</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">46</td>
-<td class="left"><a href="./instances/coloring/graph_color/david.col">david.col</a></td>
-<td class="right">87</td>
-<td class="right">406</td>
-<td class="right">11</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">46</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/david.col">david.col</a></td>
+<td class="org-right">87</td>
+<td class="org-right">406</td>
+<td class="org-right">11</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">47</td>
-<td class="left"><a href="./instances/coloring/graph_color/homer.col">homer.col</a></td>
-<td class="right">561</td>
-<td class="right">1629</td>
-<td class="right">13</td>
-<td class="left">SGB</td>
-<td class="left"># edges should be<sup><a id="fnr.1.100" name="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 1628 + 1 self-loop edge<sup><a id="fnr.2" name="fnr.2" class="footref" href="#fn.2">2</a></sup></td>
+<td class="org-right">47</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/homer.col">homer.col</a></td>
+<td class="org-right">561</td>
+<td class="org-right">1629</td>
+<td class="org-right">13</td>
+<td class="org-left">SGB</td>
+<td class="org-left"># edges should be<sup><a id="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 1628 + 1 self-loop edge<sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup></td>
 </tr>
 
 <tr>
-<td class="right">48</td>
-<td class="left"><a href="./instances/coloring/graph_color/huck.col">huck.col</a></td>
-<td class="right">74</td>
-<td class="right">301</td>
-<td class="right">11</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">48</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/huck.col">huck.col</a></td>
+<td class="org-right">74</td>
+<td class="org-right">301</td>
+<td class="org-right">11</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">49</td>
-<td class="left"><a href="./instances/coloring/graph_color/jean.col">jean.col</a></td>
-<td class="right">80</td>
-<td class="right">254</td>
-<td class="right">10</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">49</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/jean.col">jean.col</a></td>
+<td class="org-right">80</td>
+<td class="org-right">254</td>
+<td class="org-right">10</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">50</td>
-<td class="left"><a href="./instances/coloring/graph_color/games120.col">games120.col</a></td>
-<td class="right">120</td>
-<td class="right">638</td>
-<td class="right">9</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">50</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/games120.col">games120.col</a></td>
+<td class="org-right">120</td>
+<td class="org-right">638</td>
+<td class="org-right">9</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">51</td>
-<td class="left"><a href="./instances/coloring/graph_color/miles1000.col">miles1000.col</a></td>
-<td class="right">128</td>
-<td class="right">3216</td>
-<td class="right">42</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">51</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/miles1000.col">miles1000.col</a></td>
+<td class="org-right">128</td>
+<td class="org-right">3216</td>
+<td class="org-right">42</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">52</td>
-<td class="left"><a href="./instances/coloring/graph_color/miles1500.col">miles1500.col</a></td>
-<td class="right">128</td>
-<td class="right">5198</td>
-<td class="right">73</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">52</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/miles1500.col">miles1500.col</a></td>
+<td class="org-right">128</td>
+<td class="org-right">5198</td>
+<td class="org-right">73</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">53</td>
-<td class="left"><a href="./instances/coloring/graph_color/miles250.col">miles250.col</a></td>
-<td class="right">128</td>
-<td class="right">387</td>
-<td class="right">8</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">53</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/miles250.col">miles250.col</a></td>
+<td class="org-right">128</td>
+<td class="org-right">387</td>
+<td class="org-right">8</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">54</td>
-<td class="left"><a href="./instances/coloring/graph_color/miles500.col">miles500.col</a></td>
-<td class="right">128</td>
-<td class="right">1170</td>
-<td class="right">20</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">54</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/miles500.col">miles500.col</a></td>
+<td class="org-right">128</td>
+<td class="org-right">1170</td>
+<td class="org-right">20</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">55</td>
-<td class="left"><a href="./instances/coloring/graph_color/miles750.col">miles750.col</a></td>
-<td class="right">128</td>
-<td class="right">2113</td>
-<td class="right">31</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">55</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/miles750.col">miles750.col</a></td>
+<td class="org-right">128</td>
+<td class="org-right">2113</td>
+<td class="org-right">31</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">56</td>
-<td class="left"><a href="./instances/coloring/graph_color/queen5_5.col">queen5_5.col</a></td>
-<td class="right">25</td>
-<td class="right">160</td>
-<td class="right">5</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">56</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/queen5_5.col">queen5_5.col</a></td>
+<td class="org-right">25</td>
+<td class="org-right">160</td>
+<td class="org-right">5</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">57</td>
-<td class="left"><a href="./instances/coloring/graph_color/queen6_6.col">queen6_6.col</a></td>
-<td class="right">36</td>
-<td class="right">290</td>
-<td class="right">7</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">57</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/queen6_6.col">queen6_6.col</a></td>
+<td class="org-right">36</td>
+<td class="org-right">290</td>
+<td class="org-right">7</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">58</td>
-<td class="left"><a href="./instances/coloring/graph_color/queen7_7.col">queen7_7.col</a></td>
-<td class="right">49</td>
-<td class="right">476</td>
-<td class="right">7</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">58</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/queen7_7.col">queen7_7.col</a></td>
+<td class="org-right">49</td>
+<td class="org-right">476</td>
+<td class="org-right">7</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">59</td>
-<td class="left"><a href="./instances/coloring/graph_color/queen8_12.col">(*)queen8_12.col</a></td>
-<td class="right">96</td>
-<td class="right">1368</td>
-<td class="right">12</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">59</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/queen8_12.col">(*)queen8_12.col</a></td>
+<td class="org-right">96</td>
+<td class="org-right">1368</td>
+<td class="org-right">12</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">60</td>
-<td class="left"><a href="./instances/coloring/graph_color/queen8_8.col">(*)queen8_8.col</a></td>
-<td class="right">64</td>
-<td class="right">728</td>
-<td class="right">9</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">60</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/queen8_8.col">(*)queen8_8.col</a></td>
+<td class="org-right">64</td>
+<td class="org-right">728</td>
+<td class="org-right">9</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">61</td>
-<td class="left"><a href="./instances/coloring/graph_color/queen9_9.col">(*)queen9_9.col</a></td>
-<td class="right">81</td>
-<td class="right">2112</td>
-<td class="right">10</td>
-<td class="left">SGB</td>
-<td class="left"># edges should be<sup><a id="fnr.1.100" name="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 1056</td>
+<td class="org-right">61</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/queen9_9.col">(*)queen9_9.col</a></td>
+<td class="org-right">81</td>
+<td class="org-right">2112</td>
+<td class="org-right">10</td>
+<td class="org-left">SGB</td>
+<td class="org-left"># edges should be<sup><a id="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 1056</td>
 </tr>
 
 <tr>
-<td class="right">62</td>
-<td class="left"><a href="./instances/coloring/graph_color/queen10_10.col">(*)queen10_10.col</a></td>
-<td class="right">100</td>
-<td class="right">2940</td>
-<td class="right">?</td>
-<td class="left">SGB</td>
-<td class="left"># edges should be<sup><a id="fnr.1.100" name="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 1470</td>
+<td class="org-right">62</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/queen10_10.col">(*)queen10_10.col</a></td>
+<td class="org-right">100</td>
+<td class="org-right">2940</td>
+<td class="org-right">?</td>
+<td class="org-left">SGB</td>
+<td class="org-left"># edges should be<sup><a id="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 1470</td>
 </tr>
 
 <tr>
-<td class="right">63</td>
-<td class="left"><a href="./instances/coloring/graph_color/queen11_11.col">(*)queen11_11.col</a></td>
-<td class="right">121</td>
-<td class="right">3960</td>
-<td class="right">11</td>
-<td class="left">SGB</td>
-<td class="left"># edges should be<sup><a id="fnr.1.100" name="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 1980</td>
+<td class="org-right">63</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/queen11_11.col">(*)queen11_11.col</a></td>
+<td class="org-right">121</td>
+<td class="org-right">3960</td>
+<td class="org-right">11</td>
+<td class="org-left">SGB</td>
+<td class="org-left"># edges should be<sup><a id="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 1980</td>
 </tr>
 
 <tr>
-<td class="right">64</td>
-<td class="left"><a href="./instances/coloring/graph_color/queen12_12.col">(*)queen12_12.col</a></td>
-<td class="right">144</td>
-<td class="right">5192</td>
-<td class="right">?</td>
-<td class="left">SGB</td>
-<td class="left"># edges should be<sup><a id="fnr.1.100" name="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 2596</td>
+<td class="org-right">64</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/queen12_12.col">(*)queen12_12.col</a></td>
+<td class="org-right">144</td>
+<td class="org-right">5192</td>
+<td class="org-right">?</td>
+<td class="org-left">SGB</td>
+<td class="org-left"># edges should be<sup><a id="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 2596</td>
 </tr>
 
 <tr>
-<td class="right">65</td>
-<td class="left"><a href="./instances/coloring/graph_color/queen13_13.col">(*)queen13_13.col</a></td>
-<td class="right">169</td>
-<td class="right">6656</td>
-<td class="right">13</td>
-<td class="left">SGB</td>
-<td class="left"># edges should be<sup><a id="fnr.1.100" name="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 3328</td>
+<td class="org-right">65</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/queen13_13.col">(*)queen13_13.col</a></td>
+<td class="org-right">169</td>
+<td class="org-right">6656</td>
+<td class="org-right">13</td>
+<td class="org-left">SGB</td>
+<td class="org-left"># edges should be<sup><a id="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 3328</td>
 </tr>
 
 <tr>
-<td class="right">66</td>
-<td class="left"><a href="./instances/coloring/graph_color/queen14_14.col">(*)queen14_14.col</a></td>
-<td class="right">196</td>
-<td class="right">8372</td>
-<td class="right">?</td>
-<td class="left">SGB</td>
-<td class="left"># edges should be<sup><a id="fnr.1.100" name="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 4186</td>
+<td class="org-right">66</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/queen14_14.col">(*)queen14_14.col</a></td>
+<td class="org-right">196</td>
+<td class="org-right">8372</td>
+<td class="org-right">?</td>
+<td class="org-left">SGB</td>
+<td class="org-left"># edges should be<sup><a id="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 4186</td>
 </tr>
 
 <tr>
-<td class="right">67</td>
-<td class="left"><a href="./instances/coloring/graph_color/queen15_15.col">(*)queen15_15.col</a></td>
-<td class="right">225</td>
-<td class="right">10360</td>
-<td class="right">?</td>
-<td class="left">SGB</td>
-<td class="left"># edges should be<sup><a id="fnr.1.100" name="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 5180</td>
+<td class="org-right">67</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/queen15_15.col">(*)queen15_15.col</a></td>
+<td class="org-right">225</td>
+<td class="org-right">10360</td>
+<td class="org-right">?</td>
+<td class="org-left">SGB</td>
+<td class="org-left"># edges should be<sup><a id="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 5180</td>
 </tr>
 
 <tr>
-<td class="right">68</td>
-<td class="left"><a href="./instances/coloring/graph_color/queen16_16.col">(*)queen16_16.col</a></td>
-<td class="right">256</td>
-<td class="right">12640</td>
-<td class="right">?</td>
-<td class="left">SGB</td>
-<td class="left"># edges should be<sup><a id="fnr.1.100" name="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 6320</td>
+<td class="org-right">68</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/queen16_16.col">(*)queen16_16.col</a></td>
+<td class="org-right">256</td>
+<td class="org-right">12640</td>
+<td class="org-right">?</td>
+<td class="org-left">SGB</td>
+<td class="org-left"># edges should be<sup><a id="fnr.1.100" class="footref" href="#fn.1">1</a></sup> 6320</td>
 </tr>
 
 <tr>
-<td class="right">69</td>
-<td class="left"><a href="./instances/coloring/graph_color/myciel3.col">myciel3.col</a></td>
-<td class="right">11</td>
-<td class="right">20</td>
-<td class="right">4</td>
-<td class="left">MYC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">69</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/myciel3.col">myciel3.col</a></td>
+<td class="org-right">11</td>
+<td class="org-right">20</td>
+<td class="org-right">4</td>
+<td class="org-left">MYC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">70</td>
-<td class="left"><a href="./instances/coloring/graph_color/myciel4.col">myciel4.col</a></td>
-<td class="right">23</td>
-<td class="right">71</td>
-<td class="right">5</td>
-<td class="left">MYC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">70</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/myciel4.col">myciel4.col</a></td>
+<td class="org-right">23</td>
+<td class="org-right">71</td>
+<td class="org-right">5</td>
+<td class="org-left">MYC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">71</td>
-<td class="left"><a href="./instances/coloring/graph_color/myciel5.col">(*)myciel5.col</a></td>
-<td class="right">47</td>
-<td class="right">236</td>
-<td class="right">6</td>
-<td class="left">MYC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">71</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/myciel5.col">(*)myciel5.col</a></td>
+<td class="org-right">47</td>
+<td class="org-right">236</td>
+<td class="org-right">6</td>
+<td class="org-left">MYC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">72</td>
-<td class="left"><a href="./instances/coloring/graph_color/myciel6.col">(*)myciel6.col</a></td>
-<td class="right">95</td>
-<td class="right">755</td>
-<td class="right">7</td>
-<td class="left">MYC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">72</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/myciel6.col">(*)myciel6.col</a></td>
+<td class="org-right">95</td>
+<td class="org-right">755</td>
+<td class="org-right">7</td>
+<td class="org-left">MYC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">73</td>
-<td class="left"><a href="./instances/coloring/graph_color/myciel7.col">(*)myciel7.col</a></td>
-<td class="right">191</td>
-<td class="right">2360</td>
-<td class="right">8</td>
-<td class="left">MYC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">73</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/myciel7.col">(*)myciel7.col</a></td>
+<td class="org-right">191</td>
+<td class="org-right">2360</td>
+<td class="org-right">8</td>
+<td class="org-left">MYC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">74</td>
-<td class="left"><a href="./instances/coloring/graph_color/mug88_1.col">mugg88_1.col</a></td>
-<td class="right">88</td>
-<td class="right">146</td>
-<td class="right">4</td>
-<td class="left">MIZ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">74</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/mug88_1.col">mugg88_1.col</a></td>
+<td class="org-right">88</td>
+<td class="org-right">146</td>
+<td class="org-right">4</td>
+<td class="org-left">MIZ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">75</td>
-<td class="left"><a href="./instances/coloring/graph_color/mug88_25.col">mugg88_25.col</a></td>
-<td class="right">88</td>
-<td class="right">146</td>
-<td class="right">4</td>
-<td class="left">MIZ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">75</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/mug88_25.col">mugg88_25.col</a></td>
+<td class="org-right">88</td>
+<td class="org-right">146</td>
+<td class="org-right">4</td>
+<td class="org-left">MIZ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">76</td>
-<td class="left"><a href="./instances/coloring/graph_color/mug100_1.col">mugg100_1.col</a></td>
-<td class="right">100</td>
-<td class="right">166</td>
-<td class="right">4</td>
-<td class="left">MIZ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">76</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/mug100_1.col">mugg100_1.col</a></td>
+<td class="org-right">100</td>
+<td class="org-right">166</td>
+<td class="org-right">4</td>
+<td class="org-left">MIZ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">77</td>
-<td class="left"><a href="./instances/coloring/graph_color/mug100_25.col">(*)mugg100_25.col</a></td>
-<td class="right">100</td>
-<td class="right">166</td>
-<td class="right">4</td>
-<td class="left">MIZ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">77</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/mug100_25.col">(*)mugg100_25.col</a></td>
+<td class="org-right">100</td>
+<td class="org-right">166</td>
+<td class="org-right">4</td>
+<td class="org-left">MIZ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">78</td>
-<td class="left"><a href="./instances/coloring/graph_color/abb313GPIA.col">abb313GPIA.col</a></td>
-<td class="right">1557</td>
-<td class="right">53356</td>
-<td class="right">?</td>
-<td class="left">HOS</td>
-<td class="left">corrected 12/29/03</td>
+<td class="org-right">78</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/abb313GPIA.col">abb313GPIA.col</a></td>
+<td class="org-right">1557</td>
+<td class="org-right">53356</td>
+<td class="org-right">?</td>
+<td class="org-left">HOS</td>
+<td class="org-left">corrected 12/29/03</td>
 </tr>
 
 <tr>
-<td class="right">79</td>
-<td class="left"><a href="./instances/coloring/graph_color/ash331GPIA.col">ash331GPIA.col</a></td>
-<td class="right">662</td>
-<td class="right">4185</td>
-<td class="right">?</td>
-<td class="left">HOS</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">79</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/ash331GPIA.col">ash331GPIA.col</a></td>
+<td class="org-right">662</td>
+<td class="org-right">4185</td>
+<td class="org-right">?</td>
+<td class="org-left">HOS</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">80</td>
-<td class="left"><a href="./instances/coloring/graph_color/ash608GPIA.col">ash608GPIA.col</a></td>
-<td class="right">1216</td>
-<td class="right">7844</td>
-<td class="right">?</td>
-<td class="left">HOS</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">80</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/ash608GPIA.col">ash608GPIA.col</a></td>
+<td class="org-right">1216</td>
+<td class="org-right">7844</td>
+<td class="org-right">?</td>
+<td class="org-left">HOS</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">81</td>
-<td class="left"><a href="./instances/coloring/graph_color/ash958GPIA.col">ash958GPIA.col</a></td>
-<td class="right">1916</td>
-<td class="right">12506</td>
-<td class="right">?</td>
-<td class="left">HOS</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">81</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/ash958GPIA.col">ash958GPIA.col</a></td>
+<td class="org-right">1916</td>
+<td class="org-right">12506</td>
+<td class="org-right">?</td>
+<td class="org-left">HOS</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">82</td>
-<td class="left"><a href="./instances/coloring/graph_color/will199GPIA.col">will199GPIA.col</a></td>
-<td class="right">701</td>
-<td class="right">6772</td>
-<td class="right">?</td>
-<td class="left">HOS</td>
-<td class="left">corrected 12/29/03</td>
+<td class="org-right">82</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/will199GPIA.col">will199GPIA.col</a></td>
+<td class="org-right">701</td>
+<td class="org-right">6772</td>
+<td class="org-right">?</td>
+<td class="org-left">HOS</td>
+<td class="org-left">corrected 12/29/03</td>
 </tr>
 
 <tr>
-<td class="right">83</td>
-<td class="left"><a href="./instances/coloring/graph_color/1-Insertions_4.col">(*)1-Insertions_4.col</a></td>
-<td class="right">67</td>
-<td class="right">232</td>
-<td class="right">4</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">83</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/1-Insertions_4.col">(*)1-Insertions_4.col</a></td>
+<td class="org-right">67</td>
+<td class="org-right">232</td>
+<td class="org-right">4</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">84</td>
-<td class="left"><a href="./instances/coloring/graph_color/1-Insertions_5.col">(*)1-Insertions_5.col</a></td>
-<td class="right">202</td>
-<td class="right">1227</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">84</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/1-Insertions_5.col">(*)1-Insertions_5.col</a></td>
+<td class="org-right">202</td>
+<td class="org-right">1227</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">85</td>
-<td class="left"><a href="./instances/coloring/graph_color/1-Insertions_6.col">(*)1-Insertions_6.col</a></td>
-<td class="right">607</td>
-<td class="right">6337</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">85</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/1-Insertions_6.col">(*)1-Insertions_6.col</a></td>
+<td class="org-right">607</td>
+<td class="org-right">6337</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">86</td>
-<td class="left"><a href="./instances/coloring/graph_color/2-Insertions_3.col">(*)2-Insertions_3.col</a></td>
-<td class="right">37</td>
-<td class="right">72</td>
-<td class="right">4</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">86</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/2-Insertions_3.col">(*)2-Insertions_3.col</a></td>
+<td class="org-right">37</td>
+<td class="org-right">72</td>
+<td class="org-right">4</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">87</td>
-<td class="left"><a href="./instances/coloring/graph_color/2-Insertions_4.col">(*)2-Insertions_4.col</a></td>
-<td class="right">149</td>
-<td class="right">541</td>
-<td class="right">4</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">87</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/2-Insertions_4.col">(*)2-Insertions_4.col</a></td>
+<td class="org-right">149</td>
+<td class="org-right">541</td>
+<td class="org-right">4</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">88</td>
-<td class="left"><a href="./instances/coloring/graph_color/2-Insertions_5.col">(*)2-Insertions_5.col</a></td>
-<td class="right">597</td>
-<td class="right">3936</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">88</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/2-Insertions_5.col">(*)2-Insertions_5.col</a></td>
+<td class="org-right">597</td>
+<td class="org-right">3936</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">89</td>
-<td class="left"><a href="./instances/coloring/graph_color/3-Insertions_3.col">(*)3-Insertions_3.col</a></td>
-<td class="right">56</td>
-<td class="right">110</td>
-<td class="right">4</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">89</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/3-Insertions_3.col">(*)3-Insertions_3.col</a></td>
+<td class="org-right">56</td>
+<td class="org-right">110</td>
+<td class="org-right">4</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">90</td>
-<td class="left"><a href="./instances/coloring/graph_color/3-Insertions_4.col">(*)3-Insertions_4.col</a></td>
-<td class="right">281</td>
-<td class="right">1046</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">90</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/3-Insertions_4.col">(*)3-Insertions_4.col</a></td>
+<td class="org-right">281</td>
+<td class="org-right">1046</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">91</td>
-<td class="left"><a href="./instances/coloring/graph_color/3-Insertions_5.col">(*)3-Insertions_5.col</a></td>
-<td class="right">1406</td>
-<td class="right">9695</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">91</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/3-Insertions_5.col">(*)3-Insertions_5.col</a></td>
+<td class="org-right">1406</td>
+<td class="org-right">9695</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">92</td>
-<td class="left"><a href="./instances/coloring/graph_color/4-Insertions_3.col">(*)4-Insertions_3.col</a></td>
-<td class="right">79</td>
-<td class="right">156</td>
-<td class="right">3</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">92</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/4-Insertions_3.col">(*)4-Insertions_3.col</a></td>
+<td class="org-right">79</td>
+<td class="org-right">156</td>
+<td class="org-right">3</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">93</td>
-<td class="left"><a href="./instances/coloring/graph_color/4-Insertions_4.col">(*)4-Insertions_4.col</a></td>
-<td class="right">475</td>
-<td class="right">1795</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">93</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/4-Insertions_4.col">(*)4-Insertions_4.col</a></td>
+<td class="org-right">475</td>
+<td class="org-right">1795</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">94</td>
-<td class="left"><a href="./instances/coloring/graph_color/1-FullIns_3.col">(*)1-FullIns_3.col</a></td>
-<td class="right">30</td>
-<td class="right">100</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">94</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/1-FullIns_3.col">(*)1-FullIns_3.col</a></td>
+<td class="org-right">30</td>
+<td class="org-right">100</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">95</td>
-<td class="left"><a href="./instances/coloring/graph_color/1-FullIns_4.col">(*)1-FullIns_4.col</a></td>
-<td class="right">93</td>
-<td class="right">593</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">95</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/1-FullIns_4.col">(*)1-FullIns_4.col</a></td>
+<td class="org-right">93</td>
+<td class="org-right">593</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">96</td>
-<td class="left"><a href="./instances/coloring/graph_color/1-FullIns_5.col">(*)1-FullIns_5.col</a></td>
-<td class="right">282</td>
-<td class="right">3247</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">96</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/1-FullIns_5.col">(*)1-FullIns_5.col</a></td>
+<td class="org-right">282</td>
+<td class="org-right">3247</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">97</td>
-<td class="left"><a href="./instances/coloring/graph_color/2-FullIns_3.col">(*)2-FullIns_3.col</a></td>
-<td class="right">52</td>
-<td class="right">201</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">97</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/2-FullIns_3.col">(*)2-FullIns_3.col</a></td>
+<td class="org-right">52</td>
+<td class="org-right">201</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">98</td>
-<td class="left"><a href="./instances/coloring/graph_color/2-FullIns_4.col">(*)2-FullIns_4.col</a></td>
-<td class="right">212</td>
-<td class="right">1621</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">98</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/2-FullIns_4.col">(*)2-FullIns_4.col</a></td>
+<td class="org-right">212</td>
+<td class="org-right">1621</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">99</td>
-<td class="left"><a href="./instances/coloring/graph_color/2-FullIns_5.col">(*)2-FullIns_5.col</a></td>
-<td class="right">852</td>
-<td class="right">12201</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">99</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/2-FullIns_5.col">(*)2-FullIns_5.col</a></td>
+<td class="org-right">852</td>
+<td class="org-right">12201</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">100</td>
-<td class="left"><a href="./instances/coloring/graph_color/3-FullIns_3.col">(*)3-FullIns_3.col</a></td>
-<td class="right">80</td>
-<td class="right">346</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">100</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/3-FullIns_3.col">(*)3-FullIns_3.col</a></td>
+<td class="org-right">80</td>
+<td class="org-right">346</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">101</td>
-<td class="left"><a href="./instances/coloring/graph_color/3-FullIns_4.col">(*)3-FullIns_4.col</a></td>
-<td class="right">405</td>
-<td class="right">3524</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">101</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/3-FullIns_4.col">(*)3-FullIns_4.col</a></td>
+<td class="org-right">405</td>
+<td class="org-right">3524</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">102</td>
-<td class="left"><a href="./instances/coloring/graph_color/3-FullIns_5.col">(*)3-FullIns_5.col</a></td>
-<td class="right">2030</td>
-<td class="right">33751</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">102</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/3-FullIns_5.col">(*)3-FullIns_5.col</a></td>
+<td class="org-right">2030</td>
+<td class="org-right">33751</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">103</td>
-<td class="left"><a href="./instances/coloring/graph_color/4-FullIns_3.col">(*)4-FullIns_3.col</a></td>
-<td class="right">114</td>
-<td class="right">541</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">103</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/4-FullIns_3.col">(*)4-FullIns_3.col</a></td>
+<td class="org-right">114</td>
+<td class="org-right">541</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">104</td>
-<td class="left"><a href="./instances/coloring/graph_color/4-FullIns_4.col">(*)4-FullIns_4.col</a></td>
-<td class="right">690</td>
-<td class="right">6650</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">104</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/4-FullIns_4.col">(*)4-FullIns_4.col</a></td>
+<td class="org-right">690</td>
+<td class="org-right">6650</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">105</td>
-<td class="left"><a href="./instances/coloring/graph_color/4-FullIns_5.col">(*)4-FullIns_5.col</a></td>
-<td class="right">4146</td>
-<td class="right">77305</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">105</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/4-FullIns_5.col">(*)4-FullIns_5.col</a></td>
+<td class="org-right">4146</td>
+<td class="org-right">77305</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">106</td>
-<td class="left"><a href="./instances/coloring/graph_color/5-FullIns_3.col">(*)5-FullIns_3.col</a></td>
-<td class="right">154</td>
-<td class="right">792</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">106</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/5-FullIns_3.col">(*)5-FullIns_3.col</a></td>
+<td class="org-right">154</td>
+<td class="org-right">792</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">107</td>
-<td class="left"><a href="./instances/coloring/graph_color/5-FullIns_4.col">(*)5-FullIns_4.col</a></td>
-<td class="right">1085</td>
-<td class="right">11395</td>
-<td class="right">?</td>
-<td class="left">CAR</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">107</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/5-FullIns_4.col">(*)5-FullIns_4.col</a></td>
+<td class="org-right">1085</td>
+<td class="org-right">11395</td>
+<td class="org-right">?</td>
+<td class="org-left">CAR</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">108</td>
-<td class="left"><a href="./instances/coloring/graph_color/wap01a.col">wap01a.col</a></td>
-<td class="right">2368</td>
-<td class="right">110871</td>
-<td class="right">?</td>
-<td class="left">KOS</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">108</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/wap01a.col">wap01a.col</a></td>
+<td class="org-right">2368</td>
+<td class="org-right">110871</td>
+<td class="org-right">?</td>
+<td class="org-left">KOS</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">109</td>
-<td class="left"><a href="./instances/coloring/graph_color/wap02a.col">wap02a.col</a></td>
-<td class="right">2464</td>
-<td class="right">111742</td>
-<td class="right">?</td>
-<td class="left">KOS</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">109</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/wap02a.col">wap02a.col</a></td>
+<td class="org-right">2464</td>
+<td class="org-right">111742</td>
+<td class="org-right">?</td>
+<td class="org-left">KOS</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">110</td>
-<td class="left"><a href="./instances/coloring/graph_color/wap03a.col">wap03a.col</a></td>
-<td class="right">4730</td>
-<td class="right">286722</td>
-<td class="right">?</td>
-<td class="left">KOS</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">110</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/wap03a.col">wap03a.col</a></td>
+<td class="org-right">4730</td>
+<td class="org-right">286722</td>
+<td class="org-right">?</td>
+<td class="org-left">KOS</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">111</td>
-<td class="left"><a href="./instances/coloring/graph_color/wap04a.col">wap04a.col</a></td>
-<td class="right">5231</td>
-<td class="right">294902</td>
-<td class="right">?</td>
-<td class="left">KOS</td>
-<td class="left"># vertices &gt; 5000</td>
+<td class="org-right">111</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/wap04a.col">wap04a.col</a></td>
+<td class="org-right">5231</td>
+<td class="org-right">294902</td>
+<td class="org-right">?</td>
+<td class="org-left">KOS</td>
+<td class="org-left"># vertices &gt; 5000</td>
 </tr>
 
 <tr>
-<td class="right">112</td>
-<td class="left"><a href="./instances/coloring/graph_color/wap05a.col">wap05a.col</a></td>
-<td class="right">905</td>
-<td class="right">43081</td>
-<td class="right">?</td>
-<td class="left">KOS</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">112</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/wap05a.col">wap05a.col</a></td>
+<td class="org-right">905</td>
+<td class="org-right">43081</td>
+<td class="org-right">?</td>
+<td class="org-left">KOS</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">113</td>
-<td class="left"><a href="./instances/coloring/graph_color/wap06a.col">wap06a.col</a></td>
-<td class="right">947</td>
-<td class="right">43571</td>
-<td class="right">?</td>
-<td class="left">KOS</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">113</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/wap06a.col">wap06a.col</a></td>
+<td class="org-right">947</td>
+<td class="org-right">43571</td>
+<td class="org-right">?</td>
+<td class="org-left">KOS</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">114</td>
-<td class="left"><a href="./instances/coloring/graph_color/wap07a.col">wap07a.col</a></td>
-<td class="right">1809</td>
-<td class="right">103368</td>
-<td class="right">?</td>
-<td class="left">KOS</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">114</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/wap07a.col">wap07a.col</a></td>
+<td class="org-right">1809</td>
+<td class="org-right">103368</td>
+<td class="org-right">?</td>
+<td class="org-left">KOS</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">115</td>
-<td class="left"><a href="./instances/coloring/graph_color/wap08a.col">wap08a.col</a></td>
-<td class="right">1870</td>
-<td class="right">104176</td>
-<td class="right">?</td>
-<td class="left">KOS</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">115</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/wap08a.col">wap08a.col</a></td>
+<td class="org-right">1870</td>
+<td class="org-right">104176</td>
+<td class="org-right">?</td>
+<td class="org-left">KOS</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">116</td>
-<td class="left"><a href="./instances/coloring/graph_color/qg.order30.col">qg.order30.col</a></td>
-<td class="right">900</td>
-<td class="right">26100</td>
-<td class="right">30</td>
-<td class="left">GOM</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">116</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/qg.order30.col">qg.order30.col</a></td>
+<td class="org-right">900</td>
+<td class="org-right">26100</td>
+<td class="org-right">30</td>
+<td class="org-left">GOM</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">117</td>
-<td class="left"><a href="./instances/coloring/graph_color/qg.order40.col">qg.order40.col</a></td>
-<td class="right">1600</td>
-<td class="right">62400</td>
-<td class="right">40</td>
-<td class="left">GOM</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">117</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/qg.order40.col">qg.order40.col</a></td>
+<td class="org-right">1600</td>
+<td class="org-right">62400</td>
+<td class="org-right">40</td>
+<td class="org-left">GOM</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">118</td>
-<td class="left"><a href="./instances/coloring/graph_color/qg.order60.col">qg.order60.col</a></td>
-<td class="right">3600</td>
-<td class="right">212400</td>
-<td class="right">60</td>
-<td class="left">GOM</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">118</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/qg.order60.col">qg.order60.col</a></td>
+<td class="org-right">3600</td>
+<td class="org-right">212400</td>
+<td class="org-right">60</td>
+<td class="org-left">GOM</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">119</td>
-<td class="left"><a href="./instances/coloring/graph_color/qg.order100.col">qg.order100.col</a></td>
-<td class="right">10000</td>
-<td class="right">990000</td>
-<td class="right">100</td>
-<td class="left">GOM</td>
-<td class="left"># vertices &gt; 5000</td>
+<td class="org-right">119</td>
+<td class="org-left"><a href="./instances/coloring/graph_color/qg.order100.col">qg.order100.col</a></td>
+<td class="org-right">10000</td>
+<td class="org-right">990000</td>
+<td class="org-right">100</td>
+<td class="org-left">GOM</td>
+<td class="org-left"># vertices &gt; 5000</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> Coloring with Fixed Set instances</h2>
+<div id="outline-container-org231c34d" class="outline-2">
+<h2 id="org231c34d"><span class="section-number-2">3</span> Coloring with Fixed Set instances</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 <a href="./instances/coloring/fixed_set_color/">Directory</a>, 
@@ -1412,243 +1286,243 @@ run the program on <code>r500.b</code>, and report the resulting computation tim
 In the following, some or all nodes must choose from the sets given by the <code>f</code> lines.
 </p>
 
-<table id="tab:fixedset" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table id="orgaa406af" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="right" />
+<col  class="org-right" />
 
-<col  class="left" />
+<col  class="org-left" />
 
-<col  class="left" />
+<col  class="org-left" />
 
-<col  class="left" />
+<col  class="org-left" />
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="right">&#xa0;</th>
-<th scope="col" class="left">File</th>
-<th scope="col" class="left">Category</th>
-<th scope="col" class="left">Note</th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">File</th>
+<th scope="col" class="org-left">Category</th>
+<th scope="col" class="org-left">Note</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="right">1</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhdec.order18.holes120.1.col">qqwhdec.order18.holes120.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">1</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhdec.order18.holes120.1.col">qqwhdec.order18.holes120.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">2</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhdec.order30.holes316.1.col">qqwhdec.order30.holes316.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">2</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhdec.order30.holes316.1.col">qqwhdec.order30.holes316.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">3</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhdec.order30.holes320.1.col">qqwhdec.order30.holes320.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">3</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhdec.order30.holes320.1.col">qqwhdec.order30.holes320.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">4</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhdec.order33.holes381al.1.col">qqwhdec.order33.holes381al.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">4</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhdec.order33.holes381al.1.col">qqwhdec.order33.holes381al.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">5</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhdec.order35.holes405.1.col">qqwhdec.order35.holes405.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">5</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhdec.order35.holes405.1.col">qqwhdec.order35.holes405.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">6</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhdec.order40.holes528.1.col">qqwhdec.order40.holes528.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">6</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhdec.order40.holes528.1.col">qqwhdec.order40.holes528.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">7</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhdec.order5.holes10.1.col">qqwhdec.order5.holes10.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">7</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhdec.order5.holes10.1.col">qqwhdec.order5.holes10.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">8</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhdec.order50.holes750al.1.col">qqwhdec.order50.holes750al.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">8</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhdec.order50.holes750al.1.col">qqwhdec.order50.holes750al.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">9</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhdec.order50.holes825al.1.col">qqwhdec.order50.holes825al.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">9</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhdec.order50.holes825al.1.col">qqwhdec.order50.holes825al.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">10</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhdec.order60.holes1080al.1.col">qqwhdec.order60.holes1080al.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">10</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhdec.order60.holes1080al.1.col">qqwhdec.order60.holes1080al.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">11</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhdec.order60.holes1152al.1.col">qqwhdec.order60.holes1152al.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">11</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhdec.order60.holes1152al.1.col">qqwhdec.order60.holes1152al.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">12</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhdec.order60.holes1440.1.col">qqwhdec.order60.holes1440.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">12</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhdec.order60.holes1440.1.col">qqwhdec.order60.holes1440.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">13</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhdec.order60.holes1620.1.col">qqwhdec.order60.holes1620.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">13</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhdec.order60.holes1620.1.col">qqwhdec.order60.holes1620.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">14</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhdec.order70.holes2450.1.col">qqwhdec.order70.holes2450.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">14</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhdec.order70.holes2450.1.col">qqwhdec.order70.holes2450.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">15</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhdec.order70.holes2940.1.col">qqwhdec.order70.holes2940.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">15</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhdec.order70.holes2940.1.col">qqwhdec.order70.holes2940.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">16</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhopt.order18.holes120.1.col">qqwhopt.order18.holes120.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">16</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhopt.order18.holes120.1.col">qqwhopt.order18.holes120.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">17</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhopt.order30.holes316.1.col">qqwhopt.order30.holes316.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">17</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhopt.order30.holes316.1.col">qqwhopt.order30.holes316.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">18</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhopt.order30.holes320.1.col">qqwhopt.order30.holes320.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">18</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhopt.order30.holes320.1.col">qqwhopt.order30.holes320.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">19</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhopt.order33.holes381al.1.col">qqwhopt.order33.holes381al.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">19</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhopt.order33.holes381al.1.col">qqwhopt.order33.holes381al.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">20</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhopt.order35.holes405.1.col">qqwhopt.order35.holes405.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">20</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhopt.order35.holes405.1.col">qqwhopt.order35.holes405.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">21</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhopt.order40.holes528.1.col">qqwhopt.order40.holes528.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">21</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhopt.order40.holes528.1.col">qqwhopt.order40.holes528.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">22</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhopt.order5.holes10.1.col">qqwhopt.order5.holes10.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">22</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhopt.order5.holes10.1.col">qqwhopt.order5.holes10.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">23</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhopt.order50.holes750.bal.1.col">qqwhopt.order50.holes750.bal.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">23</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhopt.order50.holes750.bal.1.col">qqwhopt.order50.holes750.bal.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">24</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhopt.order50.holes825.bal.1.col">qqwhopt.order50.holes825.bal.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">24</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhopt.order50.holes825.bal.1.col">qqwhopt.order50.holes825.bal.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">25</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhopt.order60.holes1080.bal.1.col">qqwhopt.order60.holes1080.bal.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">25</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhopt.order60.holes1080.bal.1.col">qqwhopt.order60.holes1080.bal.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">26</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhopt.order60.holes1152.bal.1.col">qqwhopt.order60.holes1152.bal.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">26</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhopt.order60.holes1152.bal.1.col">qqwhopt.order60.holes1152.bal.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">27</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhopt.order60.holes1440.1.col">qqwhopt.order60.holes1440.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">27</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhopt.order60.holes1440.1.col">qqwhopt.order60.holes1440.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">28</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhopt.order60.holes1620.1.col">qqwhopt.order60.holes1620.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">28</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhopt.order60.holes1620.1.col">qqwhopt.order60.holes1620.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">29</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhopt.order70.holes2450.1.col">qqwhopt.order70.holes2450.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">29</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhopt.order70.holes2450.1.col">qqwhopt.order70.holes2450.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">30</td>
-<td class="left"><a href="./instances/coloring/fixed_set_color/qwhopt.order70.holes2940.1.col">qwhopt.order70.holes2940.1.col</a></td>
-<td class="left">GOM1</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">30</td>
+<td class="org-left"><a href="./instances/coloring/fixed_set_color/qwhopt.order70.holes2940.1.col">qwhopt.order70.holes2940.1.col</a></td>
+<td class="org-left">GOM1</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> Bandwidth and Multicoloring instances</h2>
+<div id="outline-container-orgc5e6bce" class="outline-2">
+<h2 id="orgc5e6bce"><span class="section-number-2">4</span> Bandwidth and Multicoloring instances</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 <a href="./instances/coloring/bandwidth_multicolor/">Directory</a>, 
@@ -1663,816 +1537,809 @@ bandwidth). They can even be used for graph coloring by ignoring
 both!
 </p>
 
-<table id="tab:bandwidth" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table id="org6db1156" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="right" />
+<col  class="org-right" />
 
-<col  class="left" />
+<col  class="org-left" />
 
-<col  class="right" />
+<col  class="org-right" />
 
-<col  class="right" />
+<col  class="org-right" />
 
-<col  class="left" />
+<col  class="org-left" />
 
-<col  class="left" />
+<col  class="org-left" />
 
-<col  class="left" />
+<col  class="org-left" />
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="right">&#xa0;</th>
-<th scope="col" class="left">File</th>
-<th scope="col" class="right">Vertices</th>
-<th scope="col" class="right">Edges</th>
-<th scope="col" class="left">Sol</th>
-<th scope="col" class="left">Category</th>
-<th scope="col" class="left">Note</th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">File</th>
+<th scope="col" class="org-right">Vertices</th>
+<th scope="col" class="org-right">Edges</th>
+<th scope="col" class="org-left">Sol</th>
+<th scope="col" class="org-left">Category</th>
+<th scope="col" class="org-left">Note</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="right">1</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM20.col">GEOM20.col</a></td>
-<td class="right">20</td>
-<td class="right">40</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">1</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM20.col">GEOM20.col</a></td>
+<td class="org-right">20</td>
+<td class="org-right">40</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">2</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM20a.col">GEOM20a.col</a></td>
-<td class="right">20</td>
-<td class="right">57</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">2</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM20a.col">GEOM20a.col</a></td>
+<td class="org-right">20</td>
+<td class="org-right">57</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">3</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM30.col">GEOM30.col</a></td>
-<td class="right">30</td>
-<td class="right">80</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">3</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM30.col">GEOM30.col</a></td>
+<td class="org-right">30</td>
+<td class="org-right">80</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">4</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM30a.col">GEOM30a.col</a></td>
-<td class="right">30</td>
-<td class="right">111</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">4</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM30a.col">GEOM30a.col</a></td>
+<td class="org-right">30</td>
+<td class="org-right">111</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">5</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM40.col">GEOM40.col</a></td>
-<td class="right">40</td>
-<td class="right">118</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">5</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM40.col">GEOM40.col</a></td>
+<td class="org-right">40</td>
+<td class="org-right">118</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">6</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM40a.col">GEOM40a.col</a></td>
-<td class="right">40</td>
-<td class="right">186</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">6</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM40a.col">GEOM40a.col</a></td>
+<td class="org-right">40</td>
+<td class="org-right">186</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">7</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM50.col">GEOM50.col</a></td>
-<td class="right">50</td>
-<td class="right">177</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">7</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM50.col">GEOM50.col</a></td>
+<td class="org-right">50</td>
+<td class="org-right">177</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">8</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM50a.col">GEOM50a.col</a></td>
-<td class="right">50</td>
-<td class="right">288</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">8</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM50a.col">GEOM50a.col</a></td>
+<td class="org-right">50</td>
+<td class="org-right">288</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">9</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM60.col">GEOM60.col</a></td>
-<td class="right">60</td>
-<td class="right">245</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">9</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM60.col">GEOM60.col</a></td>
+<td class="org-right">60</td>
+<td class="org-right">245</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">10</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM60a.col">GEOM60a.col</a></td>
-<td class="right">60</td>
-<td class="right">339</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">10</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM60a.col">GEOM60a.col</a></td>
+<td class="org-right">60</td>
+<td class="org-right">339</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">11</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM70.col">GEOM70.col</a></td>
-<td class="right">70</td>
-<td class="right">337</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">11</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM70.col">GEOM70.col</a></td>
+<td class="org-right">70</td>
+<td class="org-right">337</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">12</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM70a.col">GEOM70a.col</a></td>
-<td class="right">70</td>
-<td class="right">529</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">12</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM70a.col">GEOM70a.col</a></td>
+<td class="org-right">70</td>
+<td class="org-right">529</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">13</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM80.col">GEOM80.col</a></td>
-<td class="right">80</td>
-<td class="right">429</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">13</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM80.col">GEOM80.col</a></td>
+<td class="org-right">80</td>
+<td class="org-right">429</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">14</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM80a.col">GEOM80a.col</a></td>
-<td class="right">80</td>
-<td class="right">692</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">14</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM80a.col">GEOM80a.col</a></td>
+<td class="org-right">80</td>
+<td class="org-right">692</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">15</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM90.col">GEOM90.col</a></td>
-<td class="right">90</td>
-<td class="right">531</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">15</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM90.col">GEOM90.col</a></td>
+<td class="org-right">90</td>
+<td class="org-right">531</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">16</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM90a.col">GEOM90a.col</a></td>
-<td class="right">90</td>
-<td class="right">879</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">16</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM90a.col">GEOM90a.col</a></td>
+<td class="org-right">90</td>
+<td class="org-right">879</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">17</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM100.col">GEOM100.col</a></td>
-<td class="right">100</td>
-<td class="right">647</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">17</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM100.col">GEOM100.col</a></td>
+<td class="org-right">100</td>
+<td class="org-right">647</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">18</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM100a.col">GEOM100a.col</a></td>
-<td class="right">100</td>
-<td class="right">1092</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">18</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM100a.col">GEOM100a.col</a></td>
+<td class="org-right">100</td>
+<td class="org-right">1092</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">19</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM110.col">GEOM110.col</a></td>
-<td class="right">110</td>
-<td class="right">748</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">19</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM110.col">GEOM110.col</a></td>
+<td class="org-right">110</td>
+<td class="org-right">748</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">20</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM110a.col">GEOM110a.col</a></td>
-<td class="right">110</td>
-<td class="right">1317</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">20</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM110a.col">GEOM110a.col</a></td>
+<td class="org-right">110</td>
+<td class="org-right">1317</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">21</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM120.col">GEOM120.col</a></td>
-<td class="right">120</td>
-<td class="right">893</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">21</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM120.col">GEOM120.col</a></td>
+<td class="org-right">120</td>
+<td class="org-right">893</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">22</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM120a.col">GEOM120a.col</a></td>
-<td class="right">120</td>
-<td class="right">1554</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">22</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM120a.col">GEOM120a.col</a></td>
+<td class="org-right">120</td>
+<td class="org-right">1554</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">23</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM20b.col">GEOM20b.col</a></td>
-<td class="right">20</td>
-<td class="right">52</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">23</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM20b.col">GEOM20b.col</a></td>
+<td class="org-right">20</td>
+<td class="org-right">52</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">24</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM30b.col">GEOM30b.col</a></td>
-<td class="right">30</td>
-<td class="right">111</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">24</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM30b.col">GEOM30b.col</a></td>
+<td class="org-right">30</td>
+<td class="org-right">111</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">25</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM40b.col">GEOM40b.col</a></td>
-<td class="right">40</td>
-<td class="right">197</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">25</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM40b.col">GEOM40b.col</a></td>
+<td class="org-right">40</td>
+<td class="org-right">197</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">26</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM50b.col">GEOM50b.col</a></td>
-<td class="right">50</td>
-<td class="right">299</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">26</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM50b.col">GEOM50b.col</a></td>
+<td class="org-right">50</td>
+<td class="org-right">299</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">27</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM60b.col">GEOM60b.col</a></td>
-<td class="right">60</td>
-<td class="right">426</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">27</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM60b.col">GEOM60b.col</a></td>
+<td class="org-right">60</td>
+<td class="org-right">426</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">28</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM70b.col">GEOM70b.col</a></td>
-<td class="right">70</td>
-<td class="right">558</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">28</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM70b.col">GEOM70b.col</a></td>
+<td class="org-right">70</td>
+<td class="org-right">558</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">29</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM80b.col">GEOM80b.col</a></td>
-<td class="right">80</td>
-<td class="right">743</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">29</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM80b.col">GEOM80b.col</a></td>
+<td class="org-right">80</td>
+<td class="org-right">743</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">30</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM90b.col">GEOM90b.col</a></td>
-<td class="right">90</td>
-<td class="right">950</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">30</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM90b.col">GEOM90b.col</a></td>
+<td class="org-right">90</td>
+<td class="org-right">950</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">31</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM100b.col">GEOM100b.col</a></td>
-<td class="right">100</td>
-<td class="right">1150</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">31</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM100b.col">GEOM100b.col</a></td>
+<td class="org-right">100</td>
+<td class="org-right">1150</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">32</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM110b.col">GEOM110b.col</a></td>
-<td class="right">110</td>
-<td class="right">1366</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">32</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM110b.col">GEOM110b.col</a></td>
+<td class="org-right">110</td>
+<td class="org-right">1366</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">33</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM120b.col">GEOM120b.col</a></td>
-<td class="right">120</td>
-<td class="right">1611</td>
-<td class="left">&#xa0;</td>
-<td class="left">GEO</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">33</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/GEOM/GEOM120b.col">GEOM120b.col</a></td>
+<td class="org-right">120</td>
+<td class="org-right">1611</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">GEO</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">34</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/DSJC125.1g.col">DSJC125.1g.col</a></td>
-<td class="right">125</td>
-<td class="right">736</td>
-<td class="left">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">34</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/DSJC125.1g.col">DSJC125.1g.col</a></td>
+<td class="org-right">125</td>
+<td class="org-right">736</td>
+<td class="org-left">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">35</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/DSJC125.5g.col">DSJC125.5g.col</a></td>
-<td class="right">125</td>
-<td class="right">3891</td>
-<td class="left">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">35</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/DSJC125.5g.col">DSJC125.5g.col</a></td>
+<td class="org-right">125</td>
+<td class="org-right">3891</td>
+<td class="org-left">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">36</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/DSJC125.9g.col">DSJC125.9g.col</a></td>
-<td class="right">125</td>
-<td class="right">6961</td>
-<td class="left">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">36</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/DSJC125.9g.col">DSJC125.9g.col</a></td>
+<td class="org-right">125</td>
+<td class="org-right">6961</td>
+<td class="org-left">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">37</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/myciel5g.col">myciel5g.col</a></td>
-<td class="right">47</td>
-<td class="right">236</td>
-<td class="left">?</td>
-<td class="left">MYC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">37</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/myciel5g.col">myciel5g.col</a></td>
+<td class="org-right">47</td>
+<td class="org-right">236</td>
+<td class="org-left">?</td>
+<td class="org-left">MYC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">38</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/myciel6g.col">myciel6g.col</a></td>
-<td class="right">95</td>
-<td class="right">755</td>
-<td class="left">?</td>
-<td class="left">MYC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">38</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/myciel6g.col">myciel6g.col</a></td>
+<td class="org-right">95</td>
+<td class="org-right">755</td>
+<td class="org-left">?</td>
+<td class="org-left">MYC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">39</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/myciel7g.col">myciel7g.col</a></td>
-<td class="right">191</td>
-<td class="right">2360</td>
-<td class="left">?</td>
-<td class="left">MYC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">39</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/myciel7g.col">myciel7g.col</a></td>
+<td class="org-right">191</td>
+<td class="org-right">2360</td>
+<td class="org-left">?</td>
+<td class="org-left">MYC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">40</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen8_8g.col">queen8_8g.col</a></td>
-<td class="right">64</td>
-<td class="right">728</td>
-<td class="left">?</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">40</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen8_8g.col">queen8_8g.col</a></td>
+<td class="org-right">64</td>
+<td class="org-right">728</td>
+<td class="org-left">?</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">41</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen9_9g.col">queen9_9g.col</a></td>
-<td class="right">81</td>
-<td class="right">2112</td>
-<td class="left">?</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">41</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen9_9g.col">queen9_9g.col</a></td>
+<td class="org-right">81</td>
+<td class="org-right">2112</td>
+<td class="org-left">?</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">42</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen10_10g.col">queen10_10g.col</a></td>
-<td class="right">100</td>
-<td class="right">2940</td>
-<td class="left">?</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">42</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen10_10g.col">queen10_10g.col</a></td>
+<td class="org-right">100</td>
+<td class="org-right">2940</td>
+<td class="org-left">?</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">43</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen11_11g.col">queen11_11g.col</a></td>
-<td class="right">121</td>
-<td class="right">3960</td>
-<td class="left">?</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">43</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen11_11g.col">queen11_11g.col</a></td>
+<td class="org-right">121</td>
+<td class="org-right">3960</td>
+<td class="org-left">?</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">44</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen12_12g.col">queen12_12g.col</a></td>
-<td class="right">144</td>
-<td class="right">5192</td>
-<td class="left">?</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">44</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen12_12g.col">queen12_12g.col</a></td>
+<td class="org-right">144</td>
+<td class="org-right">5192</td>
+<td class="org-left">?</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">45</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/DSJC125.1gb.col">DSJC125.1gb.col</a></td>
-<td class="right">125</td>
-<td class="right">736</td>
-<td class="left">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">45</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/DSJC125.1gb.col">DSJC125.1gb.col</a></td>
+<td class="org-right">125</td>
+<td class="org-right">736</td>
+<td class="org-left">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">46</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/DSJC125.5gb.col">DSJC125.5gb.col</a></td>
-<td class="right">125</td>
-<td class="right">3891</td>
-<td class="left">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">46</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/DSJC125.5gb.col">DSJC125.5gb.col</a></td>
+<td class="org-right">125</td>
+<td class="org-right">3891</td>
+<td class="org-left">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">47</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/DSJC125.9gb.col">DSJC125.9gb.col</a></td>
-<td class="right">125</td>
-<td class="right">6961</td>
-<td class="left">?</td>
-<td class="left">DSJ</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">47</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/DSJC125.9gb.col">DSJC125.9gb.col</a></td>
+<td class="org-right">125</td>
+<td class="org-right">6961</td>
+<td class="org-left">?</td>
+<td class="org-left">DSJ</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">48</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/myciel5gb.col">myciel5gb.col</a></td>
-<td class="right">47</td>
-<td class="right">236</td>
-<td class="left">?</td>
-<td class="left">MYC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">48</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/myciel5gb.col">myciel5gb.col</a></td>
+<td class="org-right">47</td>
+<td class="org-right">236</td>
+<td class="org-left">?</td>
+<td class="org-left">MYC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">49</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/myciel6gb.col">myciel6gb.col</a></td>
-<td class="right">95</td>
-<td class="right">755</td>
-<td class="left">?</td>
-<td class="left">MYC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">49</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/myciel6gb.col">myciel6gb.col</a></td>
+<td class="org-right">95</td>
+<td class="org-right">755</td>
+<td class="org-left">?</td>
+<td class="org-left">MYC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">50</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/myciel7gb.col">myciel7gb.col</a></td>
-<td class="right">191</td>
-<td class="right">2360</td>
-<td class="left">?</td>
-<td class="left">MYC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">50</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/myciel7gb.col">myciel7gb.col</a></td>
+<td class="org-right">191</td>
+<td class="org-right">2360</td>
+<td class="org-left">?</td>
+<td class="org-left">MYC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">51</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen8_8gb.col">queen8_8gb.col</a></td>
-<td class="right">64</td>
-<td class="right">728</td>
-<td class="left">?</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">51</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen8_8gb.col">queen8_8gb.col</a></td>
+<td class="org-right">64</td>
+<td class="org-right">728</td>
+<td class="org-left">?</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">52</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen9_9gb.col">queen9_9gb.col</a></td>
-<td class="right">81</td>
-<td class="right">2112</td>
-<td class="left">?</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">52</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen9_9gb.col">queen9_9gb.col</a></td>
+<td class="org-right">81</td>
+<td class="org-right">2112</td>
+<td class="org-left">?</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">53</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen10_10gb.col">queen10_10gb.col</a></td>
-<td class="right">100</td>
-<td class="right">2940</td>
-<td class="left">?</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">53</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen10_10gb.col">queen10_10gb.col</a></td>
+<td class="org-right">100</td>
+<td class="org-right">2940</td>
+<td class="org-left">?</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">54</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen11_11gb.col">queen11_11gb.col</a></td>
-<td class="right">121</td>
-<td class="right">3960</td>
-<td class="left">?</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">54</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen11_11gb.col">queen11_11gb.col</a></td>
+<td class="org-right">121</td>
+<td class="org-right">3960</td>
+<td class="org-left">?</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">55</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen12_12gb.col">queen12_12gb.col</a></td>
-<td class="right">144</td>
-<td class="right">5192</td>
-<td class="left">?</td>
-<td class="left">SGB</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">55</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/queen12_12gb.col">queen12_12gb.col</a></td>
+<td class="org-right">144</td>
+<td class="org-right">5192</td>
+<td class="org-left">?</td>
+<td class="org-left">SGB</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">56</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R50_1g.col">R50_1g.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">56</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R50_1g.col">R50_1g.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">57</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R50_5g.col">R50_5g.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">57</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R50_5g.col">R50_5g.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">58</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R50_9g.col">R50_9g.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">58</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R50_9g.col">R50_9g.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">59</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R75_1g.col">R75_1g.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">59</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R75_1g.col">R75_1g.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">60</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R75_5g.col">R75_5g.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">60</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R75_5g.col">R75_5g.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">61</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R75_9g.col">R75_9g.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">61</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R75_9g.col">R75_9g.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">62</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R100_1g.col">R100_1g.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">62</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R100_1g.col">R100_1g.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">63</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R100_5g.col">R100_5g.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">63</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R100_5g.col">R100_5g.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">64</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R100_9g.col">R100_9g.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">64</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R100_9g.col">R100_9g.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">65</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R50_1gb.col">R50_1gb.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">65</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R50_1gb.col">R50_1gb.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">66</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R50_5gb.col">R50_5gb.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">66</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R50_5gb.col">R50_5gb.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">67</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R50_9gb.col">R50_9gb.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">67</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R50_9gb.col">R50_9gb.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">68</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R75_1gb.col">R75_1gb.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">68</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R75_1gb.col">R75_1gb.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">69</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R75_5gb.col">R75_5gb.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">69</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R75_5gb.col">R75_5gb.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">70</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R75_9gb.col">R75_9gb.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">70</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R75_9gb.col">R75_9gb.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">71</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R100_1gb.col">R100_1gb.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">71</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R100_1gb.col">R100_1gb.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">72</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R100_5gb.col">R100_5gb.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">72</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R100_5gb.col">R100_5gb.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 
 <tr>
-<td class="right">73</td>
-<td class="left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R100_9gb.col">R100_9gb.col</a></td>
-<td class="right">&#xa0;</td>
-<td class="right">&#xa0;</td>
-<td class="left">&#xa0;</td>
-<td class="left">MUC</td>
-<td class="left">&#xa0;</td>
+<td class="org-right">73</td>
+<td class="org-left"><a href="./instances/coloring/bandwidth_multicolor/Instances_g/R100_9gb.col">R100_9gb.col</a></td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">MUC</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> Categories</h2>
+<div id="outline-container-orgc4981b3" class="outline-2">
+<h2 id="orgc4981b3"><span class="section-number-2">5</span> Categories</h2>
 <div class="outline-text-2" id="text-5">
 <dl class="org-dl">
-<dt> DSJ </dt><dd>(From David Johnson, dsj@research.att.com) Random graphs used in his paper with Aragon,  McGeoch,  and Schevon, "Optimization by Simulated Annealing: An Experimental Evaluation; Part II, Graph  Coloring and Number Partitioning",  Operations Research,  31,  378&#x2013;406 (1991).
+<dt>DSJ</dt><dd><p>
+(From David Johnson, dsj@research.att.com) Random graphs used in his paper with Aragon,  McGeoch,  and Schevon, "Optimization by Simulated Annealing: An Experimental Evaluation; Part II, Graph  Coloring and Number Partitioning",  Operations Research,  31,  378&#x2013;406 (1991).
+</p>
 
 <p>
 DSJC are standard (n , p) random graphs. DSJR are geometric graphs with DSJR..c being complements of geometric graphs. In some papers the edge count is twice that given here since both (i , j) and (j , i) are counted.
-</p>
-</dd>
+</p></dd>
 
-<dt> CUL </dt><dd>(From Joe Culberson (joe@cs.ualberta.ca)) Quasi-random coloring problem.
-</dd>
+<dt>CUL</dt><dd>(From Joe Culberson (joe@cs.ualberta.ca)) Quasi-random coloring problem.</dd>
 
-<dt> REG </dt><dd>(From Gary Lewandowski (gary@cs.wisc.edu)) Problem based on register allocation for variables in real codes.
-</dd>
-<dt> LEI </dt><dd>(From Craig Morgenstern (morgenst@riogrande.cs.tcu.edu)) Leighton graphs with guaranteed coloring size. A reference is F.T. Leighton,  Journal of Research of the National Bureau of Standards, 84: 489&#x2013;505 (1979).
-</dd>
+<dt>REG</dt><dd>(From Gary Lewandowski (gary@cs.wisc.edu)) Problem based on register allocation for variables in real codes.</dd>
+<dt>LEI</dt><dd>(From Craig Morgenstern (morgenst@riogrande.cs.tcu.edu)) Leighton graphs with guaranteed coloring size. A reference is F.T. Leighton,  Journal of Research of the National Bureau of Standards, 84: 489&#x2013;505 (1979).</dd>
 
-<dt> SCH </dt><dd>(From Gary Lewandowski (lewandow@cs.wisc.edu)): Class scheduling graphs with and without study halls.
-</dd>
+<dt>SCH</dt><dd>(From Gary Lewandowski (lewandow@cs.wisc.edu)): Class scheduling graphs with and without study halls.</dd>
 
-<dt> LAT </dt><dd>(From Gary Lewandowski (lewandow@cs.wisc.edu)): Latin square problem.
-</dd>
+<dt>LAT</dt><dd>(From Gary Lewandowski (lewandow@cs.wisc.edu)): Latin square problem.</dd>
 
-<dt> SGB </dt><dd>(From Michael Trick (trick@cmu.edu) Graphs from Donald Knuth's Stanford GraphBase. These can be divided into:
+<dt>SGB</dt><dd>(From Michael Trick (trick@cmu.edu) Graphs from Donald Knuth's Stanford GraphBase. These can be divided into:
 <dl class="org-dl">
-<dt> Book Graphs </dt><dd>Given a work of literature,  a graph is created where each node represents a character. Two nodes are connected by an edge if the corresponding characters encounter each other in the book. Knuth creates the graphs for five classic works: Tolstoy's Anna Karenina (<code>anna</code>), Dicken's David Copperfield (<code>david</code>), Homer's Iliad (<code>homer</code>), Twain's Huckleberry Finn (<code>huck</code>), and Hugo's Les Miserables (<code>jean</code>).
-</dd>
+<dt>Book Graphs</dt><dd>Given a work of literature,  a graph is created where each node represents a character. Two nodes are connected by an edge if the corresponding characters encounter each other in the book. Knuth creates the graphs for five classic works: Tolstoy's Anna Karenina (<code>anna</code>), Dicken's David Copperfield (<code>david</code>), Homer's Iliad (<code>homer</code>), Twain's Huckleberry Finn (<code>huck</code>), and Hugo's Les Miserables (<code>jean</code>).</dd>
 
-<dt> Game Graphs </dt><dd>A graph representing the games played in a
+<dt>Game Graphs</dt><dd>A graph representing the games played in a
 college football season can be represented by a graph where the
 nodes represent each college team. Two teams are connected by
 an edge if they played each other during the season. Knuth
-gives the graph for the 1990 college football season.
-</dd>
+gives the graph for the 1990 college football season.</dd>
 
-<dt> Miles Graphs </dt><dd>These graphs are similar to geometric graphs
+<dt>Miles Graphs</dt><dd>These graphs are similar to geometric graphs
 in that nodes are placed in space with two nodes connected if
 they are close enough. These graphs ,  however ,  are not random.
 The nodes represent a set of United States cities and the
 distance between them is given by by road mileage from 1947.
-These graphs are also due to Kuth.
-</dd>
+These graphs are also due to Kuth.</dd>
 
-<dt> Queen Graphs </dt><dd>Given an n by n chessboard ,  a queen graph is
+<dt>Queen Graphs</dt><dd>Given an n by n chessboard ,  a queen graph is
 a graph on n^2 nodes ,  each corresponding to a square of the
 board. Two nodes are connected by an edge if the corresponding
 squares are in the same row ,  column ,  or diagonal. Unlike some
@@ -2482,51 +2349,42 @@ to place n sets of n queens on the board so that no two queens
 of the same set are in the same row ,  column ,  or diagonal? The
 answer is yes if and only if the graph has coloring number n.
 Vasek Chvatal has a <a href="http://www.cs.concordia.ca/~chvatal/queengraphs.html">page</a> on
-such colorings.
-</dd>
-</dl>
-</dd>
+such colorings.</dd>
+</dl></dd>
 
-<dt> MYC </dt><dd>(From Michael Trick (trick@cmu.edu)) 
+<dt>MYC</dt><dd>(From Michael Trick (trick@cmu.edu)) 
 Graphs based on the Mycielski transformation.
 These graphs are difficult to solve because they are triangle free
-(clique number 2) but the coloring number increases in problem size.
-</dd>
+(clique number 2) but the coloring number increases in problem size.</dd>
 </dl>
 
 
 <dl class="org-dl">
-<dt> MYC </dt><dd>(From Kuzunori Mizuno (mizuno@algor.is.tsukaba.ac.jp)
-Graphs that are almost 3-colorable, but have a hard-to-find four clique embedded.
-</dd>
+<dt>MYC</dt><dd>(From Kuzunori Mizuno (mizuno@algor.is.tsukaba.ac.jp)
+Graphs that are almost 3-colorable, but have a hard-to-find four clique embedded.</dd>
 
-<dt> HOS </dt><dd>(From Shahadat Hossain) 
+<dt>HOS</dt><dd>(From Shahadat Hossain) 
 Graphs obtained from a matrix partitioning problem in the segmented
-columns approach to determine sparse Jacobian matrices.
-</dd>
+columns approach to determine sparse Jacobian matrices.</dd>
 
-<dt> CAR </dt><dd>(From M. Caramia (caramia@iac.rm.cnr.it) and P. Dell'Olmo (paolo.dellolmo@uniroma1.it))  
+<dt>CAR</dt><dd>(From M. Caramia (caramia@iac.rm.cnr.it) and P. Dell'Olmo (paolo.dellolmo@uniroma1.it))  
 k-Insertion graphs and Full Insertion graphs are a generalization
-of myciel graphs with inserted nodes to increase graph size but not density.
-</dd>
+of myciel graphs with inserted nodes to increase graph size but not density.</dd>
 </dl>
 
 
 <dl class="org-dl">
-<dt> KOS </dt><dd>(From Arie Koster koster@zib.de)
+<dt>KOS</dt><dd>(From Arie Koster koster@zib.de)
 From real-life optical network design problems. Each
 vertex corresponds to a lightpath in the network; edges correspond
 to intersecting paths. (Corrected June 28 ,  2002 and replaced by
-wap?a.col instances: nodes now numbered from 1 to n)
-</dd>
+wap?a.col instances: nodes now numbered from 1 to n)</dd>
 
-<dt> GOM </dt><dd>(From Carla Gomes gomes@cs.cornell.edu) Latin squares (standard encoding).
-</dd>
+<dt>GOM</dt><dd>(From Carla Gomes gomes@cs.cornell.edu) Latin squares (standard encoding).</dd>
 
-<dt> GOM1 </dt><dd>Encodings of latin square problem.
-</dd>
+<dt>GOM1</dt><dd>Encodings of latin square problem.</dd>
 
-<dt> GEO </dt><dd>Geometric graphs generated by Michael Trick. 
+<dt>GEO</dt><dd>Geometric graphs generated by Michael Trick. 
 Points are generated in a 10,000 by 10,000 grid
 and are connected by an edge if they are close enough together.
 Edge weights are inversely proportional to the distance between
@@ -2534,17 +2392,16 @@ nodes; Node weights are uniformly generated. (Note,  I do not know
 how hard this problem is, so if the 120 is too easy, let me know so
 I can generate larger instances). The GEOMn instances are sparse;
 GEOMa and GEOMb instances are denser; GEOMb requires fewer colors
-per node.
-</dd>
-
-<dt> MUC </dt><dd>Other instances are for multicoloring: the "g.col" are the
+per node.</dd>
+</dl>
+<dl class="org-dl">
+<dt>MUC</dt><dd>Other instances are for multicoloring: the "g.col" are the
 corresponding coloring instances with node weights uniformly
 generated between 1 and 5; the "gb.col" have node weights uniformly
-generated between 1 and 20.
-</dd>
+generated between 1 and 20.</dd>
 </dl>
 
-<hr  />
+<hr />
 
 <p>
 <a href="./index.html">Back to benchmark instances page</a>
@@ -2555,13 +2412,13 @@ generated between 1 and 20.
 <h2 class="footnotes">Footnotes: </h2>
 <div id="text-footnotes">
 
-<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p class="footpara">
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
 <b>duplicated</b>: edges counted twice (e.g., e v1 v2 , e v2 v1)
-</p></div>
+</p></div></div>
 
-<div class="footdef"><sup><a id="fn.2" name="fn.2" class="footnum" href="#fnr.2">2</a></sup> <p class="footpara">
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">
 <b>self-loop</b>: e v1 v1
-</p></div>
+</p></div></div>
 
 
 </div>

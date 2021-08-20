@@ -2,6 +2,11 @@
 #+OPTIONS: ^:nil html-postamble:nil
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../Pub/solarized-light.css" />
 
+#+OPTIONS: ^:nil
+
+#+HTML_HEAD: <link rel="stylesheet" href="https://nguyenthanhvuh.github.io/files/org.css">
+#+HTML_HEAD: <link rel="alternative stylesheet" href="https://nguyenthanhvuh.github.io/files/org-orig.css">
+
 
 * Utils
 - [[./instances/converter.tar.gz][Converter]]: convert from benchmarks from ~ascii~ to ~binary~ format and vice versa.

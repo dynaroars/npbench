@@ -1,6 +1,9 @@
 #+TITLE:    NP-Complete Benchmark Instances
-#+OPTIONS: html-postamble:nil
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../Pub/solarized-light.css" />
+
+#+OPTIONS: ^:nil
+
+#+HTML_HEAD: <link rel="stylesheet" href="https://nguyenthanhvuh.github.io/files/org.css">
+#+HTML_HEAD: <link rel="alternative stylesheet" href="https://nguyenthanhvuh.github.io/files/org-orig.css">
 
 
 1. [[./graphcoloring.html][Graph Coloring and its Generalizations]]
@@ -10,5 +13,5 @@
 
 -----
 This website is maintained by 
-[[https://www.cse.unl.edu/~tnguyen/][ThanhVu (Vu) Nguyen]] ([[tnguyen@cse.unl.edu][tnguyen@cse.unl.edu]]) 
-and [[http://cs.hbg.psu.edu/~bui][Thang Bui]] ([[tbui@psu.edu][tbui@psu.edu]])
+[[https://nguyenthanhvuh.github.io][ThanhVu (Vu) Nguyen]] ([[mailto:tvn@gmu.edu][tvn@gmu.edu]]) 
+and [[http://cs.hbg.psu.edu/~bui][Thang Bui]] ([[mailto:tbui@psu.edu][tbui@psu.edu]])
