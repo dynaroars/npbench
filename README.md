@@ -1,1 +1,1 @@
-[NP-Complete benchmark collections](https://unsat.github.io/npbench/): a collection of benchmarks (in DIMACS format) for various NP-Complete problems 
+[NP-Complete benchmark collections](https://unsat.github.io/npbench/): a collection of benchmarks (in DIMACS format) for various NP-Complete problems including graph coloring, maximum clique, vertex cover, and spanning trees.

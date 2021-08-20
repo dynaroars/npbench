@@ -1,78 +1,59 @@
 #+TITLE:    Vertex Cover Benchmark Instances
-#+OPTIONS: ^:nil html-postamble:nil 
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../Pub/solarized-light.css" />
+#+OPTIONS: ^:nil
+
+#+HTML_HEAD: <link rel="stylesheet" href="https://nguyenthanhvuh.github.io/files/org.css">
+#+HTML_HEAD: <link rel="alternative stylesheet" href="https://nguyenthanhvuh.github.io/files/org-orig.css">
 
 * Utils
-- [[./instances/converter.tar.gz][Converter]]: convert from benchmarks from ~ascii~ to ~binary~ format and vice versa.
+- [[https://github.com/unsat/npbench/blob/master/instances/converter][Converter]]: convert from benchmarks from ~ascii~ to ~binary~ format and vice versa.
 
 * Vertex Cover instances 
-  [[./instances/vertex_cover/benchmarks/][Directory]], 
-  [[./instances/vertex_cover/benchmarks.tar.gz][tar.gz format]]
+  [[https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/][Directory]]
 
 From Ke Xu's website 
 [[http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm][http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm]]
 
 #+NAME: tab:vc
-|   | File                                                                                    | Vertices | Max IS[fn:1] | Min VC |
-|---+-----------------------------------------------------------------------------------------+----------+--------+--------|
-| 1 | [[./instances/vertex_cover/benchmarks/frb30-15-mis.tar.gz][frb30-15-mis (5 instances)]] |      450 |     30 |    420 |
-| 2 | [[./instances/vertex_cover/benchmarks/frb35-17-mis.tar.gz][frb35-17-mis (5 instances)]] |      595 |     35 |    560 |
-| 3 | [[./instances/vertex_cover/benchmarks/frb40-19-mis.tar.gz][frb40-19-mis (5 instances)]] |      760 |     40 |    720 |
-| 4 | [[./instances/vertex_cover/benchmarks/frb45-21-mis.tar.gz][frb45-21-mis (5 instances)]] |      945 |     45 |    900 |
-| 5 | [[./instances/vertex_cover/benchmarks/frb50-23-mis.tar.gz][frb50-23-mis (5 instances)]] |     1150 |     50 |   1100 |
-| 6 | [[./instances/vertex_cover/benchmarks/frb53-24-mis.tar.gz][frb53-24-mis (5 instances)]] |     1272 |     53 |   1219 |
-| 7 | [[./instances/vertex_cover/benchmarks/frb56-25-mis.tar.gz][frb56-25-mis (5 instances)]] |     1400 |     56 |   1344 |
-| 8 | [[./instances/vertex_cover/benchmarks/frb59-26-mis.tar.gz][frb59-26-mis (5 instances)]] |     1534 |     59 |   1475 |
-|---+-----------------------------------------------------------------------------------------+----------+--------+--------|
+|   | File                                                                                                                        | Vertices | Max IS[fn:1] | Min VC |
+|---+-----------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------|
+| 1 | [[https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb30-15-mis][frb30-15-mis (5 instances)]] |      450 |           30 |    420 |
+| 2 | [[https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb35-17-mis][frb35-17-mis (5 instances)]] |      595 |           35 |    560 |
+| 3 | [[https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb40-19-mis][frb40-19-mis (5 instances)]] |      760 |           40 |    720 |
+| 4 | [[https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb45-21-mis][frb45-21-mis (5 instances)]] |      945 |           45 |    900 |
+| 5 | [[https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb50-23-mis][frb50-23-mis (5 instances)]] |     1150 |           50 |   1100 |
+| 6 | [[https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb53-24-mis][frb53-24-mis (5 instances)]] |     1272 |           53 |   1219 |
+| 7 | [[https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb56-25-mis][frb56-25-mis (5 instances)]] |     1400 |           56 |   1344 |
+| 8 | [[https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb59-26-mis][frb59-26-mis (5 instances)]] |     1534 |           59 |   1475 |
+|---+-----------------------------------------------------------------------------------------------------------------------------+----------+--------------+--------|
 #+tblfm: $1=@#-1   
 # C+c C+c to reapply formula
 
 * Clique complement graphs 
-  [[./instances/vertex_cover/clique_complement/][Directory]], 
-  [[./instances/coloring/vertex_cover/clique_complement.tar.gz][tar.gz format]] 
+  [[https://github.com/unsat/npbench/blob/master/instances/vertex_cover/clique_complement/][Directory]]
 
 From Muthubharathi Periannan's MS thesis at Penn State Harrisburg.
 
-- [[./instances/vertex_cover/clique_complement/fileconverter.tar.gz][Clique to Vertex Cover]] converter: converts graph instances for Max Clique into complement graphs, usable for Min Vertex Covering. The size of the minimum vertex cover is the difference between the total number of vertices and the size of the max clique.
-
-
-#+NAME: tab:complementclique
-|    | File                                                                   |
-|----+------------------------------------------------------------------------|
-|  1 | [[./instances/vertex_cover/clique_complement/brock.tar.gz][brock]]     |
-|  2 | [[./instances/vertex_cover/clique_complement/C.tar.gz][C]]             |
-|  3 | [[./instances/vertex_cover/clique_complement/cfat.tar.gz][cfat]]       |
-|  4 | [[./instances/vertex_cover/clique_complement/gen.tar.gz][gen]]         |
-|  5 | [[./instances/vertex_cover/clique_complement/hamming.tar.gz][hamming]] |
-|  6 | [[./instances/vertex_cover/clique_complement/johnson.tar.gz][johnson]] |
-|  7 | [[./instances/vertex_cover/clique_complement/keller.tar.gz][keller]]   |
-|  8 | [[./instances/vertex_cover/clique_complement/MANN_a.tar.gz][MANN_a]]   |
-|  9 | [[./instances/vertex_cover/clique_complement/p_hat.tar.gz][p_hat]]     |
-| 10 | [[./instances/vertex_cover/clique_complement/san.tar.gz][san]]         |
-| 11 | [[./instances/vertex_cover/clique_complement/sanr.tar.gz][sanr]]       |
-|----+------------------------------------------------------------------------|
-#+tblfm: $1=@#-1   
+- [[https://github.com/unsat/npbench/blob/master/instances/vertex_cover/clique_complement/fileconverter.cpp][Clique to Vertex Cover]] converter: converts graph instances for Max Clique into complement graphs, usable for Min Vertex Covering. The size of the minimum vertex cover is the difference between the total number of vertices and the size of the max clique.
 
 * Random Graphs
-  [[./instances/vertex_cover/random_graphs/][Directory]], 
-  [[./instances//vertex_cover/random_graphs.tar.gz][tar.gz format]]
+  [[https://github.com/unsat/npbench/blob/master/instances/vertex_cover/random_graphs/][Directory]]
   
   From Muthubharathi Periannan's MS thesis at Penn State Harrisburg.
 
 #+NAME: tab:random
 |   | File                                           | Vertices |
 |---+------------------------------------------------+----------|
-| 1 | [[./instances/vertex_cover/random_graphs/graph50.tar.gz][random graphs with  50 vertices - 10 instances]] |       50 |
-| 2 | [[./instances/vertex_cover/random_graphs/graph100.tar.gz][random graphs with 100 vertices - 10 instances]] |      100 |
-| 3 | [[./instances/vertex_cover/random_graphs/graph200.tar.gz][random graphs with 200 vertices - 5 instances]]  |      200 |
-| 4 | [[./instances/vertex_cover/random_graphs/graph250.tar.gz][random graphs with 250 vertices - 5 instances]]  |      250 |
-| 5 | [[./instances/vertex_cover/random_graphs/graph500.tar.gz][random graphs with 500 vertices - 5 instances]]  |      500 |
+| 1 | random graphs with  50 vertices - 10 instances |       50 |
+| 2 | random graphs with 100 vertices - 10 instances |      100 |
+| 3 | random graphs with 200 vertices - 5 instances  |      200 |
+| 4 | random graphs with 250 vertices - 5 instances  |      250 |
+| 5 | random graphs with 500 vertices - 5 instances  |      500 |
 |---+------------------------------------------------+----------|
 #+tblfm: $1=@#-1   
 
 * Other Instances
 
-- BHOSLIB :: Benchmarks with Hidden Optimum Solutions for Graph Problems (Maximum Clique, Maximum Independent Set, Minimum Vertex Cover and Vertex Coloring): [[http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm][http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm]]
+- BHOSLIB :: Benchmarks with Hidden Optimum Solutions for Graph Problems (Maximum Clique, Maximum Independent Set, Minimum Vertex Cover and Vertex Coloring): http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm (link no longer exists)
 
 
 -----

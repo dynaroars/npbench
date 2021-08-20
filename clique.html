@@ -3,180 +3,35 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<!-- 2021-08-20 Fri 09:12 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <title>CLIQUE Benchmark Instances</title>
-<!-- 2017-01-01 Sun 23:37 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="tnguyen@GiaoChi" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { color: green; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  /*]]>*/-->
-</style>
-<link rel="stylesheet" type="text/css" href="../Pub/solarized-light.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
-<script type="text/javascript" src="http://orgmode.org/mathjax/MathJax.js"></script>
-<script type="text/javascript">
-<!--/*--><![CDATA[/*><!--*/
+<meta name="generator" content="Org mode" />
+<meta name="author" content="ThanhVu (Vu) Nguyen" />
+<link rel="stylesheet" href="https://nguyenthanhvuh.github.io/files/org.css">
+<link rel="alternative stylesheet" href="https://nguyenthanhvuh.github.io/files/org-orig.css">
+<script type="text/x-mathjax-config">
     MathJax.Hub.Config({
-        // Only one of the two following lines, depending on user settings
-        // First allows browser-native MathML display, second forces HTML/CSS
-        //  config: ["MMLorHTML.js"], jax: ["input/TeX"],
-            jax: ["input/TeX", "output/HTML-CSS"],
-        extensions: ["tex2jax.js","TeX/AMSmath.js","TeX/AMSsymbols.js",
-                     "TeX/noUndefined.js"],
-        tex2jax: {
-            inlineMath: [ ["\\(","\\)"] ],
-            displayMath: [ ['$$','$$'], ["\\[","\\]"], ["\\begin{displaymath}","\\end{displaymath}"] ],
-            skipTags: ["script","noscript","style","textarea","pre","code"],
-            ignoreClass: "tex2jax_ignore",
-            processEscapes: false,
-            processEnvironments: true,
-            preview: "TeX"
-        },
-        showProcessingMessages: true,
         displayAlign: "center",
-        displayIndent: "2em",
+        displayIndent: "0em",
 
-        "HTML-CSS": {
-             scale: 100,
-             availableFonts: ["STIX","TeX"],
-             preferredFont: "TeX",
-             webFont: "TeX",
-             imageFont: "TeX",
-             showMathMenu: true,
-        },
-        MMLorHTML: {
-             prefer: {
-                 MSIE:    "MML",
-                 Firefox: "MML",
-                 Opera:   "HTML",
-                 other:   "HTML"
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
              }
-        }
-    });
-/*]]>*///-->
+});
 </script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
@@ -185,465 +40,463 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. Utils</a></li>
-<li><a href="#sec-2">2. DIMACS Instances</a></li>
-<li><a href="#sec-3">3. Additional Instances</a></li>
-<li><a href="#sec-4">4. Categories</a></li>
-<li><a href="#sec-5">5. Other Instances</a></li>
+<li><a href="#org9f13901">1. Utils</a></li>
+<li><a href="#org8d37759">2. DIMACS Instances</a></li>
+<li><a href="#org97e58ac">3. Additional Instances</a></li>
+<li><a href="#orgd963fa3">4. Categories</a></li>
+<li><a href="#orge04f43d">5. Other Instances</a></li>
 </ul>
 </div>
 </div>
-<hr  />
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Utils</h2>
+<hr />
+<div id="outline-container-org9f13901" class="outline-2">
+<h2 id="org9f13901"><span class="section-number-2">1</span> Utils</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li><a href="./instances/converter.tar.gz">Converter</a>: convert from benchmarks from <code>ascii</code> to <code>binary</code> format and vice versa.
-</li>
+<li><a href="https://github.com/unsat/npbench/blob/master/instances/converter">Converter</a>: convert from benchmarks from <code>ascii</code> to <code>binary</code> format and vice versa.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> DIMACS Instances</h2>
+<div id="outline-container-org8d37759" class="outline-2">
+<h2 id="org8d37759"><span class="section-number-2">2</span> DIMACS Instances</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-<a href="./instances/clique/DIMACS_cliques/">Directory</a>, 
-<a href="./instances/clique/DIMACS_cliques.tar.gz">tar.gz format</a>
+<a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/">Directory</a> 
 </p>
+
 
 <p>
-Files from Dimacs <a href="ftp://dimacs.rutgers.edu/pub/challenge/graph/benchmarks/clique/"><a href="ftp://dimacs.rutgers.edu/pub/challenge/graph/benchmarks/clique/">ftp://dimacs.rutgers.edu/pub/challenge/graph/benchmarks/clique/</a></a> in binary format (<code>*.clq.b</code>).
+Files from Dimacs <a href="ftp://dimacs.rutgers.edu/pub/challenge/graph/benchmarks/clique/">ftp://dimacs.rutgers.edu/pub/challenge/graph/benchmarks/clique/</a> in binary format (<code>*.clq.b</code>).
 </p>
 
-<table id="tab:dimacs" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table id="org2774d32" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="right" />
+<col  class="org-right" />
 
-<col  class="left" />
+<col  class="org-left" />
 
-<col  class="right" />
+<col  class="org-right" />
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="right">&#xa0;</th>
-<th scope="col" class="left">File</th>
-<th scope="col" class="right">Max Clique<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup></th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">File</th>
+<th scope="col" class="org-right">Max Clique<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="right">1</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/brock200_1.clq.b     ">brock200_1     </a></td>
-<td class="right">21</td>
+<td class="org-right">1</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/brock200_1.clq.b">brock200_1</a></td>
+<td class="org-right">21</td>
 </tr>
 
 <tr>
-<td class="right">2</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/brock200_2.clq.b     ">brock200_2     </a></td>
-<td class="right">12</td>
+<td class="org-right">2</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/brock200_2.clq.b">brock200_2</a></td>
+<td class="org-right">12</td>
 </tr>
 
 <tr>
-<td class="right">3</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/brock200_3.clq.b     ">brock200_3     </a></td>
-<td class="right">15</td>
+<td class="org-right">3</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/brock200_3.clq.b">brock200_3</a></td>
+<td class="org-right">15</td>
 </tr>
 
 <tr>
-<td class="right">4</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/brock200_4.clq.b     ">brock200_4     </a></td>
-<td class="right">17</td>
+<td class="org-right">4</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/brock200_4.clq.b">brock200_4</a></td>
+<td class="org-right">17</td>
 </tr>
 
 <tr>
-<td class="right">5</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/brock400_1.clq.b     ">brock400_1     </a></td>
-<td class="right">27</td>
+<td class="org-right">5</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/brock400_1.clq.b">brock400_1</a></td>
+<td class="org-right">27</td>
 </tr>
 
 <tr>
-<td class="right">6</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/brock400_2.clq.b     ">brock400_2     </a></td>
-<td class="right">29</td>
+<td class="org-right">6</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/brock400_2.clq.b">brock400_2</a></td>
+<td class="org-right">29</td>
 </tr>
 
 <tr>
-<td class="right">7</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/brock400_3.clq.b     ">brock400_3     </a></td>
-<td class="right">31</td>
+<td class="org-right">7</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/brock400_3.clq.b">brock400_3</a></td>
+<td class="org-right">31</td>
 </tr>
 
 <tr>
-<td class="right">8</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/brock400_4.clq.b     ">brock400_4     </a></td>
-<td class="right">33</td>
+<td class="org-right">8</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/brock400_4.clq.b">brock400_4</a></td>
+<td class="org-right">33</td>
 </tr>
 
 <tr>
-<td class="right">9</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/brock800_1.clq.b     ">brock800_1     </a></td>
-<td class="right">23</td>
+<td class="org-right">9</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/brock800_1.clq.b">brock800_1</a></td>
+<td class="org-right">23</td>
 </tr>
 
 <tr>
-<td class="right">10</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/brock800_2.clq.b     ">brock800_2     </a></td>
-<td class="right">24</td>
+<td class="org-right">10</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/brock800_2.clq.b">brock800_2</a></td>
+<td class="org-right">24</td>
 </tr>
 
 <tr>
-<td class="right">11</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/brock800_3.clq.b     ">brock800_3     </a></td>
-<td class="right">25</td>
+<td class="org-right">11</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/brock800_3.clq.b">brock800_3</a></td>
+<td class="org-right">25</td>
 </tr>
 
 <tr>
-<td class="right">12</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/brock800_4.clq.b     ">brock800_4     </a></td>
-<td class="right">26</td>
+<td class="org-right">12</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/brock800_4.clq.b">brock800_4</a></td>
+<td class="org-right">26</td>
 </tr>
 
 <tr>
-<td class="right">13</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/c-fat200-1.clq.b     ">c-fat200-1     </a></td>
-<td class="right">12</td>
+<td class="org-right">13</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/c-fat200-1.clq.b">c-fat200-1</a></td>
+<td class="org-right">12</td>
 </tr>
 
 <tr>
-<td class="right">14</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/c-fat200-2.clq.b     ">c-fat200-2     </a></td>
-<td class="right">24</td>
+<td class="org-right">14</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/c-fat200-2.clq.b">c-fat200-2</a></td>
+<td class="org-right">24</td>
 </tr>
 
 <tr>
-<td class="right">15</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/c-fat200-5.clq.b     ">c-fat200-5     </a></td>
-<td class="right">58</td>
+<td class="org-right">15</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/c-fat200-5.clq.b">c-fat200-5</a></td>
+<td class="org-right">58</td>
 </tr>
 
 <tr>
-<td class="right">16</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/c-fat500-1.clq.b     ">c-fat500-1     </a></td>
-<td class="right">14</td>
+<td class="org-right">16</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/c-fat500-1.clq.b">c-fat500-1</a></td>
+<td class="org-right">14</td>
 </tr>
 
 <tr>
-<td class="right">17</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/c-fat500-2.clq.b     ">c-fat500-2     </a></td>
-<td class="right">26</td>
+<td class="org-right">17</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/c-fat500-2.clq.b">c-fat500-2</a></td>
+<td class="org-right">26</td>
 </tr>
 
 <tr>
-<td class="right">18</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/c-fat500-5.clq.b     ">c-fat500-5     </a></td>
-<td class="right">64</td>
+<td class="org-right">18</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/c-fat500-5.clq.b">c-fat500-5</a></td>
+<td class="org-right">64</td>
 </tr>
 
 <tr>
-<td class="right">19</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/c-fat500-10.clq.b    ">c-fat500-10    </a></td>
-<td class="right">126</td>
+<td class="org-right">19</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/c-fat500-10.clq.b">c-fat500-10</a></td>
+<td class="org-right">126</td>
 </tr>
 
 <tr>
-<td class="right">20</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/hamming6-2.clq.b     ">hamming6-2     </a></td>
-<td class="right">32</td>
+<td class="org-right">20</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/hamming6-2.clq.b">hamming6-2</a></td>
+<td class="org-right">32</td>
 </tr>
 
 <tr>
-<td class="right">21</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/hamming6-4.clq.b     ">hamming6-4     </a></td>
-<td class="right">4</td>
+<td class="org-right">21</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/hamming6-4.clq.b">hamming6-4</a></td>
+<td class="org-right">4</td>
 </tr>
 
 <tr>
-<td class="right">22</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/hamming8-2.clq.b     ">hamming8-2     </a></td>
-<td class="right">128</td>
+<td class="org-right">22</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/hamming8-2.clq.b">hamming8-2</a></td>
+<td class="org-right">128</td>
 </tr>
 
 <tr>
-<td class="right">23</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/hamming8-4.clq.b     ">hamming8-4     </a></td>
-<td class="right">16</td>
+<td class="org-right">23</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/hamming8-4.clq.b">hamming8-4</a></td>
+<td class="org-right">16</td>
 </tr>
 
 <tr>
-<td class="right">24</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/hamming10-2.clq.b    ">hamming10-2    </a></td>
-<td class="right">512</td>
+<td class="org-right">24</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/hamming10-2.clq.b">hamming10-2</a></td>
+<td class="org-right">512</td>
 </tr>
 
 <tr>
-<td class="right">25</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/hamming10-4.clq.b    ">hamming10-4    </a></td>
-<td class="right">40</td>
+<td class="org-right">25</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/hamming10-4.clq.b">hamming10-4</a></td>
+<td class="org-right">40</td>
 </tr>
 
 <tr>
-<td class="right">26</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/johnson8-2-4.clq.b   ">johnson8-2-4   </a></td>
-<td class="right">4</td>
+<td class="org-right">26</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/johnson8-2-4.clq.b">johnson8-2-4</a></td>
+<td class="org-right">4</td>
 </tr>
 
 <tr>
-<td class="right">27</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/johnson8-4-4.clq.b   ">johnson8-4-4   </a></td>
-<td class="right">14</td>
+<td class="org-right">27</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/johnson8-4-4.clq.b">johnson8-4-4</a></td>
+<td class="org-right">14</td>
 </tr>
 
 <tr>
-<td class="right">28</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/johnson16-2-4.clq.b  ">johnson16-2-4  </a></td>
-<td class="right">8</td>
+<td class="org-right">28</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/johnson16-2-4.clq.b">johnson16-2-4</a></td>
+<td class="org-right">8</td>
 </tr>
 
 <tr>
-<td class="right">29</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/johnson32-2-4.clq.b  ">johnson32-2-4  </a></td>
-<td class="right">16</td>
+<td class="org-right">29</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/johnson32-2-4.clq.b">johnson32-2-4</a></td>
+<td class="org-right">16</td>
 </tr>
 
 <tr>
-<td class="right">30</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/keller4.clq.b        ">keller4        </a></td>
-<td class="right">11</td>
+<td class="org-right">30</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/keller4.clq.b">keller4</a></td>
+<td class="org-right">11</td>
 </tr>
 
 <tr>
-<td class="right">31</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/keller5.clq.b        ">keller5        </a></td>
-<td class="right">27</td>
+<td class="org-right">31</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/keller5.clq.b">keller5</a></td>
+<td class="org-right">27</td>
 </tr>
 
 <tr>
-<td class="right">32</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/keller6.clq.b        ">keller6        </a></td>
-<td class="right">\(\ge\) 59</td>
+<td class="org-right">32</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/keller6.clq.b">keller6</a></td>
+<td class="org-right">\(\ge\) 59</td>
 </tr>
 
 <tr>
-<td class="right">33</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/MANN_a9.clq.b        ">MANN_a9        </a></td>
-<td class="right">16</td>
+<td class="org-right">33</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/MANN_a9.clq.b">MANN_a9</a></td>
+<td class="org-right">16</td>
 </tr>
 
 <tr>
-<td class="right">34</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/MANN_a27.clq.b       ">MANN_a27       </a></td>
-<td class="right">126</td>
+<td class="org-right">34</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/MANN_a27.clq.b">MANN_a27</a></td>
+<td class="org-right">126</td>
 </tr>
 
 <tr>
-<td class="right">35</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/MANN_a44.clq.b       ">MANN_a45       </a></td>
-<td class="right">345</td>
+<td class="org-right">35</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/MANN_a44.clq.b">MANN_a45</a></td>
+<td class="org-right">345</td>
 </tr>
 
 <tr>
-<td class="right">36</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/MANN_a81.clq.b       ">MANN_a81       </a></td>
-<td class="right">\(\ge\) 1100</td>
+<td class="org-right">36</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/MANN_a81.clq.b">MANN_a81</a></td>
+<td class="org-right">\(\ge\) 1100</td>
 </tr>
 
 <tr>
-<td class="right">37</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/p_hat300-1.clq.b     ">p_hat300-1     </a></td>
-<td class="right">8</td>
+<td class="org-right">37</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/p_hat300-1.clq.b">p_hat300-1</a></td>
+<td class="org-right">8</td>
 </tr>
 
 <tr>
-<td class="right">38</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/p_hat300-2.clq.b     ">p_hat300-2     </a></td>
-<td class="right">25</td>
+<td class="org-right">38</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/p_hat300-2.clq.b">p_hat300-2</a></td>
+<td class="org-right">25</td>
 </tr>
 
 <tr>
-<td class="right">39</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/p_hat300-3.clq.b     ">p_hat300-3     </a></td>
-<td class="right">36</td>
+<td class="org-right">39</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/p_hat300-3.clq.b">p_hat300-3</a></td>
+<td class="org-right">36</td>
 </tr>
 
 <tr>
-<td class="right">40</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/p_hat500-1.clq.b     ">p_hat500-1     </a></td>
-<td class="right">9</td>
+<td class="org-right">40</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/p_hat500-1.clq.b">p_hat500-1</a></td>
+<td class="org-right">9</td>
 </tr>
 
 <tr>
-<td class="right">41</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/p_hat500-2.clq.b     ">p_hat500-2     </a></td>
-<td class="right">36</td>
+<td class="org-right">41</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/p_hat500-2.clq.b">p_hat500-2</a></td>
+<td class="org-right">36</td>
 </tr>
 
 <tr>
-<td class="right">42</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/p_hat500-3.clq.b     ">p_hat500-3     </a></td>
-<td class="right">\(\ge\) 50</td>
+<td class="org-right">42</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/p_hat500-3.clq.b">p_hat500-3</a></td>
+<td class="org-right">\(\ge\) 50</td>
 </tr>
 
 <tr>
-<td class="right">43</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/p_hat700-1.clq.b     ">p_hat700-1     </a></td>
-<td class="right">11</td>
+<td class="org-right">43</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/p_hat700-1.clq.b">p_hat700-1</a></td>
+<td class="org-right">11</td>
 </tr>
 
 <tr>
-<td class="right">44</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/p_hat700-2.clq.b     ">p_hat700-2     </a></td>
-<td class="right">\(\ge\) 44</td>
+<td class="org-right">44</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/p_hat700-2.clq.b">p_hat700-2</a></td>
+<td class="org-right">\(\ge\) 44</td>
 </tr>
 
 <tr>
-<td class="right">45</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/p_hat700-3.clq.b     ">p_hat700-3     </a></td>
-<td class="right">\(\ge\) 62</td>
+<td class="org-right">45</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/p_hat700-3.clq.b">p_hat700-3</a></td>
+<td class="org-right">\(\ge\) 62</td>
 </tr>
 
 <tr>
-<td class="right">46</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/p_hat1000-1.clq.b    ">p_hat1000-1    </a></td>
-<td class="right">\(\ge\) 10</td>
+<td class="org-right">46</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/p_hat1000-1.clq.b">p_hat1000-1</a></td>
+<td class="org-right">\(\ge\) 10</td>
 </tr>
 
 <tr>
-<td class="right">47</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/p_hat1000-2.clq.b    ">p_hat1000-2    </a></td>
-<td class="right">\(\ge\) 46</td>
+<td class="org-right">47</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/p_hat1000-2.clq.b">p_hat1000-2</a></td>
+<td class="org-right">\(\ge\) 46</td>
 </tr>
 
 <tr>
-<td class="right">48</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/p_hat1000-3.clq.b    ">p_hat1000-3    </a></td>
-<td class="right">\(\ge\) 68</td>
+<td class="org-right">48</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/p_hat1000-3.clq.b">p_hat1000-3</a></td>
+<td class="org-right">\(\ge\) 68</td>
 </tr>
 
 <tr>
-<td class="right">49</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/p_hat1500-1.clq.b    ">p_hat1500-1    </a></td>
-<td class="right">\(\ge\) 12</td>
+<td class="org-right">49</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/p_hat1500-1.clq.b">p_hat1500-1</a></td>
+<td class="org-right">\(\ge\) 12</td>
 </tr>
 
 <tr>
-<td class="right">50</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/p_hat1500-2.clq.b    ">p_hat1500-2    </a></td>
-<td class="right">\(\ge\) 65</td>
+<td class="org-right">50</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/p_hat1500-2.clq.b">p_hat1500-2</a></td>
+<td class="org-right">\(\ge\) 65</td>
 </tr>
 
 <tr>
-<td class="right">51</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/p_hat1500-3.clq.b    ">p_hat1500-3    </a></td>
-<td class="right">\(\ge\) 94</td>
+<td class="org-right">51</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/p_hat1500-3.clq.b">p_hat1500-3</a></td>
+<td class="org-right">\(\ge\) 94</td>
 </tr>
 
 <tr>
-<td class="right">52</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/san200_0.7_1.clq.b   ">san200_0.7_1   </a></td>
-<td class="right">30</td>
+<td class="org-right">52</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/san200_0.7_1.clq.b">san200_0.7_1</a></td>
+<td class="org-right">30</td>
 </tr>
 
 <tr>
-<td class="right">53</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/san200_0.7_2.clq.b   ">san200_0.7_2   </a></td>
-<td class="right">18</td>
+<td class="org-right">53</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/san200_0.7_2.clq.b">san200_0.7_2</a></td>
+<td class="org-right">18</td>
 </tr>
 
 <tr>
-<td class="right">54</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/san200_0.9_1.clq.b   ">san200_0.9_1   </a></td>
-<td class="right">70</td>
+<td class="org-right">54</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/san200_0.9_1.clq.b">san200_0.9_1</a></td>
+<td class="org-right">70</td>
 </tr>
 
 <tr>
-<td class="right">55</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/san200_0.9_2.clq.b   ">san200_0.9_2   </a></td>
-<td class="right">60</td>
+<td class="org-right">55</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/san200_0.9_2.clq.b">san200_0.9_2</a></td>
+<td class="org-right">60</td>
 </tr>
 
 <tr>
-<td class="right">56</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/san200_0.9_3.clq.b   ">san200_0.9_3   </a></td>
-<td class="right">44</td>
+<td class="org-right">56</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/san200_0.9_3.clq.b">san200_0.9_3</a></td>
+<td class="org-right">44</td>
 </tr>
 
 <tr>
-<td class="right">57</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/san400_0.5_1.clq.b   ">san400_0.5_1   </a></td>
-<td class="right">13</td>
+<td class="org-right">57</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/san400_0.5_1.clq.b">san400_0.5_1</a></td>
+<td class="org-right">13</td>
 </tr>
 
 <tr>
-<td class="right">58</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/san400_0.7_1.clq.b   ">san400_0.7_1   </a></td>
-<td class="right">40</td>
+<td class="org-right">58</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/san400_0.7_1.clq.b">san400_0.7_1</a></td>
+<td class="org-right">40</td>
 </tr>
 
 <tr>
-<td class="right">59</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/san400_0.7_2.clq.b   ">san400_0.7_2   </a></td>
-<td class="right">30</td>
+<td class="org-right">59</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/san400_0.7_2.clq.b">san400_0.7_2</a></td>
+<td class="org-right">30</td>
 </tr>
 
 <tr>
-<td class="right">60</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/san400_0.7_3.clq.b   ">san400_0.7_3   </a></td>
-<td class="right">22</td>
+<td class="org-right">60</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/san400_0.7_3.clq.b">san400_0.7_3</a></td>
+<td class="org-right">22</td>
 </tr>
 
 <tr>
-<td class="right">61</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/san400_0.9_1.clq.b   ">san400_0.9_1   </a></td>
-<td class="right">100</td>
+<td class="org-right">61</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/san400_0.9_1.clq.b">san400_0.9_1</a></td>
+<td class="org-right">100</td>
 </tr>
 
 <tr>
-<td class="right">62</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/san1000.clq.b        ">san1000        </a></td>
-<td class="right">15</td>
+<td class="org-right">62</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/san1000.clq.b">san1000</a></td>
+<td class="org-right">15</td>
 </tr>
 
 <tr>
-<td class="right">63</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/sanr200_0.7.clq.b    ">sanr200_0.7    </a></td>
-<td class="right">18</td>
+<td class="org-right">63</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/sanr200_0.7.clq.b">sanr200_0.7</a></td>
+<td class="org-right">18</td>
 </tr>
 
 <tr>
-<td class="right">64</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/sanr200_0.9.clq.b    ">sanr200_0.9    </a></td>
-<td class="right">42</td>
+<td class="org-right">64</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/sanr200_0.9.clq.b">sanr200_0.9</a></td>
+<td class="org-right">42</td>
 </tr>
 
 <tr>
-<td class="right">65</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/sanr400_0.5.clq.b    ">sanr400_0.5    </a></td>
-<td class="right">13</td>
+<td class="org-right">65</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/sanr400_0.5.clq.b">sanr400_0.5</a></td>
+<td class="org-right">13</td>
 </tr>
 
 <tr>
-<td class="right">66</td>
-<td class="left"><a href="./instances/clique/DIMACS_cliques/sanr400_0.7.clq.b    ">sanr400_0.7    </a></td>
-<td class="right">21</td>
+<td class="org-right">66</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/DIMACS_cliques/sanr400_0.7.clq.b">sanr400_0.7</a></td>
+<td class="org-right">21</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> Additional Instances</h2>
+<div id="outline-container-org97e58ac" class="outline-2">
+<h2 id="org97e58ac"><span class="section-number-2">3</span> Additional Instances</h2>
 <div class="outline-text-2" id="text-3">
 <p>
-<a href="./instances/clique/Additional_cliques/">Directory</a>, 
-<a href="./instances/clique/Additional_cliques.tar.gz">tar.gz format</a> 
+<a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/">Directory</a>
 </p>
 
 <p>
-Files from Mike Trick <a href="http://mat.gsia.cmu.edu/COLOR02/clq.html"><a href="http://mat.gsia.cmu.edu/COLOR02/clq.html">http://mat.gsia.cmu.edu/COLOR02/clq.html</a></a>. For the <code>brock</code> graphs below, there is an "off-by-one" error in the comments: if it claims node 26, for example, is in the clique, it is really node 27.
+Files from Mike Trick <a href="http://mat.gsia.cmu.edu/COLOR02/clq.html">http://mat.gsia.cmu.edu/COLOR02/clq.html</a>. For the <code>brock</code> graphs below, there is an "off-by-one" error in the comments: if it claims node 26, for example, is in the clique, it is really node 27.
 </p>
 
 
@@ -651,283 +504,286 @@ Files from Mike Trick <a href="http://mat.gsia.cmu.edu/COLOR02/clq.html"><a href
 
 
 <colgroup>
-<col  class="right" />
+<col  class="org-right" />
 
-<col  class="left" />
+<col  class="org-left" />
 
-<col  class="right" />
+<col  class="org-right" />
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="right">&#xa0;</th>
-<th scope="col" class="left">File</th>
-<th scope="col" class="right">Max Clique<sup><a id="fnr.1.100" name="fnr.1.100" class="footref" href="#fn.1">1</a></sup></th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">File</th>
+<th scope="col" class="org-right">Max Clique<sup><a id="fnr.1.100" class="footref" href="#fn.1">1</a></sup></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="right">1</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/brock200_2.clq    ">brock200_2     </a></td>
-<td class="right">12</td>
+<td class="org-right">1</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/brock200_2.clq">brock200_2</a></td>
+<td class="org-right">12</td>
 </tr>
 
 <tr>
-<td class="right">2</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/brock200_4.clq    ">brock200_4     </a></td>
-<td class="right">17</td>
+<td class="org-right">2</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/brock200_4.clq">brock200_4</a></td>
+<td class="org-right">17</td>
 </tr>
 
 <tr>
-<td class="right">3</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/brock400_2.clq    ">brock400_2     </a></td>
-<td class="right">29</td>
+<td class="org-right">3</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/brock400_2.clq">brock400_2</a></td>
+<td class="org-right">29</td>
 </tr>
 
 <tr>
-<td class="right">4</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/brock400_4.clq    ">brock400_4     </a></td>
-<td class="right">33</td>
+<td class="org-right">4</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/brock400_4.clq">brock400_4</a></td>
+<td class="org-right">33</td>
 </tr>
 
 <tr>
-<td class="right">5</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/brock800_2.clq    ">brock800_2     </a></td>
-<td class="right">24</td>
+<td class="org-right">5</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/brock800_2.clq">brock800_2</a></td>
+<td class="org-right">24</td>
 </tr>
 
 <tr>
-<td class="right">6</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/brock800_4.clq    ">brock800_4     </a></td>
-<td class="right">26</td>
+<td class="org-right">6</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/brock800_4.clq">brock800_4</a></td>
+<td class="org-right">26</td>
 </tr>
 
 <tr>
-<td class="right">7</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/C125.9.clq        ">C125.9         </a></td>
-<td class="right">\(\ge\) 34</td>
+<td class="org-right">7</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/C125.9.clq">C125.9</a></td>
+<td class="org-right">\(\ge\) 34</td>
 </tr>
 
 <tr>
-<td class="right">8</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/C250.9.clq        ">C250.9         </a></td>
-<td class="right">\(\ge\) 44</td>
+<td class="org-right">8</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/C250.9.clq">C250.9</a></td>
+<td class="org-right">\(\ge\) 44</td>
 </tr>
 
 <tr>
-<td class="right">9</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/C500.9.clq        ">C500.9         </a></td>
-<td class="right">\(\ge\) 57</td>
+<td class="org-right">9</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/C500.9.clq">C500.9</a></td>
+<td class="org-right">\(\ge\) 57</td>
 </tr>
 
 <tr>
-<td class="right">10</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/C1000.9.clq       ">C1000.9        </a></td>
-<td class="right">\(\ge\) 68</td>
+<td class="org-right">10</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/C1000.9.clq">C1000.9</a></td>
+<td class="org-right">\(\ge\) 68</td>
 </tr>
 
 <tr>
-<td class="right">11</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/C2000.5.clq       ">C2000.5        </a></td>
-<td class="right">\(\ge\) 16</td>
+<td class="org-right">11</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/C2000.5.clq">C2000.5</a></td>
+<td class="org-right">\(\ge\) 16</td>
 </tr>
 
 <tr>
-<td class="right">12</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/C2000.9.clq       ">C2000.9        </a></td>
-<td class="right">\(\ge\) 77</td>
+<td class="org-right">12</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/C2000.9.clq">C2000.9</a></td>
+<td class="org-right">\(\ge\) 77</td>
 </tr>
 
 <tr>
-<td class="right">13</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/C4000.5.clq       ">C4000.5        </a></td>
-<td class="right">\(\ge\) 18</td>
+<td class="org-right">13</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/C4000.5.clq">C4000.5</a></td>
+<td class="org-right">\(\ge\) 18</td>
 </tr>
 
 <tr>
-<td class="right">14</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/DSJC500.5.clq     ">DSJC500.5      </a></td>
-<td class="right">\(\ge\) 13</td>
+<td class="org-right">14</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/DSJC500.5.clq">DSJC500.5 </a></td>
+<td class="org-right">\(\ge\) 13</td>
 </tr>
 
 <tr>
-<td class="right">15</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/DSJC1000.5.clq    ">DSJC1000.5     </a></td>
-<td class="right">\(\ge\) 15</td>
+<td class="org-right">15</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/DSJC1000.5.clq">DSJC1000.5</a></td>
+<td class="org-right">\(\ge\) 15</td>
 </tr>
 
 <tr>
-<td class="right">16</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/gen200_p0.9_44.clq">gen200_p0.9_44 </a></td>
-<td class="right">44</td>
+<td class="org-right">16</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/gen200_p0.9_44.clq">gen200_p0.9_44 </a></td>
+<td class="org-right">44</td>
 </tr>
 
 <tr>
-<td class="right">17</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/gen200_p0.9_55.clq">gen200_p0.9_55 </a></td>
-<td class="right">55</td>
+<td class="org-right">17</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/gen200_p0.9_55.clq">gen200_p0.9_55 </a></td>
+<td class="org-right">55</td>
 </tr>
 
 <tr>
-<td class="right">18</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/gen400_p0.9_55.clq">gen400_p0.9_55 </a></td>
-<td class="right">55</td>
+<td class="org-right">18</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/gen400_p0.9_55.clq">gen400_p0.9_55 </a></td>
+<td class="org-right">55</td>
 </tr>
 
 <tr>
-<td class="right">19</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/gen400_p0.9_65.clq">gen400_p0.9_65 </a></td>
-<td class="right">65</td>
+<td class="org-right">19</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/gen400_p0.9_65.clq">gen400_p0.9_65 </a></td>
+<td class="org-right">65</td>
 </tr>
 
 <tr>
-<td class="right">20</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/gen400_p0.9_75.clq">gen400_p0.9_75 </a></td>
-<td class="right">75</td>
+<td class="org-right">20</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/gen400_p0.9_75.clq">gen400_p0.9_75 </a></td>
+<td class="org-right">75</td>
 </tr>
 
 <tr>
-<td class="right">21</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/hamming8-4.clq    ">hamming8-4     </a></td>
-<td class="right">16</td>
+<td class="org-right">21</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/hamming8-4.clq">hamming8-4</a></td>
+<td class="org-right">16</td>
 </tr>
 
 <tr>
-<td class="right">22</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/hamming10-4.clq   ">hamming10-4    </a></td>
-<td class="right">40</td>
+<td class="org-right">22</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/hamming10-4.clq">hamming10-4</a></td>
+<td class="org-right">40</td>
 </tr>
 
 <tr>
-<td class="right">23</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/keller4.clq       ">keller4        </a></td>
-<td class="right">11</td>
+<td class="org-right">23</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/keller4.clq">keller4</a></td>
+<td class="org-right">11</td>
 </tr>
 
 <tr>
-<td class="right">24</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/keller5.clq       ">keller5        </a></td>
-<td class="right">27</td>
+<td class="org-right">24</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/keller5.clq">keller5</a></td>
+<td class="org-right">27</td>
 </tr>
 
 <tr>
-<td class="right">25</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/keller6.clq       ">keller6        </a></td>
-<td class="right">\(\ge\) 59</td>
+<td class="org-right">25</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/keller6.clq">keller6</a></td>
+<td class="org-right">\(\ge\) 59</td>
 </tr>
 
 <tr>
-<td class="right">26</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/MANN_a27.clq      ">MANN_a27       </a></td>
-<td class="right">126</td>
+<td class="org-right">26</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/MANN_a27.clq%20">MANN_a27</a></td>
+<td class="org-right">126</td>
 </tr>
 
 <tr>
-<td class="right">27</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/MANN_a44.clq      ">MANN_a45       </a></td>
-<td class="right">345</td>
+<td class="org-right">27</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/MANN_a44.clq%20">MANN_a45</a></td>
+<td class="org-right">345</td>
 </tr>
 
 <tr>
-<td class="right">28</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/MANN_a81.clq      ">MANN_a81       </a></td>
-<td class="right">\(\ge\) 1100</td>
+<td class="org-right">28</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/MANN_a81.clq%20">MANN_a81</a></td>
+<td class="org-right">\(\ge\) 1100</td>
 </tr>
 
 <tr>
-<td class="right">29</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/p_hat300-1.clq    ">p_hat300-1     </a></td>
-<td class="right">8</td>
+<td class="org-right">29</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/p_hat300-1.clq">p_hat300-1</a></td>
+<td class="org-right">8</td>
 </tr>
 
 <tr>
-<td class="right">30</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/p_hat300-2.clq    ">p_hat300-2     </a></td>
-<td class="right">25</td>
+<td class="org-right">30</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/p_hat300-2.clq">p_hat300-2</a></td>
+<td class="org-right">25</td>
 </tr>
 
 <tr>
-<td class="right">31</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/p_hat300-3.clq    ">p_hat300-3     </a></td>
-<td class="right">36</td>
+<td class="org-right">31</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/p_hat300-3.clq">p_hat300-3</a></td>
+<td class="org-right">36</td>
 </tr>
 
 <tr>
-<td class="right">32</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/p_hat700-1.clq    ">p_hat700-1     </a></td>
-<td class="right">11</td>
+<td class="org-right">32</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/p_hat700-1.clq">p_hat700-1</a></td>
+<td class="org-right">11</td>
 </tr>
 
 <tr>
-<td class="right">33</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/p_hat700-2.clq    ">p_hat700-2     </a></td>
-<td class="right">\(\ge\) 44</td>
+<td class="org-right">33</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/p_hat700-2.clq">p_hat700-2</a></td>
+<td class="org-right">\(\ge\) 44</td>
 </tr>
 
 <tr>
-<td class="right">34</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/p_hat700-3.clq    ">p_hat700-3     </a></td>
-<td class="right">\(\ge\) 62</td>
+<td class="org-right">34</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/p_hat700-3.clq">p_hat700-3</a></td>
+<td class="org-right">\(\ge\) 62</td>
 </tr>
 
 <tr>
-<td class="right">35</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/p_hat1500-1.clq   ">p_hat1500-1    </a></td>
-<td class="right">\(\ge\) 12</td>
+<td class="org-right">35</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/p_hat1500-1.clq">p_hat1500-1</a></td>
+<td class="org-right">\(\ge\) 12</td>
 </tr>
 
 <tr>
-<td class="right">36</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/p_hat1500-2.clq   ">p_hat1500-2    </a></td>
-<td class="right">\(\ge\) 65</td>
+<td class="org-right">36</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/p_hat1500-2.clq">p_hat1500-2</a></td>
+<td class="org-right">\(\ge\) 65</td>
 </tr>
 
 <tr>
-<td class="right">37</td>
-<td class="left"><a href="./instances/clique/Additional_cliques/p_hat1500-3.clq   ">p_hat1500-3    </a></td>
-<td class="right">\(\ge\) 94</td>
+<td class="org-right">37</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/clique/Additional_cliques/p_hat1500-3.clq">p_hat1500-3</a></td>
+<td class="org-right">\(\ge\) 94</td>
+</tr>
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> Categories</h2>
+<div id="outline-container-orgd963fa3" class="outline-2">
+<h2 id="orgd963fa3"><span class="section-number-2">4</span> Categories</h2>
 <div class="outline-text-2" id="text-4">
 <p>
-Reference: <a href="http://mat.gsia.cmu.edu/contents.clique.ps"><a href="http://mat.gsia.cmu.edu/contents.clique.ps">http://mat.gsia.cmu.edu/contents.clique.ps</a></a>, 
-<a href="./instances/others/cached/contents.clique.ps">(cached)</a>
+Reference: <a href="http://mat.gsia.cmu.edu/contents.clique.ps">http://mat.gsia.cmu.edu/contents.clique.ps</a>, 
+<a href="https://github.com/unsat/npbench/blob/master/instances/others/cached/contents.clique.ps">(cached)</a>
 </p>
 
 <dl class="org-dl">
-<dt> CFat </dt><dd>(From Panos Pardalos pardalos@math.uflorida.edu) 
+<dt>CFat</dt><dd>(From Panos Pardalos pardalos@math.uflorida.edu) 
 Problems based on fault diagnosis problems. Original reference is 
 Berman and Pelc, "Distributed Fault Diagnosis for Multiprocessor Systems," 
 Proceedings of the 20th Annual Symposium on Fault-Tolerant Computing, 
 340-346 (1990). 
-For more instances, see the generator in graph/contributed/pardalos. 
-</dd>
+For more instances, see the generator in graph/contributed/pardalos.</dd>
 
-<dt> Joh </dt><dd>(From Panos Pardalos pardalos@math.uflorida.edu) 
+<dt>Joh</dt><dd>(From Panos Pardalos pardalos@math.uflorida.edu) 
 Problems based  on problem in coding theory. 
 A Johnson graph with parameters n; w; d has a node for every binary vector 
 of length n with exactly w 1s. Two vertices are adjacent if and only if 
 their hamming distance is at least d. A clique then represents a feasible 
 set of vectors for a code. 
-For more instances, see the generator in graph/contributed/pardalos.
-</dd>
+For more instances, see the generator in graph/contributed/pardalos.</dd>
 
-<dt> Kel </dt><dd>(From Peter Shor shor@research.att.com) 
+<dt>Kel</dt><dd>(From Peter Shor shor@research.att.com) 
 Problems based on Keller's conjecture on tilings using hypercubes. 
 One reference is J.C. Lagarias and P.W. Shor, 
 "Keller's Cube-Tiling Conjecture is False in High Dimensions," 
 Bulletin of the AMS, 27: 279-283 (1992). 
 For more instances (though they get very large very fast) see either 
 the generator in graph/contributed/shor or the generator 
-in graph/contributed/pardalos.
-</dd>
+in graph/contributed/pardalos.</dd>
 
-<dt> Ham </dt><dd>(From Panos Pardalos pardalos@math.uflorida.edu) 
+<dt>Ham</dt><dd>(From Panos Pardalos pardalos@math.uflorida.edu) 
 Another coding theory problem. A Hamming graph with parameters n and d 
 has a node for each binary vector of length n. Two nodes are adjacent 
 if and only if the corresponding bit vectors are hamming distance at 
@@ -935,57 +791,50 @@ least d apart.
 For more instances, see the generator in graph/contributed/pardalos. 
 It has been noted by participants that n- -2 graphs have a maximum 
 clique of size \(2^{n-1}\). 
-For a proof of this, see the note in graph/contributed/bourjolly/hamming.tex.
-</dd>
+For a proof of this, see the note in graph/contributed/bourjolly/hamming.tex.</dd>
 
-<dt> San </dt><dd>(From Laura Sanchis laura@cs.colgate.edu) 
+<dt>San</dt><dd>(From Laura Sanchis laura@cs.colgate.edu) 
 Instances based on her "Test Case Construction for Vertex Cover Problem," 
 DIMACS Workshop on Computational Support for Discrete Mathematics, 
 March 1992 along with more recent work that will be part of a technical 
-report to be published. The generator generates instances with known clique size.
-</dd>
+report to be published. The generator generates instances with known clique size.</dd>
 
-<dt> SanR </dt><dd>(From Laura Sanchis laura@cs.colgate.edu) 
-These are random instances with sizes similar to those in San.
-</dd>
+<dt>SanR</dt><dd>(From Laura Sanchis laura@cs.colgate.edu) 
+These are random instances with sizes similar to those in San.</dd>
 
-<dt> Bro </dt><dd>(From Mark Brockington brock@cs.ualberta.ca) 
+<dt>Bro</dt><dd>(From Mark Brockington brock@cs.ualberta.ca) 
 Instances from Mark Brockington and Joe Culberson's generator that 
 attempts to "hide" cliques in a graph where the expected clique size 
 is much smaller. 
-For more instances, see their generator in graph/contributed/brockington.
-</dd>
+For more instances, see their generator in graph/contributed/brockington.</dd>
 
-<dt> PHat </dt><dd>(From Patrick Soriano and Michel Gendreau patrick@crt.umontreal.ca) 
+<dt>PHat</dt><dd>(From Patrick Soriano and Michel Gendreau patrick@crt.umontreal.ca) 
 Random problems generated with the p hat generator which is a 
 generalization of the classical uniform random graph generator. 
 Uses 3 parameters: n, the number of nodes, and a and b, two density 
 parameters verifying \(0 \le a \le b \le 1\). Generates problem instances 
 having wider node degree spread and larger clique sizes. 
 Reference: "Solving the Maximum Clique Problem Using a Tabu Search Approach", 
-Annals of Operations Research 41, 385-403 (1993).
-</dd>
+Annals of Operations Research 41, 385-403 (1993).</dd>
 
-<dt> Stein </dt><dd>(From Carlo Mannino mannino@iasi.rm.cnr.it) 
+<dt>Stein</dt><dd>(From Carlo Mannino mannino@iasi.rm.cnr.it) 
 Clique formulation of the set covering formulation of the Steiner 
 Triple Problem. Created using Mannino's code to convert set covering 
 problems to clique problems.
-Notes: <code>MANN</code> graphs belongs to this class.
-</dd>
+Notes: <code>MANN</code> graphs belongs to this class.</dd>
 </dl>
 </div>
 </div>
 
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> Other Instances</h2>
+<div id="outline-container-orge04f43d" class="outline-2">
+<h2 id="orge04f43d"><span class="section-number-2">5</span> Other Instances</h2>
 <div class="outline-text-2" id="text-5">
 <dl class="org-dl">
-<dt> BHOSLIB </dt><dd>Benchmarks with Hidden Optimum Solutions for Graph Problems (Maximum Clique, Maximum Independent Set, Minimum Vertex Cover and Vertex Coloring): <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm"><a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm</a></a>
-</dd>
+<dt>BHOSLIB</dt><dd>Benchmarks with Hidden Optimum Solutions for Graph Problems (Maximum Clique, Maximum Independent Set, Minimum Vertex Cover and Vertex Coloring): <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm</a></dd>
 </dl>
 
 
-<hr  />
+<hr />
 
 <p>
 <a href="./index.html">Back to benchmark instances page</a>
@@ -996,9 +845,9 @@ Notes: <code>MANN</code> graphs belongs to this class.
 <h2 class="footnotes">Footnotes: </h2>
 <div id="text-footnotes">
 
-<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p class="footpara">
-Optimal clique size obtained from various resources including  <a href="http://www.busygin.dp.ua/dimacs_clique.html"><a href="http://www.busygin.dp.ua/dimacs_clique.html">http://www.busygin.dp.ua/dimacs_clique.html</a></a> and <a href="http://mat.gsia.cmu.edu/contents.clique.ps"><a href="http://mat.gsia.cmu.edu/contents.clique.ps">http://mat.gsia.cmu.edu/contents.clique.ps</a></a>
-</p></div>
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+Optimal clique size obtained from various resources including  <a href="http://www.busygin.dp.ua/dimacs_clique.html">http://www.busygin.dp.ua/dimacs_clique.html</a> and <a href="http://mat.gsia.cmu.edu/contents.clique.ps">http://mat.gsia.cmu.edu/contents.clique.ps</a>
+</p></div></div>
 
 
 </div>

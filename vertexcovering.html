@@ -3,138 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<!-- 2021-08-20 Fri 09:22 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <title>Vertex Cover Benchmark Instances</title>
-<!-- 2017-01-01 Sun 23:08 -->
-<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<meta  name="generator" content="Org-mode" />
-<meta  name="author" content="tnguyen@GiaoChi" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { color: green; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  pre.src-sh:before    { content: 'sh'; }
-  pre.src-bash:before  { content: 'sh'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-R:before     { content: 'R'; }
-  pre.src-perl:before  { content: 'Perl'; }
-  pre.src-java:before  { content: 'Java'; }
-  pre.src-sql:before   { content: 'SQL'; }
-
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.right  { text-align: center;  }
-  th.left   { text-align: center;   }
-  th.center { text-align: center; }
-  td.right  { text-align: right;  }
-  td.left   { text-align: left;   }
-  td.center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara:nth-child(2) { display: inline; }
-  .footpara { display: block; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  /*]]>*/-->
-</style>
-<link rel="stylesheet" type="text/css" href="../Pub/solarized-light.css" />
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2013 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="ThanhVu (Vu) Nguyen" />
+<link rel="stylesheet" href="https://nguyenthanhvuh.github.io/files/org.css">
+<link rel="alternative stylesheet" href="https://nguyenthanhvuh.github.io/files/org-orig.css">
 </head>
 <body>
 <div id="content">
@@ -143,136 +18,133 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sec-1">1. Utils</a></li>
-<li><a href="#sec-2">2. Vertex Cover instances</a></li>
-<li><a href="#sec-3">3. Clique complement graphs</a></li>
-<li><a href="#sec-4">4. Random Graphs</a></li>
-<li><a href="#sec-5">5. Other Instances</a></li>
+<li><a href="#orgaae7467">1. Utils</a></li>
+<li><a href="#org4bee076">2. Vertex Cover instances</a></li>
+<li><a href="#org378bd16">3. Clique complement graphs</a></li>
+<li><a href="#org68ad96c">4. Random Graphs</a></li>
+<li><a href="#org9c258bb">5. Other Instances</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Utils</h2>
+<div id="outline-container-orgaae7467" class="outline-2">
+<h2 id="orgaae7467"><span class="section-number-2">1</span> Utils</h2>
 <div class="outline-text-2" id="text-1">
 <ul class="org-ul">
-<li><a href="./instances/converter.tar.gz">Converter</a>: convert from benchmarks from <code>ascii</code> to <code>binary</code> format and vice versa.
-</li>
+<li><a href="https://github.com/unsat/npbench/blob/master/instances/converter">Converter</a>: convert from benchmarks from <code>ascii</code> to <code>binary</code> format and vice versa.</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> Vertex Cover instances</h2>
+<div id="outline-container-org4bee076" class="outline-2">
+<h2 id="org4bee076"><span class="section-number-2">2</span> Vertex Cover instances</h2>
 <div class="outline-text-2" id="text-2">
 <p>
-<a href="./instances/vertex_cover/benchmarks/">Directory</a>, 
-<a href="./instances/vertex_cover/benchmarks.tar.gz">tar.gz format</a>
+<a href="https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/">Directory</a>
 </p>
 
 <p>
 From Ke Xu's website 
-<a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm"><a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm</a></a>
+<a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm</a>
 </p>
 
-<table id="tab:vc" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table id="org5846cc5" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="right" />
+<col  class="org-right" />
 
-<col  class="left" />
+<col  class="org-left" />
 
-<col  class="right" />
+<col  class="org-right" />
 
-<col  class="right" />
+<col  class="org-right" />
 
-<col  class="right" />
+<col  class="org-right" />
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="right">&#xa0;</th>
-<th scope="col" class="left">File</th>
-<th scope="col" class="right">Vertices</th>
-<th scope="col" class="right">Max IS<sup><a id="fnr.1" name="fnr.1" class="footref" href="#fn.1">1</a></sup></th>
-<th scope="col" class="right">Min VC</th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">File</th>
+<th scope="col" class="org-right">Vertices</th>
+<th scope="col" class="org-right">Max IS<sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup></th>
+<th scope="col" class="org-right">Min VC</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="right">1</td>
-<td class="left"><a href="./instances/vertex_cover/benchmarks/frb30-15-mis.tar.gz">frb30-15-mis (5 instances)</a></td>
-<td class="right">450</td>
-<td class="right">30</td>
-<td class="right">420</td>
+<td class="org-right">1</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb30-15-mis">frb30-15-mis (5 instances)</a></td>
+<td class="org-right">450</td>
+<td class="org-right">30</td>
+<td class="org-right">420</td>
 </tr>
 
 <tr>
-<td class="right">2</td>
-<td class="left"><a href="./instances/vertex_cover/benchmarks/frb35-17-mis.tar.gz">frb35-17-mis (5 instances)</a></td>
-<td class="right">595</td>
-<td class="right">35</td>
-<td class="right">560</td>
+<td class="org-right">2</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb35-17-mis">frb35-17-mis (5 instances)</a></td>
+<td class="org-right">595</td>
+<td class="org-right">35</td>
+<td class="org-right">560</td>
 </tr>
 
 <tr>
-<td class="right">3</td>
-<td class="left"><a href="./instances/vertex_cover/benchmarks/frb40-19-mis.tar.gz">frb40-19-mis (5 instances)</a></td>
-<td class="right">760</td>
-<td class="right">40</td>
-<td class="right">720</td>
+<td class="org-right">3</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb40-19-mis">frb40-19-mis (5 instances)</a></td>
+<td class="org-right">760</td>
+<td class="org-right">40</td>
+<td class="org-right">720</td>
 </tr>
 
 <tr>
-<td class="right">4</td>
-<td class="left"><a href="./instances/vertex_cover/benchmarks/frb45-21-mis.tar.gz">frb45-21-mis (5 instances)</a></td>
-<td class="right">945</td>
-<td class="right">45</td>
-<td class="right">900</td>
+<td class="org-right">4</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb45-21-mis">frb45-21-mis (5 instances)</a></td>
+<td class="org-right">945</td>
+<td class="org-right">45</td>
+<td class="org-right">900</td>
 </tr>
 
 <tr>
-<td class="right">5</td>
-<td class="left"><a href="./instances/vertex_cover/benchmarks/frb50-23-mis.tar.gz">frb50-23-mis (5 instances)</a></td>
-<td class="right">1150</td>
-<td class="right">50</td>
-<td class="right">1100</td>
+<td class="org-right">5</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb50-23-mis">frb50-23-mis (5 instances)</a></td>
+<td class="org-right">1150</td>
+<td class="org-right">50</td>
+<td class="org-right">1100</td>
 </tr>
 
 <tr>
-<td class="right">6</td>
-<td class="left"><a href="./instances/vertex_cover/benchmarks/frb53-24-mis.tar.gz">frb53-24-mis (5 instances)</a></td>
-<td class="right">1272</td>
-<td class="right">53</td>
-<td class="right">1219</td>
+<td class="org-right">6</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb53-24-mis">frb53-24-mis (5 instances)</a></td>
+<td class="org-right">1272</td>
+<td class="org-right">53</td>
+<td class="org-right">1219</td>
 </tr>
 
 <tr>
-<td class="right">7</td>
-<td class="left"><a href="./instances/vertex_cover/benchmarks/frb56-25-mis.tar.gz">frb56-25-mis (5 instances)</a></td>
-<td class="right">1400</td>
-<td class="right">56</td>
-<td class="right">1344</td>
+<td class="org-right">7</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb56-25-mis">frb56-25-mis (5 instances)</a></td>
+<td class="org-right">1400</td>
+<td class="org-right">56</td>
+<td class="org-right">1344</td>
 </tr>
 
 <tr>
-<td class="right">8</td>
-<td class="left"><a href="./instances/vertex_cover/benchmarks/frb59-26-mis.tar.gz">frb59-26-mis (5 instances)</a></td>
-<td class="right">1534</td>
-<td class="right">59</td>
-<td class="right">1475</td>
+<td class="org-right">8</td>
+<td class="org-left"><a href="https://github.com/unsat/npbench/blob/master/instances/vertex_cover/benchmarks/frb59-26-mis">frb59-26-mis (5 instances)</a></td>
+<td class="org-right">1534</td>
+<td class="org-right">59</td>
+<td class="org-right">1475</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-sec-3" class="outline-2">
-<h2 id="sec-3"><span class="section-number-2">3</span> Clique complement graphs</h2>
+<div id="outline-container-org378bd16" class="outline-2">
+<h2 id="org378bd16"><span class="section-number-2">3</span> Clique complement graphs</h2>
 <div class="outline-text-2" id="text-3">
 <p>
-<a href="./instances/vertex_cover/clique_complement/">Directory</a>, 
-<a href="./instances/coloring/vertex_cover/clique_complement.tar.gz">tar.gz format</a> 
+<a href="https://github.com/unsat/npbench/blob/master/instances/vertex_cover/clique_complement/">Directory</a>
 </p>
 
 <p>
@@ -280,159 +152,83 @@ From Muthubharathi Periannan's MS thesis at Penn State Harrisburg.
 </p>
 
 <ul class="org-ul">
-<li><a href="./instances/vertex_cover/clique_complement/fileconverter.tar.gz">Clique to Vertex Cover</a> converter: converts graph instances for Max Clique into complement graphs, usable for Min Vertex Covering. The size of the minimum vertex cover is the difference between the total number of vertices and the size of the max clique.
-</li>
+<li><a href="https://github.com/unsat/npbench/blob/master/instances/vertex_cover/clique_complement/fileconverter.cpp">Clique to Vertex Cover</a> converter: converts graph instances for Max Clique into complement graphs, usable for Min Vertex Covering. The size of the minimum vertex cover is the difference between the total number of vertices and the size of the max clique.</li>
 </ul>
-
-
-<table id="tab:complementclique" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="right" />
-
-<col  class="left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="right">&#xa0;</th>
-<th scope="col" class="left">File</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="right">1</td>
-<td class="left"><a href="./instances/vertex_cover/clique_complement/brock.tar.gz">brock</a></td>
-</tr>
-
-<tr>
-<td class="right">2</td>
-<td class="left"><a href="./instances/vertex_cover/clique_complement/C.tar.gz">C</a></td>
-</tr>
-
-<tr>
-<td class="right">3</td>
-<td class="left"><a href="./instances/vertex_cover/clique_complement/cfat.tar.gz">cfat</a></td>
-</tr>
-
-<tr>
-<td class="right">4</td>
-<td class="left"><a href="./instances/vertex_cover/clique_complement/gen.tar.gz">gen</a></td>
-</tr>
-
-<tr>
-<td class="right">5</td>
-<td class="left"><a href="./instances/vertex_cover/clique_complement/hamming.tar.gz">hamming</a></td>
-</tr>
-
-<tr>
-<td class="right">6</td>
-<td class="left"><a href="./instances/vertex_cover/clique_complement/johnson.tar.gz">johnson</a></td>
-</tr>
-
-<tr>
-<td class="right">7</td>
-<td class="left"><a href="./instances/vertex_cover/clique_complement/keller.tar.gz">keller</a></td>
-</tr>
-
-<tr>
-<td class="right">8</td>
-<td class="left"><a href="./instances/vertex_cover/clique_complement/MANN_a.tar.gz">MANN_a</a></td>
-</tr>
-
-<tr>
-<td class="right">9</td>
-<td class="left"><a href="./instances/vertex_cover/clique_complement/p_hat.tar.gz">p_hat</a></td>
-</tr>
-
-<tr>
-<td class="right">10</td>
-<td class="left"><a href="./instances/vertex_cover/clique_complement/san.tar.gz">san</a></td>
-</tr>
-
-<tr>
-<td class="right">11</td>
-<td class="left"><a href="./instances/vertex_cover/clique_complement/sanr.tar.gz">sanr</a></td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 
-<div id="outline-container-sec-4" class="outline-2">
-<h2 id="sec-4"><span class="section-number-2">4</span> Random Graphs</h2>
+<div id="outline-container-org68ad96c" class="outline-2">
+<h2 id="org68ad96c"><span class="section-number-2">4</span> Random Graphs</h2>
 <div class="outline-text-2" id="text-4">
 <p>
-<a href="./instances/vertex_cover/random_graphs/">Directory</a>, 
-<a href="./instances//vertex_cover/random_graphs.tar.gz">tar.gz format</a>
+<a href="https://github.com/unsat/npbench/blob/master/instances/vertex_cover/random_graphs/">Directory</a>
 </p>
 
 <p>
 From Muthubharathi Periannan's MS thesis at Penn State Harrisburg.
 </p>
 
-<table id="tab:random" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<table id="orgda2c6c3" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="right" />
+<col  class="org-right" />
 
-<col  class="left" />
+<col  class="org-left" />
 
-<col  class="right" />
+<col  class="org-right" />
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="right">&#xa0;</th>
-<th scope="col" class="left">File</th>
-<th scope="col" class="right">Vertices</th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">File</th>
+<th scope="col" class="org-right">Vertices</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="right">1</td>
-<td class="left"><a href="./instances/vertex_cover/random_graphs/graph50.tar.gz">random graphs with  50 vertices - 10 instances</a></td>
-<td class="right">50</td>
+<td class="org-right">1</td>
+<td class="org-left">random graphs with  50 vertices - 10 instances</td>
+<td class="org-right">50</td>
 </tr>
 
 <tr>
-<td class="right">2</td>
-<td class="left"><a href="./instances/vertex_cover/random_graphs/graph100.tar.gz">random graphs with 100 vertices - 10 instances</a></td>
-<td class="right">100</td>
+<td class="org-right">2</td>
+<td class="org-left">random graphs with 100 vertices - 10 instances</td>
+<td class="org-right">100</td>
 </tr>
 
 <tr>
-<td class="right">3</td>
-<td class="left"><a href="./instances/vertex_cover/random_graphs/graph200.tar.gz">random graphs with 200 vertices - 5 instances</a></td>
-<td class="right">200</td>
+<td class="org-right">3</td>
+<td class="org-left">random graphs with 200 vertices - 5 instances</td>
+<td class="org-right">200</td>
 </tr>
 
 <tr>
-<td class="right">4</td>
-<td class="left"><a href="./instances/vertex_cover/random_graphs/graph250.tar.gz">random graphs with 250 vertices - 5 instances</a></td>
-<td class="right">250</td>
+<td class="org-right">4</td>
+<td class="org-left">random graphs with 250 vertices - 5 instances</td>
+<td class="org-right">250</td>
 </tr>
 
 <tr>
-<td class="right">5</td>
-<td class="left"><a href="./instances/vertex_cover/random_graphs/graph500.tar.gz">random graphs with 500 vertices - 5 instances</a></td>
-<td class="right">500</td>
+<td class="org-right">5</td>
+<td class="org-left">random graphs with 500 vertices - 5 instances</td>
+<td class="org-right">500</td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 
-<div id="outline-container-sec-5" class="outline-2">
-<h2 id="sec-5"><span class="section-number-2">5</span> Other Instances</h2>
+<div id="outline-container-org9c258bb" class="outline-2">
+<h2 id="org9c258bb"><span class="section-number-2">5</span> Other Instances</h2>
 <div class="outline-text-2" id="text-5">
 <dl class="org-dl">
-<dt> BHOSLIB </dt><dd>Benchmarks with Hidden Optimum Solutions for Graph Problems (Maximum Clique, Maximum Independent Set, Minimum Vertex Cover and Vertex Coloring): <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm"><a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm</a></a>
-</dd>
+<dt>BHOSLIB</dt><dd>Benchmarks with Hidden Optimum Solutions for Graph Problems (Maximum Clique, Maximum Independent Set, Minimum Vertex Cover and Vertex Coloring): <a href="http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm">http://www.nlsde.buaa.edu.cn/~kexu/benchmarks/graph-benchmarks.htm</a> (link no longer exists)</dd>
 </dl>
 
 
-<hr  />
+<hr />
 
 <p>
 <a href="./index.html">Back to benchmark instances page</a>
@@ -443,9 +239,9 @@ From Muthubharathi Periannan's MS thesis at Penn State Harrisburg.
 <h2 class="footnotes">Footnotes: </h2>
 <div id="text-footnotes">
 
-<div class="footdef"><sup><a id="fn.1" name="fn.1" class="footnum" href="#fnr.1">1</a></sup> <p class="footpara">
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
 IS: indepdent set
-</p></div>
+</p></div></div>
 
 
 </div>

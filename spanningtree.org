@@ -1,524 +1,497 @@
-2#+TITLE:    Degree-Constrained Spanning Tree Benchmark Instances
-#+OPTIONS: ^:nil html-postamble:nil 
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../Pub/solarized-light.css" />
+#+TITLE:    Degree-Constrained Spanning Tree Benchmark Instances
+#+OPTIONS: ^:nil
+
+#+HTML_HEAD: <link rel="stylesheet" href="https://nguyenthanhvuh.github.io/files/org.css">
+#+HTML_HEAD: <link rel="alternative stylesheet" href="https://nguyenthanhvuh.github.io/files/org-orig.css">
 
 * Spanning Tree Instances 
-  [[./instances/spanning_tree/SHRD-Graphs][Directory]], 
-  [[./instances/spanning_tree/SHRD-Graphs.tar.gz][tar.gz format]]
+  [[https://github.com/unsat/npbench/tree/master/instances/spanning_tree/SHRD-Graphs][Directory]]
 
-  [[./instances/spanning_tree/SHRD-Graphs/README][README]]: The CRD and SYM data sets have been obtained from A Volgenant, the remainder have been created by A Ernst and M Krishnamoorthy.
+  [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/README][README]]: The CRD and SYM data sets have been obtained from A Volgenant, the remainder have been created by A Ernst and M Krishnamoorthy.
 
 #+NAME: tab:spanningtree
-|     | File                                                       | Deg | Sol[fn:1] |
-|     | <l>                                                        | <r> |       <r> |
-|-----+------------------------------------------------------------+-----+-----------|
-|   1 | [[./instances/spanning_tree/SHRD-Graphs/crd100][crd100  ]] |   2 |      7524 |
-|   2 | [[./instances/spanning_tree/SHRD-Graphs/crd100][crd100  ]] |   3 |    *6196* |
-|   3 | [[./instances/spanning_tree/SHRD-Graphs/crd100][crd100  ]] |   4 |    *6194* |
-|   4 | [[./instances/spanning_tree/SHRD-Graphs/crd100][crd100  ]] |   5 |    *6194* |
-|   5 | [[./instances/spanning_tree/SHRD-Graphs/crd101][crd101  ]] |   2 |      8312 |
-|   6 | [[./instances/spanning_tree/SHRD-Graphs/crd101][crd101  ]] |   3 |    *7004* |
-|   7 | [[./instances/spanning_tree/SHRD-Graphs/crd101][crd101  ]] |   4 |    *7004* |
-|   8 | [[./instances/spanning_tree/SHRD-Graphs/crd101][crd101  ]] |   5 |    *7004* |
-|   9 | [[./instances/spanning_tree/SHRD-Graphs/crd102][crd102  ]] |   2 |      7995 |
-|  10 | [[./instances/spanning_tree/SHRD-Graphs/crd102][crd102  ]] |   3 |    *6867* |
-|  11 | [[./instances/spanning_tree/SHRD-Graphs/crd102][crd102  ]] |   4 |    *6831* |
-|  12 | [[./instances/spanning_tree/SHRD-Graphs/crd102][crd102  ]] |   5 |    *6831* |
-|  13 | [[./instances/spanning_tree/SHRD-Graphs/crd103][crd103  ]] |   2 |      8231 |
-|  14 | [[./instances/spanning_tree/SHRD-Graphs/crd103][crd103  ]] |   3 |    *7047* |
-|  15 | [[./instances/spanning_tree/SHRD-Graphs/crd103][crd103  ]] |   4 |    *7041* |
-|  16 | [[./instances/spanning_tree/SHRD-Graphs/crd103][crd103  ]] |   5 |    *7041* |
-|  17 | [[./instances/spanning_tree/SHRD-Graphs/crd104][crd104  ]] |   2 |      8036 |
-|  18 | [[./instances/spanning_tree/SHRD-Graphs/crd104][crd104  ]] |   3 |    *6946* |
-|  19 | [[./instances/spanning_tree/SHRD-Graphs/crd104][crd104  ]] |   4 |    *6946* |
-|  20 | [[./instances/spanning_tree/SHRD-Graphs/crd104][crd104  ]] |   5 |    *6946* |
-|  21 | [[./instances/spanning_tree/SHRD-Graphs/crd105][crd105  ]] |   2 |      7660 |
-|  22 | [[./instances/spanning_tree/SHRD-Graphs/crd105][crd105  ]] |   3 |    *6456* |
-|  23 | [[./instances/spanning_tree/SHRD-Graphs/crd105][crd105  ]] |   4 |    *6449* |
-|  24 | [[./instances/spanning_tree/SHRD-Graphs/crd105][crd105  ]] |   5 |    *6449* |
-|  25 | [[./instances/spanning_tree/SHRD-Graphs/crd106][crd106  ]] |   2 |      7323 |
-|  26 | [[./instances/spanning_tree/SHRD-Graphs/crd106][crd106  ]] |   3 |    *6248* |
-|  27 | [[./instances/spanning_tree/SHRD-Graphs/crd106][crd106  ]] |   4 |    *6248* |
-|  28 | [[./instances/spanning_tree/SHRD-Graphs/crd106][crd106  ]] |   5 |    *6248* |
-|  29 | [[./instances/spanning_tree/SHRD-Graphs/crd107][crd107  ]] |   2 |      8268 |
-|  30 | [[./instances/spanning_tree/SHRD-Graphs/crd107][crd107  ]] |   3 |    *7125* |
-|  31 | [[./instances/spanning_tree/SHRD-Graphs/crd107][crd107  ]] |   4 |    *7125* |
-|  32 | [[./instances/spanning_tree/SHRD-Graphs/crd107][crd107  ]] |   5 |    *7125* |
-|  33 | [[./instances/spanning_tree/SHRD-Graphs/crd108][crd108  ]] |   2 |      7424 |
-|  34 | [[./instances/spanning_tree/SHRD-Graphs/crd108][crd108  ]] |   3 |    *6531* |
-|  35 | [[./instances/spanning_tree/SHRD-Graphs/crd108][crd108  ]] |   4 |    *6531* |
-|  36 | [[./instances/spanning_tree/SHRD-Graphs/crd108][crd108  ]] |   5 |    *6531* |
-|  37 | [[./instances/spanning_tree/SHRD-Graphs/crd109][crd109  ]] |   2 |      7824 |
-|  38 | [[./instances/spanning_tree/SHRD-Graphs/crd109][crd109  ]] |   3 |    *6620* |
-|  39 | [[./instances/spanning_tree/SHRD-Graphs/crd109][crd109  ]] |   4 |    *6613* |
-|  40 | [[./instances/spanning_tree/SHRD-Graphs/crd109][crd109  ]] |   5 |    *6613* |
-|  41 | [[./instances/spanning_tree/SHRD-Graphs/crd300][crd300  ]] |   2 |    *4472* |
-|  42 | [[./instances/spanning_tree/SHRD-Graphs/crd300][crd300  ]] |   3 |    *3634* |
-|  43 | [[./instances/spanning_tree/SHRD-Graphs/crd300][crd300  ]] |   4 |    *3634* |
-|  44 | [[./instances/spanning_tree/SHRD-Graphs/crd300][crd300  ]] |   5 |    *3634* |
-|  45 | [[./instances/spanning_tree/SHRD-Graphs/crd301][crd301  ]] |   2 |    *3618* |
-|  46 | [[./instances/spanning_tree/SHRD-Graphs/crd301][crd301  ]] |   3 |    *3277* |
-|  47 | [[./instances/spanning_tree/SHRD-Graphs/crd301][crd301  ]] |   4 |    *3277* |
-|  48 | [[./instances/spanning_tree/SHRD-Graphs/crd301][crd301  ]] |   5 |    *3277* |
-|  49 | [[./instances/spanning_tree/SHRD-Graphs/crd302][crd302  ]] |   2 |    *4221* |
-|  50 | [[./instances/spanning_tree/SHRD-Graphs/crd302][crd302  ]] |   3 |    *4001* |
-|  51 | [[./instances/spanning_tree/SHRD-Graphs/crd302][crd302  ]] |   4 |    *4001* |
-|  52 | [[./instances/spanning_tree/SHRD-Graphs/crd302][crd302  ]] |   5 |    *4001* |
-|  53 | [[./instances/spanning_tree/SHRD-Graphs/crd303][crd303  ]] |   2 |    *4234* |
-|  54 | [[./instances/spanning_tree/SHRD-Graphs/crd303][crd303  ]] |   3 |    *3861* |
-|  55 | [[./instances/spanning_tree/SHRD-Graphs/crd303][crd303  ]] |   4 |    *3861* |
-|  56 | [[./instances/spanning_tree/SHRD-Graphs/crd303][crd303  ]] |   5 |    *3861* |
-|  57 | [[./instances/spanning_tree/SHRD-Graphs/crd304][crd304  ]] |   2 |    *4730* |
-|  58 | [[./instances/spanning_tree/SHRD-Graphs/crd304][crd304  ]] |   3 |    *3931* |
-|  59 | [[./instances/spanning_tree/SHRD-Graphs/crd304][crd304  ]] |   4 |    *3931* |
-|  60 | [[./instances/spanning_tree/SHRD-Graphs/crd304][crd304  ]] |   5 |    *3931* |
-|  61 | [[./instances/spanning_tree/SHRD-Graphs/crd305][crd305  ]] |   2 |    *4249* |
-|  62 | [[./instances/spanning_tree/SHRD-Graphs/crd305][crd305  ]] |   3 |    *3812* |
-|  63 | [[./instances/spanning_tree/SHRD-Graphs/crd305][crd305  ]] |   4 |    *3774* |
-|  64 | [[./instances/spanning_tree/SHRD-Graphs/crd305][crd305  ]] |   5 |    *3774* |
-|  65 | [[./instances/spanning_tree/SHRD-Graphs/crd306][crd306  ]] |   2 |    *4212* |
-|  66 | [[./instances/spanning_tree/SHRD-Graphs/crd306][crd306  ]] |   3 |    *3831* |
-|  67 | [[./instances/spanning_tree/SHRD-Graphs/crd306][crd306  ]] |   4 |    *3801* |
-|  68 | [[./instances/spanning_tree/SHRD-Graphs/crd306][crd306  ]] |   5 |    *3801* |
-|  69 | [[./instances/spanning_tree/SHRD-Graphs/crd307][crd307  ]] |   2 |    *4259* |
-|  70 | [[./instances/spanning_tree/SHRD-Graphs/crd307][crd307  ]] |   3 |    *3927* |
-|  71 | [[./instances/spanning_tree/SHRD-Graphs/crd307][crd307  ]] |   4 |    *3927* |
-|  72 | [[./instances/spanning_tree/SHRD-Graphs/crd307][crd307  ]] |   5 |    *3927* |
-|  73 | [[./instances/spanning_tree/SHRD-Graphs/crd308][crd308  ]] |   2 |    *4030* |
-|  74 | [[./instances/spanning_tree/SHRD-Graphs/crd308][crd308  ]] |   3 |    *3714* |
-|  75 | [[./instances/spanning_tree/SHRD-Graphs/crd308][crd308  ]] |   4 |    *3714* |
-|  76 | [[./instances/spanning_tree/SHRD-Graphs/crd308][crd308  ]] |   5 |    *3714* |
-|  77 | [[./instances/spanning_tree/SHRD-Graphs/crd309][crd309  ]] |   2 |    *4030* |
-|  78 | [[./instances/spanning_tree/SHRD-Graphs/crd309][crd309  ]] |   3 |    *3730* |
-|  79 | [[./instances/spanning_tree/SHRD-Graphs/crd309][crd309  ]] |   4 |    *3730* |
-|  80 | [[./instances/spanning_tree/SHRD-Graphs/crd309][crd309  ]] |   5 |    *3730* |
-|  81 | [[./instances/spanning_tree/SHRD-Graphs/crd500][crd500  ]] |   2 |    *5312* |
-|  82 | [[./instances/spanning_tree/SHRD-Graphs/crd500][crd500  ]] |   3 |    *4931* |
-|  83 | [[./instances/spanning_tree/SHRD-Graphs/crd500][crd500  ]] |   4 |    *4931* |
-|  84 | [[./instances/spanning_tree/SHRD-Graphs/crd500][crd500  ]] |   5 |    *4931* |
-|  85 | [[./instances/spanning_tree/SHRD-Graphs/crd501][crd501  ]] |   2 |      5625 |
-|  86 | [[./instances/spanning_tree/SHRD-Graphs/crd501][crd501  ]] |   3 |    *5126* |
-|  87 | [[./instances/spanning_tree/SHRD-Graphs/crd501][crd501  ]] |   4 |    *5126* |
-|  88 | [[./instances/spanning_tree/SHRD-Graphs/crd501][crd501  ]] |   5 |    *5126* |
-|  89 | [[./instances/spanning_tree/SHRD-Graphs/crd502][crd502  ]] |   2 |      5507 |
-|  90 | [[./instances/spanning_tree/SHRD-Graphs/crd502][crd502  ]] |   3 |    *4898* |
-|  91 | [[./instances/spanning_tree/SHRD-Graphs/crd502][crd502  ]] |   4 |    *4898* |
-|  92 | [[./instances/spanning_tree/SHRD-Graphs/crd502][crd502  ]] |   5 |    *4898* |
-|  93 | [[./instances/spanning_tree/SHRD-Graphs/crd503][crd503  ]] |   2 |      5090 |
-|  94 | [[./instances/spanning_tree/SHRD-Graphs/crd503][crd503  ]] |   3 |    *4543* |
-|  95 | [[./instances/spanning_tree/SHRD-Graphs/crd503][crd503  ]] |   4 |    *4543* |
-|  96 | [[./instances/spanning_tree/SHRD-Graphs/crd503][crd503  ]] |   5 |    *4543* |
-|  97 | [[./instances/spanning_tree/SHRD-Graphs/crd504][crd504  ]] |   2 |      5562 |
-|  98 | [[./instances/spanning_tree/SHRD-Graphs/crd504][crd504  ]] |   3 |    *4733* |
-|  99 | [[./instances/spanning_tree/SHRD-Graphs/crd504][crd504  ]] |   4 |    *4733* |
-| 100 | [[./instances/spanning_tree/SHRD-Graphs/crd504][crd504  ]] |   5 |    *4733* |
-| 101 | [[./instances/spanning_tree/SHRD-Graphs/crd505][crd505  ]] |   2 |      5579 |
-| 102 | [[./instances/spanning_tree/SHRD-Graphs/crd505][crd505  ]] |   3 |    *4895* |
-| 103 | [[./instances/spanning_tree/SHRD-Graphs/crd505][crd505  ]] |   4 |    *4892* |
-| 104 | [[./instances/spanning_tree/SHRD-Graphs/crd505][crd505  ]] |   5 |    *4892* |
-| 105 | [[./instances/spanning_tree/SHRD-Graphs/crd506][crd506  ]] |   2 |      5180 |
-| 106 | [[./instances/spanning_tree/SHRD-Graphs/crd506][crd506  ]] |   3 |    *4722* |
-| 107 | [[./instances/spanning_tree/SHRD-Graphs/crd506][crd506  ]] |   4 |    *4691* |
-| 108 | [[./instances/spanning_tree/SHRD-Graphs/crd506][crd506  ]] |   5 |    *4691* |
-| 109 | [[./instances/spanning_tree/SHRD-Graphs/crd507][crd507  ]] |   2 |      5233 |
-| 110 | [[./instances/spanning_tree/SHRD-Graphs/crd507][crd507  ]] |   3 |    *4761* |
-| 111 | [[./instances/spanning_tree/SHRD-Graphs/crd507][crd507  ]] |   4 |    *4761* |
-| 112 | [[./instances/spanning_tree/SHRD-Graphs/crd507][crd507  ]] |   5 |    *4761* |
-| 113 | [[./instances/spanning_tree/SHRD-Graphs/crd508][crd508  ]] |   2 |    *5371* |
-| 114 | [[./instances/spanning_tree/SHRD-Graphs/crd508][crd508  ]] |   3 |    *5008* |
-| 115 | [[./instances/spanning_tree/SHRD-Graphs/crd508][crd508  ]] |   4 |    *5008* |
-| 116 | [[./instances/spanning_tree/SHRD-Graphs/crd508][crd508  ]] |   5 |    *5008* |
-| 117 | [[./instances/spanning_tree/SHRD-Graphs/crd509][crd509  ]] |   2 |      5345 |
-| 118 | [[./instances/spanning_tree/SHRD-Graphs/crd509][crd509  ]] |   3 |    *4607* |
-| 119 | [[./instances/spanning_tree/SHRD-Graphs/crd509][crd509  ]] |   4 |    *4607* |
-| 120 | [[./instances/spanning_tree/SHRD-Graphs/crd509][crd509  ]] |   5 |    *4607* |
-| 121 | [[./instances/spanning_tree/SHRD-Graphs/crd700][crd700  ]] |   2 |      6544 |
-| 122 | [[./instances/spanning_tree/SHRD-Graphs/crd700][crd700  ]] |   3 |    *5789* |
-| 123 | [[./instances/spanning_tree/SHRD-Graphs/crd700][crd700  ]] |   4 |    *5789* |
-| 124 | [[./instances/spanning_tree/SHRD-Graphs/crd700][crd700  ]] |   5 |    *5789* |
-| 125 | [[./instances/spanning_tree/SHRD-Graphs/crd701][crd701  ]] |   2 |      6182 |
-| 126 | [[./instances/spanning_tree/SHRD-Graphs/crd701][crd701  ]] |   3 |    *5849* |
-| 127 | [[./instances/spanning_tree/SHRD-Graphs/crd701][crd701  ]] |   4 |    *5848* |
-| 128 | [[./instances/spanning_tree/SHRD-Graphs/crd701][crd701  ]] |   5 |    *5848* |
-| 129 | [[./instances/spanning_tree/SHRD-Graphs/crd702][crd702  ]] |   2 |      7089 |
-| 130 | [[./instances/spanning_tree/SHRD-Graphs/crd702][crd702  ]] |   3 |    *6167* |
-| 131 | [[./instances/spanning_tree/SHRD-Graphs/crd702][crd702  ]] |   4 |    *6167* |
-| 132 | [[./instances/spanning_tree/SHRD-Graphs/crd702][crd702  ]] |   5 |    *6167* |
-| 133 | [[./instances/spanning_tree/SHRD-Graphs/crd703][crd703  ]] |   2 |      6606 |
-| 134 | [[./instances/spanning_tree/SHRD-Graphs/crd703][crd703  ]] |   3 |    *5894* |
-| 135 | [[./instances/spanning_tree/SHRD-Graphs/crd703][crd703  ]] |   4 |    *5878* |
-| 136 | [[./instances/spanning_tree/SHRD-Graphs/crd703][crd703  ]] |   5 |    *5878* |
-| 137 | [[./instances/spanning_tree/SHRD-Graphs/crd704][crd704  ]] |   2 |      6642 |
-| 138 | [[./instances/spanning_tree/SHRD-Graphs/crd704][crd704  ]] |   3 |    *5590* |
-| 139 | [[./instances/spanning_tree/SHRD-Graphs/crd704][crd704  ]] |   4 |    *5590* |
-| 140 | [[./instances/spanning_tree/SHRD-Graphs/crd704][crd704  ]] |   5 |    *5590* |
-| 141 | [[./instances/spanning_tree/SHRD-Graphs/crd705][crd705  ]] |   2 |      6779 |
-| 142 | [[./instances/spanning_tree/SHRD-Graphs/crd705][crd705  ]] |   3 |    *5854* |
-| 143 | [[./instances/spanning_tree/SHRD-Graphs/crd705][crd705  ]] |   4 |    *5853* |
-| 144 | [[./instances/spanning_tree/SHRD-Graphs/crd705][crd705  ]] |   5 |    *5853* |
-| 145 | [[./instances/spanning_tree/SHRD-Graphs/crd706][crd706  ]] |   2 |      6859 |
-| 146 | [[./instances/spanning_tree/SHRD-Graphs/crd706][crd706  ]] |   3 |    *6078* |
-| 147 | [[./instances/spanning_tree/SHRD-Graphs/crd706][crd706  ]] |   4 |    *6078* |
-| 148 | [[./instances/spanning_tree/SHRD-Graphs/crd706][crd706  ]] |   5 |    *6078* |
-| 149 | [[./instances/spanning_tree/SHRD-Graphs/crd707][crd707  ]] |   2 |      6668 |
-| 150 | [[./instances/spanning_tree/SHRD-Graphs/crd707][crd707  ]] |   3 |    *5985* |
-| 151 | [[./instances/spanning_tree/SHRD-Graphs/crd707][crd707  ]] |   4 |    *5985* |
-| 152 | [[./instances/spanning_tree/SHRD-Graphs/crd707][crd707  ]] |   5 |    *5985* |
-| 153 | [[./instances/spanning_tree/SHRD-Graphs/crd708][crd708  ]] |   2 |      6419 |
-| 154 | [[./instances/spanning_tree/SHRD-Graphs/crd708][crd708  ]] |   3 |    *5803* |
-| 155 | [[./instances/spanning_tree/SHRD-Graphs/crd708][crd708  ]] |   4 |    *5803* |
-| 156 | [[./instances/spanning_tree/SHRD-Graphs/crd708][crd708  ]] |   5 |    *5803* |
-| 157 | [[./instances/spanning_tree/SHRD-Graphs/crd709][crd709  ]] |   2 |      6427 |
-| 158 | [[./instances/spanning_tree/SHRD-Graphs/crd709][crd709  ]] |   3 |    *5502* |
-| 159 | [[./instances/spanning_tree/SHRD-Graphs/crd709][crd709  ]] |   4 |    *5502* |
-| 160 | [[./instances/spanning_tree/SHRD-Graphs/crd709][crd709  ]] |   5 |    *5502* |
-| 161 | [[./instances/spanning_tree/SHRD-Graphs/shrd150][shrd150]] |   2 |       895 |
-| 162 | [[./instances/spanning_tree/SHRD-Graphs/shrd150][shrd150]] |   3 |     *582* |
-| 163 | [[./instances/spanning_tree/SHRD-Graphs/shrd150][shrd150]] |   4 |       430 |
-| 164 | [[./instances/spanning_tree/SHRD-Graphs/shrd150][shrd150]] |   5 |       339 |
-| 165 | [[./instances/spanning_tree/SHRD-Graphs/shrd159][shrd159]] |   2 |       906 |
-| 166 | [[./instances/spanning_tree/SHRD-Graphs/shrd159][shrd159]] |   3 |       597 |
-| 167 | [[./instances/spanning_tree/SHRD-Graphs/shrd159][shrd159]] |   4 |       430 |
-| 168 | [[./instances/spanning_tree/SHRD-Graphs/shrd159][shrd159]] |   5 |       332 |
-| 169 | [[./instances/spanning_tree/SHRD-Graphs/shrd200][shrd200]] |   2 |      1873 |
-| 170 | [[./instances/spanning_tree/SHRD-Graphs/shrd200][shrd200]] |   3 |      1100 |
-| 171 | [[./instances/spanning_tree/SHRD-Graphs/shrd200][shrd200]] |   4 |       829 |
-| 172 | [[./instances/spanning_tree/SHRD-Graphs/shrd200][shrd200]] |   5 |       638 |
-| 173 | [[./instances/spanning_tree/SHRD-Graphs/shrd209][shrd209]] |   2 |      1808 |
-| 174 | [[./instances/spanning_tree/SHRD-Graphs/shrd209][shrd209]] |   3 |      1106 |
-| 175 | [[./instances/spanning_tree/SHRD-Graphs/shrd209][shrd209]] |   4 |       807 |
-| 176 | [[./instances/spanning_tree/SHRD-Graphs/shrd209][shrd209]] |   5 |       634 |
-| 177 | [[./instances/spanning_tree/SHRD-Graphs/shrd258][shrd258]] |   2 |      2953 |
-| 178 | [[./instances/spanning_tree/SHRD-Graphs/shrd258][shrd258]] |   3 |      1838 |
-| 179 | [[./instances/spanning_tree/SHRD-Graphs/shrd258][shrd258]] |   4 |      1302 |
-| 180 | [[./instances/spanning_tree/SHRD-Graphs/shrd258][shrd258]] |   5 |      1007 |
-| 181 | [[./instances/spanning_tree/SHRD-Graphs/shrd259][shrd259]] |   2 |      2984 |
-| 182 | [[./instances/spanning_tree/SHRD-Graphs/shrd259][shrd259]] |   3 |      1870 |
-| 183 | [[./instances/spanning_tree/SHRD-Graphs/shrd259][shrd259]] |   4 |      1312 |
-| 184 | [[./instances/spanning_tree/SHRD-Graphs/shrd259][shrd259]] |   5 |      1019 |
-| 185 | [[./instances/spanning_tree/SHRD-Graphs/shrd300][shrd300]] |   2 |      4560 |
-| 186 | [[./instances/spanning_tree/SHRD-Graphs/shrd300][shrd300]] |   3 |      2738 |
-| 187 | [[./instances/spanning_tree/SHRD-Graphs/shrd300][shrd300]] |   4 |      1965 |
-| 188 | [[./instances/spanning_tree/SHRD-Graphs/shrd300][shrd300]] |   5 |      1526 |
-| 189 | [[./instances/spanning_tree/SHRD-Graphs/shrd309][shrd309]] |   2 |      4268 |
-| 190 | [[./instances/spanning_tree/SHRD-Graphs/shrd309][shrd309]] |   3 |      2765 |
-| 191 | [[./instances/spanning_tree/SHRD-Graphs/shrd309][shrd309]] |   4 |      1947 |
-| 192 | [[./instances/spanning_tree/SHRD-Graphs/shrd309][shrd309]] |   5 |      1487 |
-| 193 | [[./instances/spanning_tree/SHRD-Graphs/str1000][str1000]] |   2 |      5211 |
-| 194 | [[./instances/spanning_tree/SHRD-Graphs/str1000][str1000]] |   3 |    *4702* |
-| 195 | [[./instances/spanning_tree/SHRD-Graphs/str1000][str1000]] |   4 |    *4546* |
-| 196 | [[./instances/spanning_tree/SHRD-Graphs/str1000][str1000]] |   5 |    *4403* |
-| 197 | [[./instances/spanning_tree/SHRD-Graphs/str1001][str1001]] |   2 |      5211 |
-| 198 | [[./instances/spanning_tree/SHRD-Graphs/str1001][str1001]] |   3 |    *4702* |
-| 199 | [[./instances/spanning_tree/SHRD-Graphs/str1001][str1001]] |   4 |    *4546* |
-| 200 | [[./instances/spanning_tree/SHRD-Graphs/str1001][str1001]] |   5 |    *4403* |
-| 201 | [[./instances/spanning_tree/SHRD-Graphs/str1002][str1002]] |   2 |      7276 |
-| 202 | [[./instances/spanning_tree/SHRD-Graphs/str1002][str1002]] |   3 |    *6713* |
-| 203 | [[./instances/spanning_tree/SHRD-Graphs/str1002][str1002]] |   4 |    *6511* |
-| 204 | [[./instances/spanning_tree/SHRD-Graphs/str1002][str1002]] |   5 |    *6362* |
-| 205 | [[./instances/spanning_tree/SHRD-Graphs/str1003][str1003]] |   2 |      7276 |
-| 206 | [[./instances/spanning_tree/SHRD-Graphs/str1003][str1003]] |   3 |    *6713* |
-| 207 | [[./instances/spanning_tree/SHRD-Graphs/str1003][str1003]] |   4 |    *6511* |
-| 208 | [[./instances/spanning_tree/SHRD-Graphs/str1003][str1003]] |   5 |    *6362* |
-| 209 | [[./instances/spanning_tree/SHRD-Graphs/str1004][str1004]] |   2 |      8935 |
-| 210 | [[./instances/spanning_tree/SHRD-Graphs/str1004][str1004]] |   3 |    *8313* |
-| 211 | [[./instances/spanning_tree/SHRD-Graphs/str1004][str1004]] |   4 |    *8117* |
-| 212 | [[./instances/spanning_tree/SHRD-Graphs/str1004][str1004]] |   5 |    *7930* |
-| 213 | [[./instances/spanning_tree/SHRD-Graphs/str1005][str1005]] |   2 |      8935 |
-| 214 | [[./instances/spanning_tree/SHRD-Graphs/str1005][str1005]] |   3 |    *8313* |
-| 215 | [[./instances/spanning_tree/SHRD-Graphs/str1005][str1005]] |   4 |    *8117* |
-| 216 | [[./instances/spanning_tree/SHRD-Graphs/str1005][str1005]] |   5 |    *7930* |
-| 217 | [[./instances/spanning_tree/SHRD-Graphs/str1006][str1006]] |   2 |     10684 |
-| 218 | [[./instances/spanning_tree/SHRD-Graphs/str1006][str1006]] |   3 |  1* 0155* |
-| 219 | [[./instances/spanning_tree/SHRD-Graphs/str1006][str1006]] |   4 |    *9951* |
-| 220 | [[./instances/spanning_tree/SHRD-Graphs/str1006][str1006]] |   5 |    *9756* |
-| 221 | [[./instances/spanning_tree/SHRD-Graphs/str1007][str1007]] |   2 |     10684 |
-| 222 | [[./instances/spanning_tree/SHRD-Graphs/str1007][str1007]] |   3 |  1* 0155* |
-| 223 | [[./instances/spanning_tree/SHRD-Graphs/str1007][str1007]] |   4 |    *9951* |
-| 224 | [[./instances/spanning_tree/SHRD-Graphs/str1007][str1007]] |   5 |    *9756* |
-| 225 | [[./instances/spanning_tree/SHRD-Graphs/str1008][str1008]] |   2 |     12625 |
-| 226 | [[./instances/spanning_tree/SHRD-Graphs/str1008][str1008]] |   3 |  1* 1952* |
-| 227 | [[./instances/spanning_tree/SHRD-Graphs/str1008][str1008]] |   4 |     11726 |
-| 228 | [[./instances/spanning_tree/SHRD-Graphs/str1008][str1008]] |   5 |     11530 |
-| 229 | [[./instances/spanning_tree/SHRD-Graphs/str1009][str1009]] |   2 |     12568 |
-| 230 | [[./instances/spanning_tree/SHRD-Graphs/str1009][str1009]] |   3 |  1* 1985* |
-| 231 | [[./instances/spanning_tree/SHRD-Graphs/str1009][str1009]] |   4 |     11767 |
-| 232 | [[./instances/spanning_tree/SHRD-Graphs/str1009][str1009]] |   5 |     11571 |
-| 233 | [[./instances/spanning_tree/SHRD-Graphs/str300][str300  ]] |   2 |    *4173* |
-| 234 | [[./instances/spanning_tree/SHRD-Graphs/str300][str300  ]] |   3 |    *3924* |
-| 235 | [[./instances/spanning_tree/SHRD-Graphs/str300][str300  ]] |   4 |    *3761* |
-| 236 | [[./instances/spanning_tree/SHRD-Graphs/str300][str300  ]] |   5 |    *3605* |
-| 237 | [[./instances/spanning_tree/SHRD-Graphs/str301][str301  ]] |   2 |    *4171* |
-| 238 | [[./instances/spanning_tree/SHRD-Graphs/str301][str301  ]] |   3 |    *3907* |
-| 239 | [[./instances/spanning_tree/SHRD-Graphs/str301][str301  ]] |   4 |    *3753* |
-| 240 | [[./instances/spanning_tree/SHRD-Graphs/str301][str301  ]] |   5 |    *3600* |
-| 241 | [[./instances/spanning_tree/SHRD-Graphs/str302][str302  ]] |   2 |    *5706* |
-| 242 | [[./instances/spanning_tree/SHRD-Graphs/str302][str302  ]] |   3 |    *5434* |
-| 243 | [[./instances/spanning_tree/SHRD-Graphs/str302][str302  ]] |   4 |    *5237* |
-| 244 | [[./instances/spanning_tree/SHRD-Graphs/str302][str302  ]] |   5 |    *5089* |
-| 245 | [[./instances/spanning_tree/SHRD-Graphs/str303][str303  ]] |   2 |    *5660* |
-| 246 | [[./instances/spanning_tree/SHRD-Graphs/str303][str303  ]] |   3 |    *5352* |
-| 247 | [[./instances/spanning_tree/SHRD-Graphs/str303][str303  ]] |   4 |    *5152* |
-| 248 | [[./instances/spanning_tree/SHRD-Graphs/str303][str303  ]] |   5 |    *4990* |
-| 249 | [[./instances/spanning_tree/SHRD-Graphs/str304][str304  ]] |   2 |    *7089* |
-| 250 | [[./instances/spanning_tree/SHRD-Graphs/str304][str304  ]] |   3 |    *6763* |
-| 251 | [[./instances/spanning_tree/SHRD-Graphs/str304][str304  ]] |   4 |    *6559* |
-| 252 | [[./instances/spanning_tree/SHRD-Graphs/str304][str304  ]] |   5 |    *6368* |
-| 253 | [[./instances/spanning_tree/SHRD-Graphs/str305][str305  ]] |   2 |    *7187* |
-| 254 | [[./instances/spanning_tree/SHRD-Graphs/str305][str305  ]] |   3 |    *6874* |
-| 255 | [[./instances/spanning_tree/SHRD-Graphs/str305][str305  ]] |   4 |    *6665* |
-| 256 | [[./instances/spanning_tree/SHRD-Graphs/str305][str305  ]] |   5 |    *6467* |
-| 257 | [[./instances/spanning_tree/SHRD-Graphs/str306][str306  ]] |   2 |      8674 |
-| 258 | [[./instances/spanning_tree/SHRD-Graphs/str306][str306  ]] |   3 |    *8298* |
-| 259 | [[./instances/spanning_tree/SHRD-Graphs/str306][str306  ]] |   4 |    *8066* |
-| 260 | [[./instances/spanning_tree/SHRD-Graphs/str306][str306  ]] |   5 |    *7871* |
-| 261 | [[./instances/spanning_tree/SHRD-Graphs/str307][str307  ]] |   2 |    *8499* |
-| 262 | [[./instances/spanning_tree/SHRD-Graphs/str307][str307  ]] |   3 |    *8164* |
-| 263 | [[./instances/spanning_tree/SHRD-Graphs/str307][str307  ]] |   4 |    *7964* |
-| 264 | [[./instances/spanning_tree/SHRD-Graphs/str307][str307  ]] |   5 |    *7768* |
-| 265 | [[./instances/spanning_tree/SHRD-Graphs/str308][str308  ]] |   2 |    *9793* |
-| 266 | [[./instances/spanning_tree/SHRD-Graphs/str308][str308  ]] |   3 |    *9432* |
-| 267 | [[./instances/spanning_tree/SHRD-Graphs/str308][str308  ]] |   4 |    *9223* |
-| 268 | [[./instances/spanning_tree/SHRD-Graphs/str308][str308  ]] |   5 |    *9030* |
-| 269 | [[./instances/spanning_tree/SHRD-Graphs/str309][str309  ]] |   2 |    *9948* |
-| 270 | [[./instances/spanning_tree/SHRD-Graphs/str309][str309  ]] |   3 |    *9597* |
-| 271 | [[./instances/spanning_tree/SHRD-Graphs/str309][str309  ]] |   4 |    *9367* |
-| 272 | [[./instances/spanning_tree/SHRD-Graphs/str309][str309  ]] |   5 |    *9169* |
-| 273 | [[./instances/spanning_tree/SHRD-Graphs/str500][str500  ]] |   2 |      4471 |
-| 274 | [[./instances/spanning_tree/SHRD-Graphs/str500][str500  ]] |   3 |    *4128* |
-| 275 | [[./instances/spanning_tree/SHRD-Graphs/str500][str500  ]] |   4 |    *3962* |
-| 276 | [[./instances/spanning_tree/SHRD-Graphs/str500][str500  ]] |   5 |    *3807* |
-| 277 | [[./instances/spanning_tree/SHRD-Graphs/str501][str501  ]] |   2 |    *4517* |
-| 278 | [[./instances/spanning_tree/SHRD-Graphs/str501][str501  ]] |   3 |    *4259* |
-| 279 | [[./instances/spanning_tree/SHRD-Graphs/str501][str501  ]] |   4 |    *4095* |
-| 280 | [[./instances/spanning_tree/SHRD-Graphs/str501][str501  ]] |   5 |    *3936* |
-| 281 | [[./instances/spanning_tree/SHRD-Graphs/str502][str502  ]] |   2 |      6162 |
-| 282 | [[./instances/spanning_tree/SHRD-Graphs/str502][str502  ]] |   3 |    *5823* |
-| 283 | [[./instances/spanning_tree/SHRD-Graphs/str502][str502  ]] |   4 |    *5634* |
-| 284 | [[./instances/spanning_tree/SHRD-Graphs/str502][str502  ]] |   5 |    *5482* |
-| 285 | [[./instances/spanning_tree/SHRD-Graphs/str503][str503  ]] |   2 |      6090 |
-| 286 | [[./instances/spanning_tree/SHRD-Graphs/str503][str503  ]] |   3 |    *5724* |
-| 287 | [[./instances/spanning_tree/SHRD-Graphs/str503][str503  ]] |   4 |    *5530* |
-| 288 | [[./instances/spanning_tree/SHRD-Graphs/str503][str503  ]] |   5 |    *5377* |
-| 289 | [[./instances/spanning_tree/SHRD-Graphs/str504][str504  ]] |   2 |      7682 |
-| 290 | [[./instances/spanning_tree/SHRD-Graphs/str504][str504  ]] |   3 |    *7300* |
-| 291 | [[./instances/spanning_tree/SHRD-Graphs/str504][str504  ]] |   4 |    *7105* |
-| 292 | [[./instances/spanning_tree/SHRD-Graphs/str504][str504  ]] |   5 |    *6919* |
-| 293 | [[./instances/spanning_tree/SHRD-Graphs/str505][str505  ]] |   2 |      7723 |
-| 294 | [[./instances/spanning_tree/SHRD-Graphs/str505][str505  ]] |   3 |    *7274* |
-| 295 | [[./instances/spanning_tree/SHRD-Graphs/str505][str505  ]] |   4 |    *7073* |
-| 296 | [[./instances/spanning_tree/SHRD-Graphs/str505][str505  ]] |   5 |    *6880* |
-| 297 | [[./instances/spanning_tree/SHRD-Graphs/str506][str506  ]] |   2 |      9279 |
-| 298 | [[./instances/spanning_tree/SHRD-Graphs/str506][str506  ]] |   3 |    *8852* |
-| 299 | [[./instances/spanning_tree/SHRD-Graphs/str506][str506  ]] |   4 |    *8645* |
-| 300 | [[./instances/spanning_tree/SHRD-Graphs/str506][str506  ]] |   5 |    *8449* |
-| 301 | [[./instances/spanning_tree/SHRD-Graphs/str507][str507  ]] |   2 |      9271 |
-| 302 | [[./instances/spanning_tree/SHRD-Graphs/str507][str507  ]] |   3 |    *8788* |
-| 303 | [[./instances/spanning_tree/SHRD-Graphs/str507][str507  ]] |   4 |    *8582* |
-| 304 | [[./instances/spanning_tree/SHRD-Graphs/str507][str507  ]] |   5 |    *8393* |
-| 305 | [[./instances/spanning_tree/SHRD-Graphs/str508][str508  ]] |   2 |      0859 |
-| 306 | [[./instances/spanning_tree/SHRD-Graphs/str508][str508  ]] |   3 |    *0358* |
-| 307 | [[./instances/spanning_tree/SHRD-Graphs/str508][str508  ]] |   4 |      0138 |
-| 308 | [[./instances/spanning_tree/SHRD-Graphs/str508][str508  ]] |     |    *9941* |
-| 309 | [[./instances/spanning_tree/SHRD-Graphs/str509][str509  ]] |   2 |      0776 |
-| 310 | [[./instances/spanning_tree/SHRD-Graphs/str509][str509  ]] |   3 |    *0345* |
-| 311 | [[./instances/spanning_tree/SHRD-Graphs/str509][str509  ]] |   4 |      0123 |
-| 312 | [[./instances/spanning_tree/SHRD-Graphs/str509][str509  ]] |   5 |    *9933* |
-| 313 | [[./instances/spanning_tree/SHRD-Graphs/str700][str700  ]] |   2 |      4727 |
-| 314 | [[./instances/spanning_tree/SHRD-Graphs/str700][str700  ]] |   3 |    *4397* |
-| 315 | [[./instances/spanning_tree/SHRD-Graphs/str700][str700  ]] |   4 |    *4249* |
-| 316 | [[./instances/spanning_tree/SHRD-Graphs/str700][str700  ]] |   5 |    *4100* |
-| 317 | [[./instances/spanning_tree/SHRD-Graphs/str701][str701  ]] |   2 |      4786 |
-| 318 | [[./instances/spanning_tree/SHRD-Graphs/str701][str701  ]] |   3 |    *4375* |
-| 319 | [[./instances/spanning_tree/SHRD-Graphs/str701][str701  ]] |   4 |    *4217* |
-| 320 | [[./instances/spanning_tree/SHRD-Graphs/str701][str701  ]] |   5 |    *4069* |
-| 321 | [[./instances/spanning_tree/SHRD-Graphs/str702][str702  ]] |   2 |      6494 |
-| 322 | [[./instances/spanning_tree/SHRD-Graphs/str702][str702  ]] |   3 |    *6079* |
-| 323 | [[./instances/spanning_tree/SHRD-Graphs/str702][str702  ]] |   4 |    *5877* |
-| 324 | [[./instances/spanning_tree/SHRD-Graphs/str702][str702  ]] |   5 |    *5724* |
-| 325 | [[./instances/spanning_tree/SHRD-Graphs/str703][str703  ]] |   2 |      6485 |
-| 326 | [[./instances/spanning_tree/SHRD-Graphs/str703][str703  ]] |   3 |    *6079* |
-| 327 | [[./instances/spanning_tree/SHRD-Graphs/str703][str703  ]] |   4 |    *5880* |
-| 328 | [[./instances/spanning_tree/SHRD-Graphs/str703][str703  ]] |   5 |    *5728* |
-| 329 | [[./instances/spanning_tree/SHRD-Graphs/str704][str704  ]] |   2 |      8298 |
-| 330 | [[./instances/spanning_tree/SHRD-Graphs/str704][str704  ]] |   3 |    *7897* |
-| 331 | [[./instances/spanning_tree/SHRD-Graphs/str704][str704  ]] |   4 |    *7694* |
-| 332 | [[./instances/spanning_tree/SHRD-Graphs/str704][str704  ]] |   5 |    *7497* |
-| 333 | [[./instances/spanning_tree/SHRD-Graphs/str705][str705  ]] |   2 |      8134 |
-| 334 | [[./instances/spanning_tree/SHRD-Graphs/str705][str705  ]] |   3 |    *7688* |
-| 335 | [[./instances/spanning_tree/SHRD-Graphs/str705][str705  ]] |   4 |    *7496* |
-| 336 | [[./instances/spanning_tree/SHRD-Graphs/str705][str705  ]] |   5 |    *7311* |
-| 337 | [[./instances/spanning_tree/SHRD-Graphs/str706][str706  ]] |   2 |      9863 |
-| 338 | [[./instances/spanning_tree/SHRD-Graphs/str706][str706  ]] |   3 |    *9359* |
-| 339 | [[./instances/spanning_tree/SHRD-Graphs/str706][str706  ]] |   4 |    *9153* |
-| 340 | [[./instances/spanning_tree/SHRD-Graphs/str706][str706  ]] |   5 |    *8964* |
-| 341 | [[./instances/spanning_tree/SHRD-Graphs/str707][str707  ]] |   2 |      9855 |
-| 342 | [[./instances/spanning_tree/SHRD-Graphs/str707][str707  ]] |   3 |    *9467* |
-| 343 | [[./instances/spanning_tree/SHRD-Graphs/str707][str707  ]] |   4 |    *9256* |
-| 344 | [[./instances/spanning_tree/SHRD-Graphs/str707][str707  ]] |   5 |    *9065* |
-| 345 | [[./instances/spanning_tree/SHRD-Graphs/str708][str708  ]] |   2 |      1361 |
-| 346 | [[./instances/spanning_tree/SHRD-Graphs/str708][str708  ]] |   3 |    *0887* |
-| 347 | [[./instances/spanning_tree/SHRD-Graphs/str708][str708  ]] |   4 |      0674 |
-| 348 | [[./instances/spanning_tree/SHRD-Graphs/str708][str708  ]] |   5 |      0482 |
-| 349 | [[./instances/spanning_tree/SHRD-Graphs/str709][str709  ]] |   2 |      1347 |
-| 350 | [[./instances/spanning_tree/SHRD-Graphs/str709][str709  ]] |   3 |    *0765* |
-| 351 | [[./instances/spanning_tree/SHRD-Graphs/str709][str709  ]] |   4 |      0561 |
-| 352 | [[./instances/spanning_tree/SHRD-Graphs/str709][str709  ]] |   5 |      0367 |
-| 353 | [[./instances/spanning_tree/SHRD-Graphs/sym300][sym300  ]] |   2 |    *1376* |
-| 354 | [[./instances/spanning_tree/SHRD-Graphs/sym300][sym300  ]] |   3 |    *1012* |
-| 355 | [[./instances/spanning_tree/SHRD-Graphs/sym300][sym300  ]] |   4 |     *965* |
-| 356 | [[./instances/spanning_tree/SHRD-Graphs/sym300][sym300  ]] |   5 |     *959* |
-| 357 | [[./instances/spanning_tree/SHRD-Graphs/sym301][sym301  ]] |   2 |    *1637* |
-| 358 | [[./instances/spanning_tree/SHRD-Graphs/sym301][sym301  ]] |   3 |    *1285* |
-| 359 | [[./instances/spanning_tree/SHRD-Graphs/sym301][sym301  ]] |   4 |    *1219* |
-| 360 | [[./instances/spanning_tree/SHRD-Graphs/sym301][sym301  ]] |   5 |    *1219* |
-| 361 | [[./instances/spanning_tree/SHRD-Graphs/sym302][sym302  ]] |   2 |      2048 |
-| 362 | [[./instances/spanning_tree/SHRD-Graphs/sym302][sym302  ]] |   3 |    *1311* |
-| 363 | [[./instances/spanning_tree/SHRD-Graphs/sym302][sym302  ]] |   4 |    *1256* |
-| 364 | [[./instances/spanning_tree/SHRD-Graphs/sym302][sym302  ]] |   5 |    *1252* |
-| 365 | [[./instances/spanning_tree/SHRD-Graphs/sym303][sym303  ]] |   2 |    *1494* |
-| 366 | [[./instances/spanning_tree/SHRD-Graphs/sym303][sym303  ]] |   3 |    *1125* |
-| 367 | [[./instances/spanning_tree/SHRD-Graphs/sym303][sym303  ]] |   4 |    *1090* |
-| 368 | [[./instances/spanning_tree/SHRD-Graphs/sym303][sym303  ]] |   5 |    *1090* |
-| 369 | [[./instances/spanning_tree/SHRD-Graphs/sym304][sym304  ]] |   2 |    *2511* |
-| 370 | [[./instances/spanning_tree/SHRD-Graphs/sym304][sym304  ]] |   3 |    *1722* |
-| 371 | [[./instances/spanning_tree/SHRD-Graphs/sym304][sym304  ]] |   4 |    *1686* |
-| 372 | [[./instances/spanning_tree/SHRD-Graphs/sym304][sym304  ]] |   5 |    *1686* |
-| 373 | [[./instances/spanning_tree/SHRD-Graphs/sym305][sym305  ]] |   2 |      1523 |
-| 374 | [[./instances/spanning_tree/SHRD-Graphs/sym305][sym305  ]] |   3 |     *958* |
-| 375 | [[./instances/spanning_tree/SHRD-Graphs/sym305][sym305  ]] |   4 |     *904* |
-| 376 | [[./instances/spanning_tree/SHRD-Graphs/sym305][sym305  ]] |   5 |     *903* |
-| 377 | [[./instances/spanning_tree/SHRD-Graphs/sym306][sym306  ]] |   2 |    *1588* |
-| 378 | [[./instances/spanning_tree/SHRD-Graphs/sym306][sym306  ]] |   3 |    *1110* |
-| 379 | [[./instances/spanning_tree/SHRD-Graphs/sym306][sym306  ]] |   4 |     *976* |
-| 380 | [[./instances/spanning_tree/SHRD-Graphs/sym306][sym306  ]] |   5 |     *976* |
-| 381 | [[./instances/spanning_tree/SHRD-Graphs/sym307][sym307  ]] |   2 |    *1750* |
-| 382 | [[./instances/spanning_tree/SHRD-Graphs/sym307][sym307  ]] |   3 |    *1280* |
-| 383 | [[./instances/spanning_tree/SHRD-Graphs/sym307][sym307  ]] |   4 |    *1271* |
-| 384 | [[./instances/spanning_tree/SHRD-Graphs/sym307][sym307  ]] |   5 |    *1271* |
-| 385 | [[./instances/spanning_tree/SHRD-Graphs/sym308][sym308  ]] |   2 |      2273 |
-| 386 | [[./instances/spanning_tree/SHRD-Graphs/sym308][sym308  ]] |   3 |    *1546* |
-| 387 | [[./instances/spanning_tree/SHRD-Graphs/sym308][sym308  ]] |   4 |    *1506* |
-| 388 | [[./instances/spanning_tree/SHRD-Graphs/sym308][sym308  ]] |   5 |    *1506* |
-| 389 | [[./instances/spanning_tree/SHRD-Graphs/sym309][sym309  ]] |   2 |    *1731* |
-| 390 | [[./instances/spanning_tree/SHRD-Graphs/sym309][sym309  ]] |   3 |    *1368* |
-| 391 | [[./instances/spanning_tree/SHRD-Graphs/sym309][sym309  ]] |   4 |    *1302* |
-| 392 | [[./instances/spanning_tree/SHRD-Graphs/sym309][sym309  ]] |   5 |    *1296* |
-| 393 | [[./instances/spanning_tree/SHRD-Graphs/sym500][sym500  ]] |   2 |      2522 |
-| 394 | [[./instances/spanning_tree/SHRD-Graphs/sym500][sym500  ]] |   3 |    *1156* |
-| 395 | [[./instances/spanning_tree/SHRD-Graphs/sym500][sym500  ]] |   4 |    *1105* |
-| 396 | [[./instances/spanning_tree/SHRD-Graphs/sym500][sym500  ]] |   5 |    *1098* |
-| 397 | [[./instances/spanning_tree/SHRD-Graphs/sym501][sym501  ]] |   2 |      2009 |
-| 398 | [[./instances/spanning_tree/SHRD-Graphsp/sym501][sym501 ]] |   3 |    *1106* |
-| 399 | [[./instances/spanning_tree/SHRD-Graphs/sym501][sym501  ]] |   4 |    *1065* |
-| 400 | [[./instances/spanning_tree/SHRD-Graphs/sym501][sym501  ]] |   5 |    *1045* |
-| 401 | [[./instances/spanning_tree/SHRD-Graphs/sym502][sym502  ]] |   2 |      2508 |
-| 402 | [[./instances/spanning_tree/SHRD-Graphs/sym502][sym502  ]] |   3 |    *1459* |
-| 403 | [[./instances/spanning_tree/SHRD-Graphs/sym502][sym502  ]] |   4 |    *1416* |
-| 404 | [[./instances/spanning_tree/SHRD-Graphs/sym502][sym502  ]] |   5 |    *1416* |
-| 405 | [[./instances/spanning_tree/SHRD-Graphs/sym503][sym503  ]] |   2 |      2166 |
-| 406 | [[./instances/spanning_tree/SHRD-Graphs/sym503][sym503  ]] |   3 |    *1431* |
-| 407 | [[./instances/spanning_tree/SHRD-Graphs/sym503][sym503  ]] |   4 |    *1367* |
-| 408 | [[./instances/spanning_tree/SHRD-Graphs/sym503][sym503  ]] |   5 |    *1349* |
-| 409 | [[./instances/spanning_tree/SHRD-Graphs/sym504][sym504  ]] |   2 |      2671 |
-| 410 | [[./instances/spanning_tree/SHRD-Graphs/sym504][sym504  ]] |   3 |    *1272* |
-| 411 | [[./instances/spanning_tree/SHRD-Graphs/sym504][sym504  ]] |   4 |    *1241* |
-| 412 | [[./instances/spanning_tree/SHRD-Graphs/sym504][sym504  ]] |   5 |    *1231* |
-| 413 | [[./instances/spanning_tree/SHRD-Graphs/sym505][sym505  ]] |   2 |      2666 |
-| 414 | [[./instances/spanning_tree/SHRD-Graphs/sym505][sym505  ]] |   3 |    *1441* |
-| 415 | [[./instances/spanning_tree/SHRD-Graphs/sym505][sym505  ]] |   4 |    *1276* |
-| 416 | [[./instances/spanning_tree/SHRD-Graphs/sym505][sym505  ]] |   5 |    *1268* |
-| 417 | [[./instances/spanning_tree/SHRD-Graphs/sym506][sym506  ]] |   2 |      2076 |
-| 418 | [[./instances/spanning_tree/SHRD-Graphs/sym506][sym506  ]] |   3 |    *1329* |
-| 419 | [[./instances/spanning_tree/SHRD-Graphs/sym506][sym506  ]] |   4 |    *1256* |
-| 420 | [[./instances/spanning_tree/SHRD-Graphs/sym506][sym506  ]] |   5 |    *1226* |
-| 421 | [[./instances/spanning_tree/SHRD-Graphs/sym507][sym507  ]] |   2 |      2174 |
-| 422 | [[./instances/spanning_tree/SHRD-Graphs/sym507][sym507  ]] |   3 |    *1163* |
-| 423 | [[./instances/spanning_tree/SHRD-Graphs/sym507][sym507  ]] |   4 |    *1106* |
-| 424 | [[./instances/spanning_tree/SHRD-Graphs/sym507][sym507  ]] |   5 |    *1093* |
-| 425 | [[./instances/spanning_tree/SHRD-Graphs/sym508][sym508  ]] |   2 |      2161 |
-| 426 | [[./instances/spanning_tree/SHRD-Graphs/sym508][sym508  ]] |   3 |    *1281* |
-| 427 | [[./instances/spanning_tree/SHRD-Graphs/sym508][sym508  ]] |   4 |    *1266* |
-| 428 | [[./instances/spanning_tree/SHRD-Graphs/sym508][sym508  ]] |   5 |    *1266* |
-| 429 | [[./instances/spanning_tree/SHRD-Graphs/sym509][sym509  ]] |   2 |      2470 |
-| 430 | [[./instances/spanning_tree/SHRD-Graphs/sym509][sym509  ]] |   3 |    *1190* |
-| 431 | [[./instances/spanning_tree/SHRD-Graphs/sym509][sym509  ]] |   4 |    *1160* |
-| 432 | [[./instances/spanning_tree/SHRD-Graphs/sym509][sym509  ]] |   5 |    *1160* |
-| 433 | [[./instances/spanning_tree/SHRD-Graphs/sym700][sym700  ]] |   2 |      2746 |
-| 434 | [[./instances/spanning_tree/SHRD-Graphs/sym700][sym700  ]] |   3 |    *1341* |
-| 435 | [[./instances/spanning_tree/SHRD-Graphs/sym700][sym700  ]] |   4 |    *1234* |
-| 436 | [[./instances/spanning_tree/SHRD-Graphs/sym700][sym700  ]] |   5 |    *1183* |
-| 437 | [[./instances/spanning_tree/SHRD-Graphs/sym701][sym701  ]] |   2 |      2908 |
-| 438 | [[./instances/spanning_tree/SHRD-Graphs/sym701][sym701  ]] |   3 |    *1270* |
-| 439 | [[./instances/spanning_tree/SHRD-Graphs/sym701][sym701  ]] |   4 |    *1198* |
-| 440 | [[./instances/spanning_tree/SHRD-Graphs/sym701][sym701  ]] |   5 |    *1186* |
-| 441 | [[./instances/spanning_tree/SHRD-Graphs/sym702][sym702  ]] |   2 |      2802 |
-| 442 | [[./instances/spanning_tree/SHRD-Graphs/sym702][sym702  ]] |   3 |    *1296* |
-| 443 | [[./instances/spanning_tree/SHRD-Graphs/sym702][sym702  ]] |   4 |    *1234* |
-| 444 | [[./instances/spanning_tree/SHRD-Graphs/sym702][sym702  ]] |   5 |    *1232* |
-| 445 | [[./instances/spanning_tree/SHRD-Graphs/sym703][sym703  ]] |   2 |      1859 |
-| 446 | [[./instances/spanning_tree/SHRD-Graphs/sym703][sym703  ]] |   3 |    *1033* |
-| 447 | [[./instances/spanning_tree/SHRD-Graphs/sym703][sym703  ]] |   4 |     *992* |
-| 448 | [[./instances/spanning_tree/SHRD-Graphs/sym703][sym703  ]] |   5 |     *990* |
-| 449 | [[./instances/spanning_tree/SHRD-Graphs/sym704][sym704  ]] |   2 |      2454 |
-| 450 | [[./instances/spanning_tree/SHRD-Graphs/sym704][sym704  ]] |   3 |    *1412* |
-| 451 | [[./instances/spanning_tree/SHRD-Graphs/sym704][sym704  ]] |   4 |    *1335* |
-| 452 | [[./instances/spanning_tree/SHRD-Graphs/sym704][sym704  ]] |   5 |    *1335* |
-| 453 | [[./instances/spanning_tree/SHRD-Graphs/sym705][sym705  ]] |   2 |      2860 |
-| 454 | [[./instances/spanning_tree/SHRD-Graphs/sym705][sym705  ]] |   3 |    *1347* |
-| 455 | [[./instances/spanning_tree/SHRD-Graphs/sym705][sym705  ]] |   4 |    *1298* |
-| 456 | [[./instances/spanning_tree/SHRD-Graphs/sym705][sym705  ]] |   5 |    *1283* |
-| 457 | [[./instances/spanning_tree/SHRD-Graphs/sym706][sym706  ]] |   2 |      1786 |
-| 458 | [[./instances/spanning_tree/SHRD-Graphs/sym706][sym706  ]] |   3 |     *987* |
-| 459 | [[./instances/spanning_tree/SHRD-Graphs/sym706][sym706  ]] |   4 |     *977* |
-| 460 | [[./instances/spanning_tree/SHRD-Graphs/sym706][sym706  ]] |   5 |     *958* |
-| 461 | [[./instances/spanning_tree/SHRD-Graphs/sym707][sym707  ]] |   2 |      3024 |
-| 462 | [[./instances/spanning_tree/SHRD-Graphs/sym707][sym707  ]] |   3 |    *1507* |
-| 463 | [[./instances/spanning_tree/SHRD-Graphs/sym707][sym707  ]] |   4 |    *1447* |
-| 464 | [[./instances/spanning_tree/SHRD-Graphs/sym707][sym707  ]] |   5 |    *1432* |
-| 465 | [[./instances/spanning_tree/SHRD-Graphs/sym708][sym708  ]] |   2 |      2472 |
-| 466 | [[./instances/spanning_tree/SHRD-Graphs/sym708][sym708  ]] |   3 |    *1318* |
-| 467 | [[./instances/spanning_tree/SHRD-Graphs/sym708][sym708  ]] |   4 |    *1284* |
-| 468 | [[./instances/spanning_tree/SHRD-Graphs/sym708][sym708  ]] |   5 |    *1271* |
-| 469 | [[./instances/spanning_tree/SHRD-Graphs/sym709][sym709  ]] |   2 |      2404 |
-| 470 | [[./instances/spanning_tree/SHRD-Graphs/sym709][sym709  ]] |   3 |    *1106* |
-| 471 | [[./instances/spanning_tree/SHRD-Graphs/sym709][sym709  ]] |   4 |    *1044* |
-| 472 | [[./instances/spanning_tree/SHRD-Graphs/sym709][sym709  ]] |   5 |    *1044* |
-|-----+------------------------------------------------------------+-----+-----------|
+|     | File                                                                                                  | Deg | Sol[fn:1] |
+|     | <l>                                                                                                   | <r> |       <r> |
+|-----+-------------------------------------------------------------------------------------------------------+-----+-----------|
+|   1 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd100][crd100]]   |   2 |      7524 |
+|   2 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd100][crd100]]   |   3 |    *6196* |
+|   3 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd100][crd100]]   |   4 |    *6194* |
+|   4 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd100][crd100]]   |   5 |    *6194* |
+|   5 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd101][crd101]]   |   2 |      8312 |
+|   6 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd101][crd101]]   |   3 |    *7004* |
+|   7 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd101][crd101]]   |   4 |    *7004* |
+|   8 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd101][crd101]]   |   5 |    *7004* |
+|   9 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd102][crd102]]   |   2 |      7995 |
+|  10 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd102][crd102]]   |   3 |    *6867* |
+|  11 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd102][crd102]]   |   4 |    *6831* |
+|  12 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd102][crd102]]   |   5 |    *6831* |
+|  13 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd103][crd103]]   |   2 |      8231 |
+|  14 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd103][crd103]]   |   3 |    *7047* |
+|  15 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd103][crd103]]   |   4 |    *7041* |
+|  16 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd103][crd103]]   |   5 |    *7041* |
+|  17 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd104][crd104]]   |   2 |      8036 |
+|  18 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd104][crd104]]   |   3 |    *6946* |
+|  19 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd104][crd104]]   |   4 |    *6946* |
+|  20 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd104][crd104]]   |   5 |    *6946* |
+|  21 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd105][crd105]]   |   2 |      7660 |
+|  22 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd105][crd105]]   |   3 |    *6456* |
+|  23 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd105][crd105]]   |   4 |    *6449* |
+|  24 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd105][crd105]]   |   5 |    *6449* |
+|  25 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd106][crd106]]   |   2 |      7323 |
+|  26 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd106][crd106]]   |   3 |    *6248* |
+|  27 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd106][crd106]]   |   4 |    *6248* |
+|  28 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd106][crd106]]   |   5 |    *6248* |
+|  29 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd107][crd107]]   |   2 |      8268 |
+|  30 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd107][crd107]]   |   3 |    *7125* |
+|  31 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd107][crd107]]   |   4 |    *7125* |
+|  32 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd107][crd107]]   |   5 |    *7125* |
+|  33 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd108][crd108]]   |   2 |      7424 |
+|  34 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd108][crd108]]   |   3 |    *6531* |
+|  35 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd108][crd108]]   |   4 |    *6531* |
+|  36 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd108][crd108]]   |   5 |    *6531* |
+|  37 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd109][crd109]]   |   2 |      7824 |
+|  38 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd109][crd109]]   |   3 |    *6620* |
+|  39 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd109][crd109]]   |   4 |    *6613* |
+|  40 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd109][crd109]]   |   5 |    *6613* |
+|  41 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd300][crd300]]   |   2 |    *4472* |
+|  42 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd300][crd300]]   |   3 |    *3634* |
+|  43 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd300][crd300]]   |   4 |    *3634* |
+|  44 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd300][crd300]]   |   5 |    *3634* |
+|  45 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd301][crd301]]   |   2 |    *3618* |
+|  46 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd301][crd301]]   |   3 |    *3277* |
+|  47 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd301][crd301]]   |   4 |    *3277* |
+|  48 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd301][crd301]]   |   5 |    *3277* |
+|  49 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd302][crd302]]   |   2 |    *4221* |
+|  50 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd302][crd302]]   |   3 |    *4001* |
+|  51 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd302][crd302]]   |   4 |    *4001* |
+|  52 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd302][crd302]]   |   5 |    *4001* |
+|  53 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd303][crd303]]   |   2 |    *4234* |
+|  54 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd303][crd303]]   |   3 |    *3861* |
+|  55 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd303][crd303]]   |   4 |    *3861* |
+|  56 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd303][crd303]]   |   5 |    *3861* |
+|  57 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd304][crd304]]   |   2 |    *4730* |
+|  58 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd304][crd304]]   |   3 |    *3931* |
+|  59 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd304][crd304]]   |   4 |    *3931* |
+|  60 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd304][crd304]]   |   5 |    *3931* |
+|  61 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd305][crd305]]   |   2 |    *4249* |
+|  62 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd305][crd305]]   |   3 |    *3812* |
+|  63 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd305][crd305]]   |   4 |    *3774* |
+|  64 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd305][crd305]]   |   5 |    *3774* |
+|  65 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd306][crd306]]   |   2 |    *4212* |
+|  66 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd306][crd306]]   |   3 |    *3831* |
+|  67 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd306][crd306]]   |   4 |    *3801* |
+|  68 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd306][crd306]]   |   5 |    *3801* |
+|  69 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd307][crd307]]   |   2 |    *4259* |
+|  70 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd307][crd307]]   |   3 |    *3927* |
+|  71 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd307][crd307]]   |   4 |    *3927* |
+|  72 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd307][crd307]]   |   5 |    *3927* |
+|  73 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd308][crd308]]   |   2 |    *4030* |
+|  74 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd308][crd308]]   |   3 |    *3714* |
+|  75 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd308][crd308]]   |   4 |    *3714* |
+|  76 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd308][crd308]]   |   5 |    *3714* |
+|  77 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd309][crd309]]   |   2 |    *4030* |
+|  78 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd309][crd309]]   |   3 |    *3730* |
+|  79 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd309][crd309]]   |   4 |    *3730* |
+|  80 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd309][crd309]]   |   5 |    *3730* |
+|  81 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd500][crd500]]   |   2 |    *5312* |
+|  82 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd500][crd500]]   |   3 |    *4931* |
+|  83 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd500][crd500]]   |   4 |    *4931* |
+|  84 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd500][crd500]]   |   5 |    *4931* |
+|  85 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd501][crd501]]   |   2 |      5625 |
+|  86 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd501][crd501]]   |   3 |    *5126* |
+|  87 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd501][crd501]]   |   4 |    *5126* |
+|  88 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd501][crd501]]   |   5 |    *5126* |
+|  89 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd502][crd502]]   |   2 |      5507 |
+|  90 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd502][crd502]]   |   3 |    *4898* |
+|  91 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd502][crd502]]   |   4 |    *4898* |
+|  92 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd502][crd502]]   |   5 |    *4898* |
+|  93 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd503][crd503]]   |   2 |      5090 |
+|  94 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd503][crd503]]   |   3 |    *4543* |
+|  95 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd503][crd503]]   |   4 |    *4543* |
+|  96 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd503][crd503]]   |   5 |    *4543* |
+|  97 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd504][crd504]]   |   2 |      5562 |
+|  98 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd504][crd504]]   |   3 |    *4733* |
+|  99 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd504][crd504]]   |   4 |    *4733* |
+| 100 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd504][crd504]]   |   5 |    *4733* |
+| 101 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd505][crd505]]   |   2 |      5579 |
+| 102 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd505][crd505]]   |   3 |    *4895* |
+| 103 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd505][crd505]]   |   4 |    *4892* |
+| 104 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd505][crd505]]   |   5 |    *4892* |
+| 105 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd506][crd506]]   |   2 |      5180 |
+| 106 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd506][crd506]]   |   3 |    *4722* |
+| 107 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd506][crd506]]   |   4 |    *4691* |
+| 108 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd506][crd506]]   |   5 |    *4691* |
+| 109 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd507][crd507]]   |   2 |      5233 |
+| 110 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd507][crd507]]   |   3 |    *4761* |
+| 111 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd507][crd507]]   |   4 |    *4761* |
+| 112 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd507][crd507]]   |   5 |    *4761* |
+| 113 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd508][crd508]]   |   2 |    *5371* |
+| 114 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd508][crd508]]   |   3 |    *5008* |
+| 115 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd508][crd508]]   |   4 |    *5008* |
+| 116 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd508][crd508]]   |   5 |    *5008* |
+| 117 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd509][crd509]]   |   2 |      5345 |
+| 118 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd509][crd509]]   |   3 |    *4607* |
+| 119 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd509][crd509]]   |   4 |    *4607* |
+| 120 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd509][crd509]]   |   5 |    *4607* |
+| 121 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd700][crd700]]   |   2 |      6544 |
+| 122 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd700][crd700]]   |   3 |    *5789* |
+| 123 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd700][crd700]]   |   4 |    *5789* |
+| 124 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd700][crd700]]   |   5 |    *5789* |
+| 125 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd701][crd701]]   |   2 |      6182 |
+| 126 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd701][crd701]]   |   3 |    *5849* |
+| 127 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd701][crd701]]   |   4 |    *5848* |
+| 128 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd701][crd701]]   |   5 |    *5848* |
+| 129 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd702][crd702]]   |   2 |      7089 |
+| 130 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd702][crd702]]   |   3 |    *6167* |
+| 131 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd702][crd702]]   |   4 |    *6167* |
+| 132 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd702][crd702]]   |   5 |    *6167* |
+| 133 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd703][crd703]]   |   2 |      6606 |
+| 134 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd703][crd703]]   |   3 |    *5894* |
+| 135 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd703][crd703]]   |   4 |    *5878* |
+| 136 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd703][crd703]]   |   5 |    *5878* |
+| 137 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd704][crd704]]   |   2 |      6642 |
+| 138 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd704][crd704]]   |   3 |    *5590* |
+| 139 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd704][crd704]]   |   4 |    *5590* |
+| 140 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd704][crd704]]   |   5 |    *5590* |
+| 141 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd705][crd705]]   |   2 |      6779 |
+| 142 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd705][crd705]]   |   3 |    *5854* |
+| 143 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd705][crd705]]   |   4 |    *5853* |
+| 144 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd705][crd705]]   |   5 |    *5853* |
+| 145 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd706][crd706]]   |   2 |      6859 |
+| 146 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd706][crd706]]   |   3 |    *6078* |
+| 147 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd706][crd706]]   |   4 |    *6078* |
+| 148 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd706][crd706]]   |   5 |    *6078* |
+| 149 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd707][crd707]]   |   2 |      6668 |
+| 150 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd707][crd707]]   |   3 |    *5985* |
+| 151 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd707][crd707]]   |   4 |    *5985* |
+| 152 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd707][crd707]]   |   5 |    *5985* |
+| 153 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd708][crd708]]   |   2 |      6419 |
+| 154 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd708][crd708]]   |   3 |    *5803* |
+| 155 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd708][crd708]]   |   4 |    *5803* |
+| 156 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd708][crd708]]   |   5 |    *5803* |
+| 157 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd709][crd709]]   |   2 |      6427 |
+| 158 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd709][crd709]]   |   3 |    *5502* |
+| 159 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd709][crd709]]   |   4 |    *5502* |
+| 160 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/crd709][crd709]]   |   5 |    *5502* |
+| 161 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd150][shrd150]] |   2 |       895 |
+| 162 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd150][shrd150]] |   3 |     *582* |
+| 163 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd150][shrd150]] |   4 |       430 |
+| 164 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd150][shrd150]] |   5 |       339 |
+| 165 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd159][shrd159]] |   2 |       906 |
+| 166 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd159][shrd159]] |   3 |       597 |
+| 167 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd159][shrd159]] |   4 |       430 |
+| 168 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd159][shrd159]] |   5 |       332 |
+| 169 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd200][shrd200]] |   2 |      1873 |
+| 170 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd200][shrd200]] |   3 |      1100 |
+| 171 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd200][shrd200]] |   4 |       829 |
+| 172 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd200][shrd200]] |   5 |       638 |
+| 173 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd209][shrd209]] |   2 |      1808 |
+| 174 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd209][shrd209]] |   3 |      1106 |
+| 175 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd209][shrd209]] |   4 |       807 |
+| 176 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd209][shrd209]] |   5 |       634 |
+| 177 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd258][shrd258]] |   2 |      2953 |
+| 178 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd258][shrd258]] |   3 |      1838 |
+| 179 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd258][shrd258]] |   4 |      1302 |
+| 180 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd258][shrd258]] |   5 |      1007 |
+| 181 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd259][shrd259]] |   2 |      2984 |
+| 182 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd259][shrd259]] |   3 |      1870 |
+| 183 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd259][shrd259]] |   4 |      1312 |
+| 184 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd259][shrd259]] |   5 |      1019 |
+| 185 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd300][shrd300]] |   2 |      4560 |
+| 186 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd300][shrd300]] |   3 |      2738 |
+| 187 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd300][shrd300]] |   4 |      1965 |
+| 188 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd300][shrd300]] |   5 |      1526 |
+| 189 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd309][shrd309]] |   2 |      4268 |
+| 190 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd309][shrd309]] |   3 |      2765 |
+| 191 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd309][shrd309]] |   4 |      1947 |
+| 192 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/shrd309][shrd309]] |   5 |      1487 |
+| 193 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1000][str1000]] |   2 |      5211 |
+| 194 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1000][str1000]] |   3 |    *4702* |
+| 195 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1000][str1000]] |   4 |    *4546* |
+| 196 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1000][str1000]] |   5 |    *4403* |
+| 197 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1001][str1001]] |   2 |      5211 |
+| 198 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1001][str1001]] |   3 |    *4702* |
+| 199 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1001][str1001]] |   4 |    *4546* |
+| 200 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1001][str1001]] |   5 |    *4403* |
+| 201 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1002][str1002]] |   2 |      7276 |
+| 202 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1002][str1002]] |   3 |    *6713* |
+| 203 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1002][str1002]] |   4 |    *6511* |
+| 204 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1002][str1002]] |   5 |    *6362* |
+| 205 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1003][str1003]] |   2 |      7276 |
+| 206 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1003][str1003]] |   3 |    *6713* |
+| 207 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1003][str1003]] |   4 |    *6511* |
+| 208 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1003][str1003]] |   5 |    *6362* |
+| 209 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1004][str1004]] |   2 |      8935 |
+| 210 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1004][str1004]] |   3 |    *8313* |
+| 211 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1004][str1004]] |   4 |    *8117* |
+| 212 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1004][str1004]] |   5 |    *7930* |
+| 213 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1005][str1005]] |   2 |      8935 |
+| 214 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1005][str1005]] |   3 |    *8313* |
+| 215 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1005][str1005]] |   4 |    *8117* |
+| 216 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1005][str1005]] |   5 |    *7930* |
+| 217 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1006][str1006]] |   2 |     10684 |
+| 218 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1006][str1006]] |   3 |  1* 0155* |
+| 219 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1006][str1006]] |   4 |    *9951* |
+| 220 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1006][str1006]] |   5 |    *9756* |
+| 221 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1007][str1007]] |   2 |     10684 |
+| 222 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1007][str1007]] |   3 |  1* 0155* |
+| 223 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1007][str1007]] |   4 |    *9951* |
+| 224 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1007][str1007]] |   5 |    *9756* |
+| 225 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1008][str1008]] |   2 |     12625 |
+| 226 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1008][str1008]] |   3 |  1* 1952* |
+| 227 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1008][str1008]] |   4 |     11726 |
+| 228 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1008][str1008]] |   5 |     11530 |
+| 229 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1009][str1009]] |   2 |     12568 |
+| 230 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1009][str1009]] |   3 |  1* 1985* |
+| 231 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1009][str1009]] |   4 |     11767 |
+| 232 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str1009][str1009]] |   5 |     11571 |
+| 233 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str300][str300]]   |   2 |    *4173* |
+| 234 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str300][str300]]   |   3 |    *3924* |
+| 235 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str300][str300]]   |   4 |    *3761* |
+| 236 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str300][str300]]   |   5 |    *3605* |
+| 237 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str301][str301]]   |   2 |    *4171* |
+| 238 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str301][str301]]   |   3 |    *3907* |
+| 239 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str301][str301]]   |   4 |    *3753* |
+| 240 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str301][str301]]   |   5 |    *3600* |
+| 241 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str302][str302]]   |   2 |    *5706* |
+| 242 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str302][str302]]   |   3 |    *5434* |
+| 243 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str302][str302]]   |   4 |    *5237* |
+| 244 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str302][str302]]   |   5 |    *5089* |
+| 245 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str303][str303]]   |   2 |    *5660* |
+| 246 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str303][str303]]   |   3 |    *5352* |
+| 247 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str303][str303]]   |   4 |    *5152* |
+| 248 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str303][str303]]   |   5 |    *4990* |
+| 249 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str304][str304]]   |   2 |    *7089* |
+| 250 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str304][str304]]   |   3 |    *6763* |
+| 251 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str304][str304]]   |   4 |    *6559* |
+| 252 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str304][str304]]   |   5 |    *6368* |
+| 253 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str305][str305]]   |   2 |    *7187* |
+| 254 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str305][str305]]   |   3 |    *6874* |
+| 255 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str305][str305]]   |   4 |    *6665* |
+| 256 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str305][str305]]   |   5 |    *6467* |
+| 257 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str306][str306]]   |   2 |      8674 |
+| 258 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str306][str306]]   |   3 |    *8298* |
+| 259 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str306][str306]]   |   4 |    *8066* |
+| 260 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str306][str306]]   |   5 |    *7871* |
+| 261 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str307][str307]]   |   2 |    *8499* |
+| 262 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str307][str307]]   |   3 |    *8164* |
+| 263 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str307][str307]]   |   4 |    *7964* |
+| 264 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str307][str307]]   |   5 |    *7768* |
+| 265 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str308][str308]]   |   2 |    *9793* |
+| 266 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str308][str308]]   |   3 |    *9432* |
+| 267 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str308][str308]]   |   4 |    *9223* |
+| 268 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str308][str308]]   |   5 |    *9030* |
+| 269 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str309][str309]]   |   2 |    *9948* |
+| 270 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str309][str309]]   |   3 |    *9597* |
+| 271 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str309][str309]]   |   4 |    *9367* |
+| 272 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str309][str309]]   |   5 |    *9169* |
+| 273 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str500][str500]]   |   2 |      4471 |
+| 274 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str500][str500]]   |   3 |    *4128* |
+| 275 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str500][str500]]   |   4 |    *3962* |
+| 276 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str500][str500]]   |   5 |    *3807* |
+| 277 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str501][str501]]   |   2 |    *4517* |
+| 278 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str501][str501]]   |   3 |    *4259* |
+| 279 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str501][str501]]   |   4 |    *4095* |
+| 280 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str501][str501]]   |   5 |    *3936* |
+| 281 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str502][str502]]   |   2 |      6162 |
+| 282 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str502][str502]]   |   3 |    *5823* |
+| 283 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str502][str502]]   |   4 |    *5634* |
+| 284 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str502][str502]]   |   5 |    *5482* |
+| 285 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str503][str503]]   |   2 |      6090 |
+| 286 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str503][str503]]   |   3 |    *5724* |
+| 287 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str503][str503]]   |   4 |    *5530* |
+| 288 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str503][str503]]   |   5 |    *5377* |
+| 289 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str504][str504]]   |   2 |      7682 |
+| 290 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str504][str504]]   |   3 |    *7300* |
+| 291 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str504][str504]]   |   4 |    *7105* |
+| 292 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str504][str504]]   |   5 |    *6919* |
+| 293 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str505][str505]]   |   2 |      7723 |
+| 294 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str505][str505]]   |   3 |    *7274* |
+| 295 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str505][str505]]   |   4 |    *7073* |
+| 296 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str505][str505]]   |   5 |    *6880* |
+| 297 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str506][str506]]   |   2 |      9279 |
+| 298 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str506][str506]]   |   3 |    *8852* |
+| 299 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str506][str506]]   |   4 |    *8645* |
+| 300 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str506][str506]]   |   5 |    *8449* |
+| 301 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str507][str507]]   |   2 |      9271 |
+| 302 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str507][str507]]   |   3 |    *8788* |
+| 303 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str507][str507]]   |   4 |    *8582* |
+| 304 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str507][str507]]   |   5 |    *8393* |
+| 305 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str508][str508]]   |   2 |      0859 |
+| 306 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str508][str508]]   |   3 |    *0358* |
+| 307 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str508][str508]]   |   4 |      0138 |
+| 308 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str508][str508]]   |     |    *9941* |
+| 309 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str509][str509]]   |   2 |      0776 |
+| 310 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str509][str509]]   |   3 |    *0345* |
+| 311 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str509][str509]]   |   4 |      0123 |
+| 312 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str509][str509]]   |   5 |    *9933* |
+| 313 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str700][str700]]   |   2 |      4727 |
+| 314 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str700][str700]]   |   3 |    *4397* |
+| 315 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str700][str700]]   |   4 |    *4249* |
+| 316 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str700][str700]]   |   5 |    *4100* |
+| 317 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str701][str701]]   |   2 |      4786 |
+| 318 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str701][str701]]   |   3 |    *4375* |
+| 319 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str701][str701]]   |   4 |    *4217* |
+| 320 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str701][str701]]   |   5 |    *4069* |
+| 321 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str702][str702]]   |   2 |      6494 |
+| 322 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str702][str702]]   |   3 |    *6079* |
+| 323 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str702][str702]]   |   4 |    *5877* |
+| 324 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str702][str702]]   |   5 |    *5724* |
+| 325 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str703][str703]]   |   2 |      6485 |
+| 326 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str703][str703]]   |   3 |    *6079* |
+| 327 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str703][str703]]   |   4 |    *5880* |
+| 328 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str703][str703]]   |   5 |    *5728* |
+| 329 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str704][str704]]   |   2 |      8298 |
+| 330 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str704][str704]]   |   3 |    *7897* |
+| 331 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str704][str704]]   |   4 |    *7694* |
+| 332 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str704][str704]]   |   5 |    *7497* |
+| 333 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str705][str705]]   |   2 |      8134 |
+| 334 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str705][str705]]   |   3 |    *7688* |
+| 335 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str705][str705]]   |   4 |    *7496* |
+| 336 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str705][str705]]   |   5 |    *7311* |
+| 337 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str706][str706]]   |   2 |      9863 |
+| 338 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str706][str706]]   |   3 |    *9359* |
+| 339 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str706][str706]]   |   4 |    *9153* |
+| 340 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str706][str706]]   |   5 |    *8964* |
+| 341 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str707][str707]]   |   2 |      9855 |
+| 342 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str707][str707]]   |   3 |    *9467* |
+| 343 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str707][str707]]   |   4 |    *9256* |
+| 344 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str707][str707]]   |   5 |    *9065* |
+| 345 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str708][str708]]   |   2 |      1361 |
+| 346 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str708][str708]]   |   3 |    *0887* |
+| 347 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str708][str708]]   |   4 |      0674 |
+| 348 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str708][str708]]   |   5 |      0482 |
+| 349 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str709][str709]]   |   2 |      1347 |
+| 350 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str709][str709]]   |   3 |    *0765* |
+| 351 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str709][str709]]   |   4 |      0561 |
+| 352 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/str709][str709]]   |   5 |      0367 |
+| 353 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym300][sym300]]   |   2 |    *1376* |
+| 354 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym300][sym300]]   |   3 |    *1012* |
+| 355 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym300][sym300]]   |   4 |     *965* |
+| 356 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym300][sym300]]   |   5 |     *959* |
+| 357 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym301][sym301]]   |   2 |    *1637* |
+| 358 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym301][sym301]]   |   3 |    *1285* |
+| 359 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym301][sym301]]   |   4 |    *1219* |
+| 360 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym301][sym301]]   |   5 |    *1219* |
+| 361 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym302][sym302]]   |   2 |      2048 |
+| 362 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym302][sym302]]   |   3 |    *1311* |
+| 363 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym302][sym302]]   |   4 |    *1256* |
+| 364 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym302][sym302]]   |   5 |    *1252* |
+| 365 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym303][sym303]]   |   2 |    *1494* |
+| 366 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym303][sym303]]   |   3 |    *1125* |
+| 367 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym303][sym303]]   |   4 |    *1090* |
+| 368 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym303][sym303]]   |   5 |    *1090* |
+| 369 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym304][sym304]]   |   2 |    *2511* |
+| 370 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym304][sym304]]   |   3 |    *1722* |
+| 371 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym304][sym304]]   |   4 |    *1686* |
+| 372 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym304][sym304]]   |   5 |    *1686* |
+| 373 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym305][sym305]]   |   2 |      1523 |
+| 374 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym305][sym305]]   |   3 |     *958* |
+| 375 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym305][sym305]]   |   4 |     *904* |
+| 376 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym305][sym305]]   |   5 |     *903* |
+| 377 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym306][sym306]]   |   2 |    *1588* |
+| 378 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym306][sym306]]   |   3 |    *1110* |
+| 379 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym306][sym306]]   |   4 |     *976* |
+| 380 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym306][sym306]]   |   5 |     *976* |
+| 381 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym307][sym307]]   |   2 |    *1750* |
+| 382 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym307][sym307]]   |   3 |    *1280* |
+| 383 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym307][sym307]]   |   4 |    *1271* |
+| 384 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym307][sym307]]   |   5 |    *1271* |
+| 385 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym308][sym308]]   |   2 |      2273 |
+| 386 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym308][sym308]]   |   3 |    *1546* |
+| 387 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym308][sym308]]   |   4 |    *1506* |
+| 388 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym308][sym308]]   |   5 |    *1506* |
+| 389 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym309][sym309]]   |   2 |    *1731* |
+| 390 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym309][sym309]]   |   3 |    *1368* |
+| 391 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym309][sym309]]   |   4 |    *1302* |
+| 392 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym309][sym309]]   |   5 |    *1296* |
+| 393 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym500][sym500]]   |   2 |      2522 |
+| 394 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym500][sym500]]   |   3 |    *1156* |
+| 395 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym500][sym500]]   |   4 |    *1105* |
+| 396 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym500][sym500]]   |   5 |    *1098* |
+| 397 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym501][sym501]]   |   2 |      2009 |
+| 398 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphsp/sym501][sym501]]  |   3 |    *1106* |
+| 399 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym501][sym501]]   |   4 |    *1065* |
+| 400 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym501][sym501]]   |   5 |    *1045* |
+| 401 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym502][sym502]]   |   2 |      2508 |
+| 402 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym502][sym502]]   |   3 |    *1459* |
+| 403 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym502][sym502]]   |   4 |    *1416* |
+| 404 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym502][sym502]]   |   5 |    *1416* |
+| 405 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym503][sym503]]   |   2 |      2166 |
+| 406 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym503][sym503]]   |   3 |    *1431* |
+| 407 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym503][sym503]]   |   4 |    *1367* |
+| 408 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym503][sym503]]   |   5 |    *1349* |
+| 409 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym504][sym504]]   |   2 |      2671 |
+| 410 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym504][sym504]]   |   3 |    *1272* |
+| 411 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym504][sym504]]   |   4 |    *1241* |
+| 412 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym504][sym504]]   |   5 |    *1231* |
+| 413 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym505][sym505]]   |   2 |      2666 |
+| 414 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym505][sym505]]   |   3 |    *1441* |
+| 415 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym505][sym505]]   |   4 |    *1276* |
+| 416 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym505][sym505]]   |   5 |    *1268* |
+| 417 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym506][sym506]]   |   2 |      2076 |
+| 418 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym506][sym506]]   |   3 |    *1329* |
+| 419 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym506][sym506]]   |   4 |    *1256* |
+| 420 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym506][sym506]]   |   5 |    *1226* |
+| 421 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym507][sym507]]   |   2 |      2174 |
+| 422 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym507][sym507]]   |   3 |    *1163* |
+| 423 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym507][sym507]]   |   4 |    *1106* |
+| 424 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym507][sym507]]   |   5 |    *1093* |
+| 425 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym508][sym508]]   |   2 |      2161 |
+| 426 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym508][sym508]]   |   3 |    *1281* |
+| 427 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym508][sym508]]   |   4 |    *1266* |
+| 428 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym508][sym508]]   |   5 |    *1266* |
+| 429 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym509][sym509]]   |   2 |      2470 |
+| 430 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym509][sym509]]   |   3 |    *1190* |
+| 431 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym509][sym509]]   |   4 |    *1160* |
+| 432 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym509][sym509]]   |   5 |    *1160* |
+| 433 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym700][sym700]]   |   2 |      2746 |
+| 434 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym700][sym700]]   |   3 |    *1341* |
+| 435 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym700][sym700]]   |   4 |    *1234* |
+| 436 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym700][sym700]]   |   5 |    *1183* |
+| 437 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym701][sym701]]   |   2 |      2908 |
+| 438 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym701][sym701]]   |   3 |    *1270* |
+| 439 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym701][sym701]]   |   4 |    *1198* |
+| 440 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym701][sym701]]   |   5 |    *1186* |
+| 441 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym702][sym702]]   |   2 |      2802 |
+| 442 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym702][sym702]]   |   3 |    *1296* |
+| 443 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym702][sym702]]   |   4 |    *1234* |
+| 444 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym702][sym702]]   |   5 |    *1232* |
+| 445 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym703][sym703]]   |   2 |      1859 |
+| 446 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym703][sym703]]   |   3 |    *1033* |
+| 447 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym703][sym703]]   |   4 |     *992* |
+| 448 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym703][sym703]]   |   5 |     *990* |
+| 449 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym704][sym704]]   |   2 |      2454 |
+| 450 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym704][sym704]]   |   3 |    *1412* |
+| 451 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym704][sym704]]   |   4 |    *1335* |
+| 452 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym704][sym704]]   |   5 |    *1335* |
+| 453 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym705][sym705]]   |   2 |      2860 |
+| 454 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym705][sym705]]   |   3 |    *1347* |
+| 455 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym705][sym705]]   |   4 |    *1298* |
+| 456 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym705][sym705]]   |   5 |    *1283* |
+| 457 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym706][sym706]]   |   2 |      1786 |
+| 458 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym706][sym706]]   |   3 |     *987* |
+| 459 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym706][sym706]]   |   4 |     *977* |
+| 460 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym706][sym706]]   |   5 |     *958* |
+| 461 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym707][sym707]]   |   2 |      3024 |
+| 462 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym707][sym707]]   |   3 |    *1507* |
+| 463 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym707][sym707]]   |   4 |    *1447* |
+| 464 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym707][sym707]]   |   5 |    *1432* |
+| 465 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym708][sym708]]   |   2 |      2472 |
+| 466 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym708][sym708]]   |   3 |    *1318* |
+| 467 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym708][sym708]]   |   4 |    *1284* |
+| 468 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym708][sym708]]   |   5 |    *1271* |
+| 469 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym709][sym709]]   |   2 |      2404 |
+| 470 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym709][sym709]]   |   3 |    *1106* |
+| 471 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym709][sym709]]   |   4 |    *1044* |
+| 472 | [[https://github.com/unsat/npbench/blob/master/instances/spanning_tree/SHRD-Graphs/sym709][sym709]]   |   5 |    *1044* |
+|-----+-------------------------------------------------------------------------------------------------------+-----+-----------|
 #+tblfm: $1=@#-1   
 # C+c C+c to reapply formula
 
 * Additional Instances 
-  [[./instances/spanning_tree/IEEE-Graphs/][Directory]], 
-  [[./instances/spanning_tree/IEEE-Graphs.tar.gz][tar.gz format]] 
+  [[https://github.com/unsat/npbench/tree/master/instances/spanning_tree/IEEE-Graphs/][Directory]]
 
-#+NAME: tab:additional
-|    | File                                                               |
-|----+--------------------------------------------------------------------|
-|  1 | [[./instances/spanning_tree/IEEE-Graphs/R100n1][R100n1  ]]         |
-|  2 | [[./instances/spanning_tree/IEEE-Graphs/R100n2][R100n2  ]]         |
-|  3 | [[./instances/spanning_tree/IEEE-Graphs/R100n3][R100n3  ]]         |
-|  4 | [[./instances/spanning_tree/IEEE-Graphs/R200n1][R200n1  ]]         |
-|  5 | [[./instances/spanning_tree/IEEE-Graphs/R200n2][R200n2  ]]         |
-|  6 | [[./instances/spanning_tree/IEEE-Graphs/R200n3][R200n3  ]]         |
-|  7 | [[./instances/spanning_tree/IEEE-Graphs/R50n1][ R50n1   ]]         |
-|  8 | [[./instances/spanning_tree/IEEE-Graphs/R50n2][ R50n2   ]]         |
-|  9 | [[./instances/spanning_tree/IEEE-Graphs/R50n3][ R50n3   ]]         |
-| 10 | [[./instances/spanning_tree/IEEE-Graphs/m050n1][m050n1  ]]         |
-| 11 | [[./instances/spanning_tree/IEEE-Graphs/m050n2][m050n2  ]]         |
-| 12 | [[./instances/spanning_tree/IEEE-Graphs/m050n3][m050n3  ]]         |
-| 13 | [[./instances/spanning_tree/IEEE-Graphs/m100n1][m100n1  ]]         |
-| 14 | [[./instances/spanning_tree/IEEE-Graphs/m100n2][m100n2  ]]         |
-| 15 | [[./instances/spanning_tree/IEEE-Graphs/m100n3][m100n3  ]]         |
-| 16 | [[./instances/spanning_tree/IEEE-Graphs/m200n1][m200n1  ]]         |
-| 17 | [[./instances/spanning_tree/IEEE-Graphs/m200n2][m200n2  ]]         |
-| 18 | [[./instances/spanning_tree/IEEE-Graphs/m200n3][m200n3  ]]         |
-| 19 | [[./instances/spanning_tree/IEEE-Graphs/m300n1][m300n1  ]]         |
-| 20 | [[./instances/spanning_tree/IEEE-Graphs/m400n1][m400n1  ]]         |
-| 21 | [[./instances/spanning_tree/IEEE-Graphs/m500n1][m500n1  ]]         |
-| 22 | [[./instances/spanning_tree/IEEE-Graphs/zhou-gen-9n][zhou-gen-9n]] |
-|----+--------------------------------------------------------------------|
-#+tblfm: $1=@#-1   
 
 -----
 
